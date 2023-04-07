@@ -1,6 +1,6 @@
 # **Trainee 2023.1**
 
-# **Nome do seu blog**
+# **Radiator Springs**
 
 ## **Projeto Trainee, Code Jr, Grupo 000, 2023.1**
 
@@ -13,15 +13,16 @@
 
 #### Desenvolvedores:
 
-* Trainee 1
-* Trainee 2
-* Trainee 3
-* Trainee 4
+* Lucas Henrique de Arruda Ferreira
+* Fabio do Vale Affonso
+* Pedro Henrique Pascoalino Marques
+* Daniel Abib
+* Gabriel de Oliveira Vieira
 
 
 #### Scrum Master:
 
-* [Nome do Scrum](coloque o link do github, se quiser).
+* Quezia Emanuelly
 
 #### Links Úteis:
 
