@@ -28,7 +28,7 @@
 
 * [Trello](https://trello.com/invite/b/bqIztYrS/ATTIab90cba7dfdf93d666259bfa004098ad85D767CE/trainee-20231)
 
-* [Drive com ID Visual]()
+* [Drive com ID Visual](https://drive.google.com/drive/folders/17oI3FbWMIIwVS63kFxFasXMaAADqERLq?usp=share_link)
 
 
 
