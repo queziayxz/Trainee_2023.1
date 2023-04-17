@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* Vermelho: #9C1111
+Marrom: #32252C
+Branco: #D6C0B4 */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #D6C0B4;
+}
+
+
+
+main{
+    background-color: #D6C0B4 ;
+    
+}
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+#intro{
+    /* padding: 10px 10px; */
+    display: inline-block;
+    background-color: #32252C ;
+    height: 312px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+
+#imgIntro{
+    display: inline-block;
+    padding-left: 20px;
+
+}
+
+#imgIntro img{
+    width: 600px;
+    
+}
+
+#pIntro{
+    width: 50%;
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 70px;
+    padding-left: 20px;
+}
+
+.cor{
+    background-color: #9C1111 ;
+    height: 10px;
+    margin-top: -5px;
+}
+
+#sinopse{
+    display: inline-block;
+    background-color: #32252C ;
+    height: 375px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+}
+
+#imgSnp{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+#sinopse img{
+    width: 600px;
+}
+
+#pSinopse h2{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#pSinopse{
+    width: 50%;
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 70px;
+    padding-left: 20px;
+}
+
+
+#trailer{
+    background-color: #32252C;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#trailer h2{
+    font-size: 2em;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#curiosidades{
+    background-color: #32252C;
+}
+
+
+@media (max-width:1000px){
+
+main{
+    background-color:blue;
+}
+
+
+
+}
