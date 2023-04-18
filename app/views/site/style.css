@@ -15,76 +15,59 @@ Branco: #D6C0B4 */
 
 
 main{
-    background-color: #32252C ;
-    
+    background-color: #32252C ;    
 }
 h1{
     font-size: 2em;
     padding:20px 0px 30px 30px;
+    text-align: center;
 }
 
 #intro{
-    /* padding: 10px 10px; */
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #32252C ;
-    height: 312px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+    width: 80%;
+    margin: auto;
    
 }
 
-#imgIntro{
-    display: inline-block;
-    padding-left: 20px;
-
-}
-
-#imgIntro img{
-    width: 600px;
-    
-}
 
 #pIntro{
-    width: 50%;
-    display: inline-block;
-    vertical-align: text-bottom;
     font-size: 1.2em;
-    padding-bottom: 70px;
-    padding-left: 20px;
+    padding-left: 30px; 
 }
 
 .cor{
     background-color: #9C1111 ;
-    height: 10px;
+    height: 5px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
 #sinopse{
-    display: inline-block;
     background-color: #32252C ;
-    height: 375px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
 }
 
-#imgSnp{
-    display: inline-block;
-    padding-left: 20px;
-}
-
-#sinopse img{
-    width: 600px;
+img{
+    width: 500px;
 }
 
 #pSinopse h2{
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     text-align: center;
 }
 
 #pSinopse{
-    width: 50%;
-    display: inline-block;
-    vertical-align: text-bottom;
     font-size: 1.2em;
     padding-bottom: 70px;
     padding-left: 20px;
@@ -105,11 +88,17 @@ h1{
 
 #curiosidades{
     background-color: #32252C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 #curiosidades h2{
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 #curiosidades ol{
@@ -121,10 +110,42 @@ h1{
 
 @media (max-width:1000px){
 
-main{
-    background-color:blue;
+
+    #intro{
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    #imgIntro img{
+        width: 320px;
+    }
+
+    #pIntro{  
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    #sinopse{
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    #sinopse img{
+        width: 320px;
+    }
+
+    #trailer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    
 }
-
-
-
+@media(max-width:280px){
+    #imgIntro img{
+        width: 100%;
+    }
 }
