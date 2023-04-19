@@ -17,6 +17,24 @@ main{
     background-color: #32252C ;    
 }
 
+#intro{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #32252C ;
+    width: 80%;
+    margin: auto;
+}
+
+#intro img{
+    width: 250px;
+}
+
+#pIntro{
+    font-size: 1.2em;
+    padding-left: 20px;
+}
+
 h1{
     font-size: 2em;
     padding:20px 0px 30px 30px;
