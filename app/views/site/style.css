@@ -61,55 +61,30 @@ h2{
     border-radius: 10px;
 }
 
-#sinopse{
-    background-color: #32252C ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-
-}
-
-
-#pSinopse{
-    font-size: 1.2em;
-    padding-bottom: 70px;
-    padding-left: 20px;
-}
-
-
-#trailer{
-    background-color: #32252C;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-#trailer h2{
-    font-size: 2em;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
 
 #curiosidades{
     background-color: #32252C;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     width: 80%;
     margin: auto;
 }
 
-#curiosidades h2{
-    padding-bottom: 20px;
-    text-align: center;
-}
 
 #curiosidades ol{
     padding-left: 50px;
     line-height: 40px;
     list-style: decimal;
+}
+
+#curiosidades a{
+    text-decoration: none;
+}
+
+#curiosidades a:hover{
+    text-decoration: underline;
 }
 
 
