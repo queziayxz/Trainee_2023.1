@@ -28,7 +28,6 @@ h1{
     justify-content: center;
     align-items: center;
     background-color: #32252C ;
-
     width: 80%;
     margin: auto;
    
@@ -110,13 +109,16 @@ img{
 
 @media (max-width:1000px){
 
-
+    h1{
+        font-size:1.5em;
+        text-align: center;
+    }
     #intro{
         flex-wrap: wrap;
         text-align: left;
     }
     #imgIntro img{
-        width: 320px;
+        width: 300px;
     }
 
     #pIntro{  
@@ -130,22 +132,27 @@ img{
     }
 
     #sinopse img{
-        width: 320px;
+        width: 300px;
     }
 
     #trailer{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 300px;
         margin: auto;
         flex-wrap: wrap;
     }
 
     
 }
+
 @media(max-width:280px){
     #imgIntro img{
         width: 100%;
     }
+    #sinopse img{
+        width: 100%;
+    }
+
 }
