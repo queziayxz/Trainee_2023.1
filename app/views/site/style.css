@@ -13,17 +13,24 @@ Branco: #D6C0B4 */
 }
 
 
-
 main{
     background-color: #32252C ;    
 }
+
 h1{
     font-size: 2em;
     padding:20px 0px 30px 30px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-#intro{
+h2{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+#posts{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,10 +41,16 @@ h1{
 }
 
 
-#pIntro{
+#pPost{
     font-size: 1.2em;
     padding-left: 30px; 
 }
+
+#imgPost1{
+    width: 400px;
+    border-radius: 5px;
+}
+
 
 .cor{
     background-color: #9C1111 ;
@@ -57,9 +70,7 @@ h1{
 
 }
 
-img{
-    width: 500px;
-}
+
 
 #pSinopse h2{
     padding-bottom: 15px;
