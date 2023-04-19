@@ -43,10 +43,11 @@ h2{
 
 #pPost{
     font-size: 1.2em;
-    padding-left: 30px; 
+    padding-bottom: 70px;
+    padding-left: 20px;
 }
 
-#imgPost1{
+#imgPost img{
     width: 400px;
     border-radius: 5px;
 }
@@ -70,12 +71,6 @@ h2{
 
 }
 
-
-
-#pSinopse h2{
-    padding-bottom: 15px;
-    text-align: center;
-}
 
 #pSinopse{
     font-size: 1.2em;
@@ -114,7 +109,7 @@ h2{
 #curiosidades ol{
     padding-left: 50px;
     line-height: 40px;
-    list-style: circle;
+    list-style: decimal;
 }
 
 
