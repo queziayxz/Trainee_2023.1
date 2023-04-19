@@ -105,6 +105,26 @@ h2{
     text-decoration: underline;
 }
 
+#rs{
+    text-align: center;
+}
+
+#rs img{
+
+        width: 50px;
+        margin: 10px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px black;
+        box-sizing: border-box;
+}
+
+#rs img:hover{
+    border: 2px solid #9C1111;
+    transform: translate(-3px,-3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
+    transition: 0.2s border .2s;
+}
+
 
 @media (max-width:1000px){
 
