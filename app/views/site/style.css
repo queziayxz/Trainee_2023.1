@@ -110,7 +110,6 @@ h2{
 }
 
 #rs img{
-
         width: 50px;
         margin: 10px;
         border-radius: 50%;
@@ -128,50 +127,77 @@ h2{
 
 @media (max-width:1000px){
 
-    h1{
-        font-size:1.5em;
-        text-align: center;
-    }
     #intro{
         flex-wrap: wrap;
         text-align: left;
     }
-    #imgIntro img{
+
+    #imgIntro{
+        margin: auto;
+    }
+
+    h1{
+        font-size:1.5em;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 1.3em;
+    }
+
+    #posts{
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    #imgPost img{
         width: 300px;
     }
 
-    #pIntro{  
+    #pPosts{  
         width: 100%;
         padding-left: 0px;
     }
 
-    #sinopse{
-        flex-wrap: wrap;
-        text-align: left;
+    #curiosidades a{
+        text-decoration: underline;
     }
 
-    #sinopse img{
-        width: 300px;
-    }
-
-    #trailer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        margin: auto;
-        flex-wrap: wrap;
-    }
-
+    #small{
+        font-size: 1.2em;
+        }
     
 }
 
 @media(max-width:280px){
+    #imgPost img{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+
     #imgIntro img{
-        width: 100%;
+        margin: auto;
+        width: 190px;
     }
-    #sinopse img{
-        width: 100%;
+    
+    #rs img{
+        width: 30px;
+        margin: 0px;
     }
+
+    #curiosidades a{
+        text-decoration: underline;
+    }
+
+    #rs img:hover{
+  display: none;
+    }
+
+    #small{
+    font-size: 1em;
+    }
+
 
 }
