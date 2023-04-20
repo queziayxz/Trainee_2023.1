@@ -27,6 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #D6C0B4;
+
 }
 
 .search-text {
@@ -55,12 +56,51 @@ body {
     font-size: 25px;
 }
 
+.main {
+    align-content: center;
+    margin: 25% 15% 5% 15%;
+}
+
+.miniatura {
+    margin: 0 10% 5% 0;
+    display: flex;
+}
+
+.miniatura h1 {
+    font-size: 20px;
+    display: block;
+    margin-left: 20px;
+}
+
+.miniatura a {
+    text-decoration: none;
+    color: #9C1111;
+    text-decoration: underline;
+}
+
+.miniatura span {
+    font-size: 15px;
+    color: #D6C0B4;
+}
+
+.link-img {
+    width: 280px;
+    height: 170px;
+    display: inline-block;
+}
+
 @media (max-width: 1000px) {
 
 .search-box {
     max-width: 85%;
     left: 50%;
     margin: 0 5% 0 0;
+}
+
+.miniatura {
+    margin-top: 45%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 }
