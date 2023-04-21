@@ -112,7 +112,7 @@ footer {
     word-spacing: 2px;
 }
 
-@media(max-width: 1000px){
+@media(max-width: 500px){
 
     .navegacao li{
         display: none;
@@ -124,16 +124,16 @@ footer {
 
     .menujs{
         height: auto;
-        text-align: center;
     }
     .menujs ul{
         height: auto;
+        text-align: center;
         padding-left: 15%;
         padding-right: 15%;
-        width: 100%;
-        padding: 0;
     }
     .menujs li{
         display: block;
+        width: 100%;
+        padding: 0;
     }
 }
