@@ -78,8 +78,9 @@ body{
 }
 
 .botao a {position: fixed;
-    right: -360px;
-    top: 550px;
+    left: 90%;
+    right: -30%;
+    top: 85%; 
     text-decoration: none;
 }
  .botao img{
@@ -96,4 +97,12 @@ body{
     margin-left: 1%;
     font-weight: 100;
     color: white;
+}
+
+ @media (max-width: 1000px) {
+
+
+    .descricao p {
+        text-align: left;
+    }
 }
