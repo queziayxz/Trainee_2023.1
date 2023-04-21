@@ -110,6 +110,7 @@ body {
 
 .miniatura {
     display: block;
+    line-height: 23px;
 }
 
 .miniatura a {
