@@ -118,11 +118,14 @@ body {
     margin-left: 0;
     margin-bottom: 60px;
     max-width: 90%;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .miniatura span {
     text-align: justify;
     font-size: 14px;
+    
 }
 
 .link-img {
