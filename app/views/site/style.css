@@ -12,7 +12,6 @@ Branco: #D6C0B4 */
     font-weight: bold;
 }
 
-
 main{
     background-color: #32252C ;    
 }
@@ -37,7 +36,7 @@ main{
 }
 
 #pIntro{
-    font-size: 1.4em;
+    font-size: 1.3em;
     padding-left: 20px;
 }
 
@@ -47,20 +46,12 @@ main{
     font-size: 1.4em;
 }
 
-/* h1{
-    font-size: 2em;
-    padding:20px 0px 30px 30px;
-    text-align: center;
-    margin-bottom: 30px;
-} */
-
 h2{
     padding-bottom: 15px;
     text-align: center;
     font-size: 1.4em;
 
 }
-
 
 #posts{
     display: flex;
@@ -80,8 +71,18 @@ h2{
 }
 
 #imgPost img{
-    width: 400px;
+    width: 350px;
     border-radius: 5px;
+}
+
+.aPost{
+    text-align:end;
+    margin-right: 10%;
+    font-size: 1em;
+}
+
+.aPost a:hover{
+    color: #9C1111;
 }
 
 
@@ -143,20 +144,20 @@ h2{
 
     #intro{
         flex-wrap: wrap;
-        text-align: left;
+        text-align: center;
     }
 
     #imgIntro{
         margin: auto;
     }
 
-    h1{
-        font-size:1.5em;
-        text-align: center;
+    #imgIntro img{
+        width: 100%;
     }
 
     h2{
         font-size: 1.3em;
+        padding-top: 20px;
     }
 
     #posts{
@@ -170,6 +171,19 @@ h2{
     #pPosts{  
         width: 100%;
         padding-left: 0px;
+    }
+
+    .aPost{
+        margin-top: -60px;
+        font-size: 1em;
+    }
+
+    .aPost a{
+      text-decoration: underline;
+    }
+
+    #curiosidades{
+        margin-bottom: 60px;
     }
 
     #curiosidades a{
