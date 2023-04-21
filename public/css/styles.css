@@ -84,6 +84,10 @@ body {
     display: inline-block;
 }
 
+.back-link {
+    color: #9C1111;
+}
+
 @media (max-width: 1050px) {
 
 body {
