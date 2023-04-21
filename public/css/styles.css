@@ -105,4 +105,10 @@ body{
     .descricao p {
         text-align: left;
     }
+
+    .botao a{
+        height: 300px;
+        width: 300px;
+        left: 85%;
+    }
 }
