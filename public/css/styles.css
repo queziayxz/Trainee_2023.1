@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+/* Vermelho: #9C1111
+Marrom: #32252C
+Branco: #D6C0B4 */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #D6C0B4;
+    font-weight: bold;
+}
+
+main{
+    background-color: #32252C ;    
+}
+
+#intro{
+    /* display: flex;
+    justify-content: left;
+    align-items: center; */
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #32252C ;
+    width: 80%;
+    margin: auto;
+}
+
+#intro img{
+    width: 350px;
+}
+
+#imgIntro {
+    margin-bottom: -15px;
+}
+
+#pIntro{
+    font-size: 1.3em;
+    padding-left: 20px;
+}
+
+#h2intro{
+    padding:35px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+h2{
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 1.4em;
+
+}
+
+#posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #32252C ;
+    width: 80%;
+    margin: auto;
+   
+}
+
+
+#pPost{
+    font-size: 1em;
+    padding-bottom: 70px;
+    padding-left: 20px;
+}
+
+#imgPost img{
+    width: 350px;
+    border-radius: 5px;
+}
+
+.aPost{
+    text-align:end;
+    margin-right: 10%;
+    font-size: 1em;
+}
+
+.aPost a:hover{
+    color: #9C1111;
+}
+
+
+.cor{
+    background-color: #9C1111 ;
+    height: 5px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+#curiosidades{
+    background-color: #32252C;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 80%;
+    margin: auto;
+}
+
+
+#curiosidades ol{
+    padding-left: 50px;
+    line-height: 40px;
+    list-style: decimal;
+}
+
+#curiosidades a{
+    text-decoration: none;
+}
+
+#curiosidades a:hover{
+    text-decoration: underline;
+}
+
+#rs{
+    text-align: center;
+}
+
+#rs img{
+        width: 50px;
+        margin: 10px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px black;
+        box-sizing: border-box;
+}
+
+#rs img:hover{
+    border: 2px solid #9C1111;
+    transform: translate(-3px,-3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
+    transition: 0.2s border .2s;
+}
+
+
+@media (max-width:1000px){
+
+    #intro{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #imgIntro{
+        margin: auto;
+    }
+
+    #imgIntro img{
+        width: 300px;
+    }
+
+    h2{
+        font-size: 1.3em;
+        padding-top: 20px;
+    }
+
+    #posts{
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    #imgPost img{
+        width: 300px;
+    }
+
+    #pPosts{  
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .aPost{
+        margin-top: -60px;
+        font-size: 1em;
+    }
+
+    .aPost a{
+      text-decoration: underline;
+    }
+
+    #curiosidades{
+        margin-bottom: 60px;
+    }
+
+    #curiosidades a{
+        text-decoration: underline;
+    }
+
+    #small{
+        font-size: 1.2em;
+        }
+    
+}
+
+@media(max-width:280px){
+    #imgPost img{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+
+    #imgIntro img{
+        margin: auto;
+        width: 190px;
+    }
+    
+    #rs img{
+        width: 30px;
+        margin: 3px;
+        margin-bottom: 10px;
+    }
+
+    #curiosidades a{
+        text-decoration: underline;
+    }
+
+    #small{
+    font-size: 1em;
+    }
+
+
+}
