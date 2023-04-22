@@ -104,6 +104,11 @@ body {
     margin: 0 5% 0 0;
 }
 
+.search-button {
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
 .main {
     margin-left: 16%;
     margin-bottom: 90px;
