@@ -1,139 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #9C1111; 
+  font-family: 'Montserrat', sans-serif;
 }
 
-.navegacao
+#navbarNav a
 {
-    background-color: #32252C;
-    color: #D6C0B4;
-    height: 50px;
-    font-weight: bold;
+  color: #D6C0B4;
 }
-.navegacao a{
-    text-decoration: none;
-    color: #D6C0B4;
-}
-.navegacao a:hover{
-    color: #72665f;
-    transition: color .4s ease
+#navbarNav a:hover{
+  color: #91827a;
 }
 
-.navegacao ul{
-    margin-top: 0;
-    list-style: none;
-    padding-left: 0;
-    text-align: center;
-    height: 50px;
+header, .navbar{
+  background-color: #9C1111;
 }
 
-.navegacao li{
-    display: inline-block;
-    padding-left: 30px;
-    padding-right: 30px;
-    line-height: 50px;
+#nav-container{
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.navegacao li.threeline-icon{
-    display: none;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #32252C;
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
-    color: #D6C0B4;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-
-  .conteudo-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .conteudo-footer h3{
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    line-height: 3rem;
-  }
-  .social-media{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-  }
-
-  .social-media li{
-    margin: 0 10px;
-  }
-
-  .social-media a{
-    text-decoration: none;
-    color: #D6C0B4;
-  }
-
-  .social-media a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-  }
-
-  .social-media a:hover i{
-    color: #72665f;
-}
-
-  .footer-bottom{
-    background: #32252C;
-    width: 100vw;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-}
-
-@media(max-width: 500px){
-
-    .navegacao li{
-        display: none;
-    }
-
-    .navegacao li.threeline-icon{
-        display: inline-block;
-    }
-
-    .menujs{
-        height: auto;
-    }
-    .menujs ul{
-        height: auto;
-        text-align: center;
-        padding-left: 15%;
-        padding-right: 15%;
-    }
-    .menujs li{
-        display: block;
-        width: 100%;
-        padding: 0;
-    }
+#logo{
+  width: 70px;
 }
