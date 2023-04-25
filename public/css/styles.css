@@ -22,7 +22,6 @@ main{
     align-items: center; */
     flex-wrap: wrap;
     text-align: center;
-    background-color: #32252C ;
     width: 80%;
     margin: auto;
 }
@@ -57,7 +56,6 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #32252C ;
     width: 80%;
     margin: auto;
    
@@ -94,29 +92,17 @@ h2{
     border-radius: 10px;
 }
 
-
-#curiosidades{
-    background-color: #32252C;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    width: 80%;
-    margin: auto;
-}
-
-
-#curiosidades ol{
+#listPost ol{
     padding-left: 50px;
     line-height: 40px;
     list-style: decimal;
 }
 
-#curiosidades a{
+#listPost a{
     text-decoration: none;
 }
 
-#curiosidades a:hover{
+#listPost a:hover{
     text-decoration: underline;
 }
 
@@ -182,11 +168,11 @@ h2{
       text-decoration: underline;
     }
 
-    #curiosidades{
+    #listPost{
         margin-bottom: 60px;
     }
 
-    #curiosidades a{
+    #listPost a{
         text-decoration: underline;
     }
 
@@ -216,7 +202,7 @@ h2{
         margin-bottom: 10px;
     }
 
-    #curiosidades a{
+    #listPost a{
         text-decoration: underline;
     }
 
