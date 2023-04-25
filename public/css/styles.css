@@ -1,7 +1,12 @@
 body.cor-diferente{
     background-color: #32252C;
   }
-  
+
+main{
+  padding-bottom: 20rem;
+  color: white;
+}
+
   header li{
     padding-right: 30px;
   }
@@ -35,7 +40,6 @@ body.cor-diferente{
     margin-top: 50px;
     color: #D6C0B4;
     font-family: 'Montserrat', sans-serif;
-    width: 100%;
   }
   
   .footer h4 {
