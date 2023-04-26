@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    background-color: #32252C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+table {
+    background-color: #D6C0B4;
+    text-align: center;
+    border-collapse: collapse;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+#table-box{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 40%;
+}
+
+thead td {
+    color: #D6C0B4;
+    font-weight: bold;
+    background-color: #32252C;
+}
+
+td {
+    background-color: #D6C0B4;
+    border: 1.5px solid #32252C;
+    padding: 8px 15px;
+}

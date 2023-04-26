@@ -126,40 +126,6 @@ h2{
 }
 
 
-
-table {
-    background-color: #D6C0B4;
-    text-align: center;
-    border-collapse: collapse;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 40%;
-    left: 50%;
-}
-
-#table-box{
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin-top: 40%;
-}
-
-thead {
-    font-weight: bold;
-    background-color: #32252C;
-}
-
-thead td{
-    color: #D6C0B4;
-}
-
-td{
-    border: 1.5px solid #32252C;
-    padding: 8px 15px;
-    color: black;
-}
-
-
 @media (max-width:1000px){
 
     #intro{
