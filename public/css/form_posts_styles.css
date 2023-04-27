@@ -4,7 +4,12 @@ body{
     overflow: hidden;
 
 }
-
+h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-weight: bold;   
+}
 .formulario{
     display: flex;
     flex-direction: row;
@@ -12,11 +17,14 @@ body{
 }
 .coluna-esquerda, .coluna-direita{
     width: 50%;
-
+    
 }
 .coluna-direita-item textarea{
     resize: vertical;
     width: 50%;
+    background-color: #32252C;
+    
+    
 
 }
 .area-fundo{
@@ -64,15 +72,43 @@ body{
     
     width: 100%;
     color: #D6C0B4;
-    background-color: #252a34;
+    background-color: #32252C;
     border: none;
     outline: none;
     border-radius: 8px;
     padding-left: 10px;
-    resize: vertical;
+    
 }
-
+input[type="file"]{
+    display: none;
+}
+#img{
+    padding-top: 10px;
+    height: 35px;
+    width: 180%;
+    background-color: #32252C;
+    color: #D6C0B4;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 1s;
+    
+    
+}
+#exampleFormControlTextarea1::placeholder{
+    padding-left: 1px;
+    color: #D6C0B4;
+    font-size: 14px;
+}
+#img:hover{
+    color: #32252C;
+    background-color: #D6C0B4;
+}
 input::placeholder{
+    padding-left: 1px;
     color: #D6C0B4;
     font-size: 14px;
     
@@ -99,24 +135,33 @@ input::placeholder{
 
 
 
-
-@media (max-width: 1000px) {
+ 
+/* @media (max-width: 1000px) {
     .area {
         width: 45%;
         height: auto;
         
     }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
 }
-@media (max-width: 280px){
+@media (min-width: 280px){
     .area {
         width: 75%;
         height: 60%;
         padding: 8px;
     }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
 
 
-
+ */
 
 
 

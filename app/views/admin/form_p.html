@@ -19,15 +19,15 @@
 
     <form class="formulario">
       <div class="coluna-esquerda">
-
+        <h1>Area de Posts</h1>
         <div class="coluna-esquerda-item mb-3" id="titulo">
           <label for="exampleFormControlInput1" class="form-label"></label>
           <input class="form-control" id="exampleFormControlInput1" placeholder="Titulo">
         </div>
 
         <div class="coluna-esquerda-item mb-3">
-          <label for="formFile" class="form-label"></label>
-          <input class="form-control" type="file" id="formFile">
+          <label for="arquivo" id="img">Enviar Arquivo</label>
+          <input class="form-control" type="file" name="arquivo" id="arquivo">
 
         </div>
 
@@ -51,16 +51,15 @@
 
         <div class="coluna-esquerda-item form-group">
           <button type="button" class="btn">Publicar</button>
-          <button type="button" class="btn">Editar</button>
-          <button type="button" class="btn">Apagar</button>
+          <button type="reset" class="btn">Apagar</button>
         </div>
 
       </div>
-
+      
       <div class="coluna-direita">
     
           <label for="exampleFormControlTextarea1" class="form-label"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Conteudo" rows="20"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Conteudo" rows="15" style="resize: none;"></textarea>
         
       </div>
 
