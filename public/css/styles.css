@@ -71,9 +71,7 @@ body {
 }
 
 .miniatura-text a {
-    text-decoration: none;
     color: #9C1111;
-    text-decoration: underline;
 }
 
 .miniatura-text h2 {
@@ -105,8 +103,8 @@ body {
 }
 
 .search-button {
-    margin-right: 5px;
-    padding-right: 5px;
+    margin-right: 4px;
+    padding-right: 4px;
 }
 
 .main {
