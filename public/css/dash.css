@@ -3,6 +3,8 @@ body.modificacoes{
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 .cor-fundo{
     background-color: #9C1111;
 }
@@ -10,6 +12,14 @@ body.modificacoes{
 .primary-text {
     color: #D6C0B4;
   }
+  .navbar-nav > li > .dropdown-menu {   
+      background-color: #32252C;
+      border: none;
+      }
+
+      .navbar-nav > li > .dropdown-menu a{   
+        color: #D6C0B4;
+        }
   
   .rounded-full {
     border-radius: 100%;
@@ -57,6 +67,7 @@ body.modificacoes{
   #page-content-wrapper h2 {
     color: #D6C0B4;
   }
+
   
   #wrapper.toggled #sidebar-wrapper {
     margin-left: 0;
