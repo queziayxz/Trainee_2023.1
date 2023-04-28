@@ -33,7 +33,7 @@ body {
     background: #9C1111;
 	color: #D6C0B4;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 27px;
     cursor: pointer;
     border-radius: 5px;
     margin: 0 0 30px 0;
@@ -90,7 +90,7 @@ td, th {
     transition: 0.3s;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 456px) {
 
 .table-box {
     background-color: #32252C;
@@ -121,6 +121,7 @@ td, th {
 
 }
 
+/*
 @media (max-width: 455px) {
 
 .add-button {
@@ -226,3 +227,4 @@ td, th {
 }
     
 }
+*/
