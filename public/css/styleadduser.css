@@ -97,8 +97,8 @@ form{
   }
 
     
-.btn{
-    padding-top: 1000px;
+.botoes{
+    margin-left: 9%;
 }
 
     @media screen and (max-width: 912px) {
