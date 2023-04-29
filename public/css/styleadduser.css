@@ -3,17 +3,22 @@
     padding: 0;
 }
 
-
+body{
+    display: flex;
+}
+.campos{
+    height: 100%;
+    margin-top: 8%;
+}
 .main{
     background-color: #32252C;
     height: 100vh;
     width: 100%;
-    display: flex;
     font-family: 'Montserrat', sans-serif;
 }
 
-h1{
-    
+form{
+    height: 100%;
 }
 .texto h1{
     color: #32252C;
@@ -23,26 +28,20 @@ h1{
 }
 
 .area{
-    background-color: #D6C0B4;
-    height: 75vh;
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 5%;
-    border-radius: 30px;
+    
+        background-color: #D6C0B4;
+        height: 75%;
+        width: 60%;
+        border-radius: 30px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        padding-bottom: 5%;
+    
 }
 
-.form-control{
-    color: whitesmoke;
-}
 
-.campos{
-    margin-top: 8%;
-}
-
-.botao{
-    text-align: center;
-    margin-top: 5.7%;
-}
 
 .form-bar{
     padding-left: 9%;
@@ -51,13 +50,14 @@ h1{
 }
 
 #exampleFormControlInput1{
-    
     width: 90%;
+    height: 90%;
     background-color: #32252C ;
     border: none;
     outline: none;
     border-radius: 8px;
-    color: white;
+    color: #D6C0B4;
+    position: relative;
 }
 
 #exampleFormControlInput1::placeholder{
@@ -65,3 +65,111 @@ h1{
     color: #D6C0B4;
     font-size: 14px;
 }
+
+.botao{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 20px;
+}
+
+
+#botaoo{
+    height: 8%;
+    width: 30%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #D6C0B4;
+    margin-top:-1%;
+    left: 10%;
+    top: 2%;
+    transform: translate(-10%,-2%);
+    
+}
+
+.botao button {
+    width: 100%; 
+    margin: 0 auto; 
+    height: 8%;
+    margin-top: 2%;
+  }
+
+    
+.btn{
+    padding-top: 1000px;
+}
+
+    @media screen and (max-width: 912px) {
+
+    .area{
+        height: 42%;
+    }
+
+
+    #botaoo{
+        height: 80px;
+        width: 55%;
+        font-size: 150%;
+        left: -2%;
+        top: 2%;
+        transform: translate(+2%,-2%);
+    }
+
+
+    #exampleFormControlInput1{
+        font-size: 1.7rem;
+        line-height: 2.3;
+    }
+    #exampleFormControlInput1::placeholder{
+        padding-left: 1px;
+        color: #D6C0B4;
+        font-size: 22px;
+    }
+
+}
+    @media screen and (max-width: 768px) {
+        .area{
+            height: 48%;
+        }
+        
+    }
+
+    @media screen and (max-width: 540px) {
+        .area{
+            height: 70%;
+        }
+        
+    }
+
+    @media screen and (max-width: 414px) {
+        .area{
+            height: 56%;
+            width: 83%;
+        }
+
+        #botaoo{
+        left: -2%;
+        top: -32%;
+        transform: translate(+2%,+32%);
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        .area{
+            height: 70%;
+        }
+        
+    }
+
+    @media screen and (max-width: 280px){
+        #exampleFormControlInput1::placeholder{
+            padding-left: 1px;
+            color: #D6C0B4;
+            font-size: 16px;
+        }
+
+        #botaoo{
+            font-size: 120%;
+            height: 60px;
+        }
+    }
