@@ -6,6 +6,8 @@
 body{
     display: flex;
 }
+
+
 .campos{
     height: 100%;
     margin-top: 8%;
@@ -46,7 +48,7 @@ form{
 .form-bar{
     padding-left: 9%;
     margin-bottom: 18px;
-    text-align: center;
+    text-align: left;
 }
 
 #exampleFormControlInput1{
