@@ -1,0 +1,18 @@
+body.estilos{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+.alteracoes a span,i
+{
+    color: #D6C0B4;
+}
+
+.alteracoes a:hover span
+{
+    color: #91827a;
+}
+
+.cor-side
+{
+    background-color: #9C1111;
+}
