@@ -91,7 +91,7 @@ td, tr {
     transition: 0.4s;
 }
 
-.option-button {
+.icon-button {
     vertical-align: center;
 	background: #9C1111;
 	color: #D6C0B4;
@@ -107,7 +107,7 @@ td, tr {
     transition: 0.3s;
 }
 
-.option-button:hover {
+.icon-button:hover {
     opacity: 0.7;
     transition: 0.3s;
 }
@@ -124,7 +124,7 @@ td, tr {
 @media (max-width: 570px) {
 
 .table-box {
-    top: 65%;
+    top: 75%;
 }
 
 .page-title {
@@ -149,7 +149,18 @@ td, tr {
     max-width: 95%;
 }
 
-.option-button:hover {
+.option-button {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.icon-button {
+    margin-bottom: 5px;
+}
+
+.icon-button:hover {
     opacity: unset;
 }
 
