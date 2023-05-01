@@ -15,12 +15,12 @@ body {
 
 .table-box {
     background-color: #32252C;
-    padding: 5%;
     transform: translate(-50%, -50%);
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     border-radius: 50px;
+    width: 100%;
 }
 
 .page-title {
@@ -28,7 +28,7 @@ body {
     margin: 0;
     color: #D6C0B4;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -36,14 +36,13 @@ body {
     background: #9C1111;
 	color: #D6C0B4;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 25px;
     cursor: pointer;
     border-radius: 5px;
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 50%;
     border: none;
     padding: 0.5% 0.8%;
     transform: translate(-50%);
-    margin-left: 50%;
     transition: 0.3s;
     box-shadow: 0px 3px 10px black;
 }
@@ -82,12 +81,22 @@ td, tr {
     font-weight: bold;
 }
 
+.table-line {
+    transition: 0.35s;
+}
+
+.table-line:hover {
+    color: #32252C;
+    background-color: #D6C0B4;
+    transition: 0.4s;
+}
+
 .option-button {
     vertical-align: center;
 	background: #9C1111;
 	color: #D6C0B4;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 19px;
     cursor: pointer;
     border-radius: 5px;
     border: none;
@@ -103,35 +112,33 @@ td, tr {
     transition: 0.3s;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px){
 
-.table-box {
-    border-radius: 25px;
-}
-
-}
-
-@media (max-width: 456px) {
-
-.table-box {
+.table-line:hover {
     background-color: #32252C;
-    width: 100%;
-    top: 55%;
-    box-shadow: none;
+    color: #D6C0B4;
+}
+
+}
+
+@media (max-width: 570px) {
+
+.table-box {
+    top: 65%;
 }
 
 .page-title {
-    color: #D6C0B4;
     text-align: left;
-    margin-left: 4%;
+    margin-left: 5%;
+    margin-bottom: 20px;
 }
 
 .add-button {
-    margin-left: 4%;
+    margin-left: 5%;
     padding: 2%;
     position: relative;
     transform: translate(0, 50%);
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .add-button:hover {
@@ -139,14 +146,7 @@ td, tr {
 }
 
 .table-box table {
-    color: #D6C0B4;
-    background-color: #32252C;
-    width: 100%;
-    margin-left: 2.5%;
-}
-
-.table-box thead {
-    background-color: #9C1111;
+    max-width: 95%;
 }
 
 .option-button:hover {
@@ -155,68 +155,15 @@ td, tr {
 
 }
 
-@media (max-width: 401px) {
-    
-.table-box table {
-    margin-left: 2%;
-}
-
-}
-
-@media (max-width: 397px) {
-
-
-
-.table-box table {
-    margin-left: 1.5%;
-}
-
-}
-
-@media (max-width: 392px) {
-  
-.table-box table {
-    margin-left: 1%;
-}
-
-}
-
-@media (max-width: 382px) {
-
-.add-button {
-    margin-left: 0.5%;
-}
-
-.table-box table {
-    margin-left: 0.5%;
-}
-
-}
-
-@media (max-width: 382px) {
+@media (max-width: 312px) {
 
 .page-title {
-    margin-left: 4%;
-}
-
-.add-button {
-    margin-left: 4%;
+    font-size: 33px;
+    width: 100%;
 }
     
-.table-box table {
-    margin-left: 0;
-}
-
-}
-
-@media (max-width: 310px) {
-
-.page-title {
-    font-size: 30px;
-}
-
 .add-button {
-    font-size: 17px;
+    font-size: 25px;
 }
 
 }
