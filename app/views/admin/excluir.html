@@ -24,20 +24,24 @@
           <label for="exampleFormControlInput1" class="form-label"></label>
           <input class="form-control" id="exampleFormControlInput1" placeholder="Post">
         </div>
-        
         <div>
+          <label for="myCheck">Tem certeza que deseja excluir seu post?</label>
+          <input type="checkbox" id="myCheck" onclick="myFunction()">
+          <script>
+            function myFunction() {
+              var checkBox = document.getElementById("myCheck");
+              var text = document.getElementById("text");
+              if (checkBox.checked == true){
+                text.style.display = "block";
+              } else {
+                 text.style.display = "none";
+              }
+            }
+            </script>
+                    </div>
+        <div>
+          <button type="button" class="btn">Excluir</button>
           
-          
-<button id="myBtn" class="btn" onclick="javascript:alert('Clique no botao Ok para excluir ')">Excluir</button>
-<script>
-  var input = document.getElementById("myInput");
-  input.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      document.getElementById("myBtn").click();
-    }
-  });
-  </script>
         
         </div>
 
