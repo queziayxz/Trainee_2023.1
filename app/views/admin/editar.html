@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-  <link rel="stylesheet" href="../../../public/css/editar_posts.css">
+  <link rel="stylesheet" href="../../../public/css/form_posts_styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&display=swap"
     rel="stylesheet">
-  <title>Form_Editar</title>
+  <title>Form_P</title>
 </head>
 
 <body class="area-fundo">
@@ -25,9 +25,21 @@
           <input class="form-control" id="exampleFormControlInput1" placeholder="Titulo">
         </div>
 
-        
+        <div class="coluna-esquerda-item mb-3">
+          <label for="arquivo" id="img">Enviar Arquivo</label>
+          <input class="form-control" type="file" name="arquivo" id="arquivo">
+
         </div>
 
+
+        <div class="coluna-esquerda-item mb-3" >
+          <form method="post">
+
+            <div class="form-group">
+              <label class="control-label" for="date"></label>
+              <input type="date" id="txtDate" name="date">
+
+            </div>
 
           </form>
         </div>
