@@ -17,6 +17,10 @@ h2{
     font-weight: bold;
 
 }
+#flexCheckDefault{
+    width: 50%;
+    height: 50%;
+}
 .formulario{
     display: flex;
     flex-direction: row;
