@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-  <link rel="stylesheet" href="../../../public/css/excluir_posts.css">
+  <link rel="stylesheet" href="../../../public/css/form_posts_styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -14,43 +14,46 @@
   <title>Form_excluir</title>
 </head>
 
-<body class="area-fundo">
-  <section class="area">
+<body class="area-fundo-excluir">
+  <section class="area-excluir">
 
-    <form class="formulario">
+    <form class="formulario-excluir">
       <div class="coluna-esquerda">
         <h1>Excluir Posts</h1>
         <div class="coluna-esquerda-item mb-3" id="titulo">
           <label for="exampleFormControlInput1" class="form-label"></label>
-          <input class="form-control" id="exampleFormControlInput1" placeholder="Titulo">
+          <input class="form-control" id="exampleFormControlInput1" placeholder="Post">
+        </div>
+        
+        <div>
+          
+          
+<button id="myBtn" class="btn" onclick="javascript:alert('Clique no botao Ok para excluir ')">Excluir</button>
+<script>
+  var input = document.getElementById("myInput");
+  input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      document.getElementById("myBtn").click();
+    }
+  });
+  </script>
+        
         </div>
 
-        <div class="coluna-esquerda-item mb-3">
-          <label for="arquivo" id="img">Enviar Arquivo</label>
-          <input class="form-control" type="file" name="arquivo" id="arquivo">
-
-        </div>
 
 
         
 
-        <div class="coluna-esquerda-item mb-3">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Autor">
-        </div>
+        
 
        
 
       </div>
       
-      <div class="coluna-direita">
-    
-          <label for="exampleFormControlTextarea1" class="form-label"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Conteudo" rows="15" style="resize: none;"></textarea>
-          <div>
-            <button type="button" class="btn">Editar</button>
-          </div>
-      </div>
+      
+          
+          
 
 
 
