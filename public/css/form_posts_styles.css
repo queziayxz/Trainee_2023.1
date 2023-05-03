@@ -59,9 +59,9 @@ h2{
     height: 50%;
 }
 .coluna-esquerd{
-    width: 50%;
+    width: 60%;
     height: 100%;
-    gap: 20px;
+    
     
 }
 .area-fundo{
@@ -106,7 +106,7 @@ h2{
 
 }
 .texto2{
-    font-size: 50px;
+    font-size: 20px;
 }
 .area form {
     
@@ -168,7 +168,7 @@ input[type="file"]{
 }
 #img{
     padding-top: 10px;
-    height: 35px;
+    height: 45px;
     width: 100%;
     background-color: #32252C;
     color: #D6C0B4;
@@ -183,7 +183,7 @@ input[type="file"]{
     
 }
 .titulo{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     
 }
@@ -218,7 +218,7 @@ input::placeholder{
 }
 .btnC {
     padding: 10px 8px;
-    width: 60px;
+    width: 120px;
     text-align: center;
     color: #D6C0B4;
     background: #9C1111;
@@ -240,7 +240,7 @@ input::placeholder{
     
 }
 .conteudo{
-    font-size: 13px;
+    font-size: 15px;
     line-height: 19px;
     font-weight: 400;
 }
@@ -249,7 +249,7 @@ input::placeholder{
     background-color: #D6C0B4;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 60%; 
     padding: 35px;
     border-radius: 8px;
@@ -267,7 +267,8 @@ input::placeholder{
     
     display: flex;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
 }
 .area-excluir input {
     margin-top: 10px;
@@ -309,7 +310,8 @@ input::placeholder{
         
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 5px;
+        width: 60%;
         
     }
     h1{
@@ -376,15 +378,29 @@ input::placeholder{
         font-weight: bold;
    
 }
-.img{
-    width: 100%;
+.area-excluir{
+    width: 70%;
+    height: 50%;
+
    }
+
+
+
+.btnC {
+    padding: 10px 8px;
+    width: 75px;
+    
+    
+    
+} 
 }
 
 
 
 @media (max-width: 469px){
-   
+   .area-excluir{
+    width: 100%;
+   }
    .img{
     width: 100%;
    }
@@ -413,7 +429,7 @@ input::placeholder{
     }
     .area-excluir{
         padding: 10px;
-
+        
 
     }
     
