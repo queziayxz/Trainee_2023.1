@@ -14,18 +14,37 @@
   <title>Form_vizualizar</title>
 </head>
 
-<body class="area-fundo">
-  <section class="area">
+<body class="area-fundo-vizualizar">
+  <section class="area-vizualizar">
 
-    <form class="formulario">
-      <div class="coluna-esquerda">
-        <h1>Vizualizar Posts</h1>
-        <div class="coluna-esquerda-item mb-3" id="titulo">
+    <form class="formulario-vizualizar">
+      <div class="coluna-esquerd">
+        
+        <div class="coluna-esquerd-item mb-3" id="titulo">
           <label for="exampleFormControlInput1" class="form-label"></label>
-          <input class="form-control" id="exampleFormControlInput1" placeholder="Titulo">
+          
+        </div>
+        <h1>Título do Post</h1>
+        <img src="../../../public/assets/relampago.jpg"   class="img" alt="imagem post">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis fuga in consectetur, et harum nobis commodi saepe placeat porro laboriosam ex? Molestiae beatae explicabo quisquam repellat ex ad dolorem.</h2>
+
+        <div class="coluna-esquerda-item mb-3" >
+          <form method="post">
+
+            <div class="form-group">
+              <label class="control-label" for="date"></label>
+              <input type="date" id="txtDate" name="date" disabled>
+              
+
+            </div>
+
+          </form>
         </div>
 
-
+          <button type="button" class="btn">Voltar</button>
+          
+          
+        
         
        
 
