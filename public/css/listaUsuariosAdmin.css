@@ -20,6 +20,7 @@ body {
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    margin-top: 60px;
 }
 
 .page-title {
@@ -86,11 +87,12 @@ td, tr {
     font-weight: bold;
 }
 
-.table-line {
+.animacao-linha {
     transition: 0.35s;
 }
 
-.table-line:hover {
+
+.animacao-linha:hover {
     color: #32252C;
     background-color: #D6C0B4;
     transition: 0.4s;
@@ -119,7 +121,7 @@ td, tr {
 
 @media (max-width: 1100px){
 
-.table-line:hover {
+.animacao-linha:hover {
     background-color: #32252C;
     color: #D6C0B4;
 }
@@ -141,14 +143,24 @@ td, tr {
 }
 
 .table-box table {
-    max-width: 100%;
-    font-size: 15px;
+    font-size: 13px;
+}
+
+.table-box thead {
+    font-size: 13px;
+}
+
+.email-cabecalho {
+    padding-right: 0;
+    padding-left: 20px;
 }
 
 .table-line {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .table-box td {
@@ -178,7 +190,7 @@ td, tr {
 
 @media (max-width: 362px) {
 
-.table-box table {
+.table-box tbody {
     font-size: 13px;
 }
 
@@ -190,17 +202,22 @@ td, tr {
 
 @media (max-width: 319px) {
 
-.table-box table {
+.table-box tbody {
     font-size: 12px;
 }
 
 .email {
     width: 50px;
 }
-    
-.icon-button {
-    font-size: 14px;
+
+.email-cabecalho {
+    padding-left: 10px;
 }
+
+.nome-cabecalho {
+    padding-left: 6px;
+}
+    
 }
 
 @media (max-width: 315px) {
@@ -215,7 +232,11 @@ td, tr {
     width: 80%;
 }
 
-.table-box table {
+.table-box thead {
+    font-size: 10px;
+}
+
+.table-box tbody {
     font-size: 10px;
 }
 
@@ -224,7 +245,7 @@ td, tr {
 }
 
 .icon-button {
-    font-size: 12px;
+    font-size: 19px;
 }
 
 }
