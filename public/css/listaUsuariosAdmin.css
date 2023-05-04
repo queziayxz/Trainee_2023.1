@@ -17,7 +17,8 @@ body {
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: 60px;
+    height: 100vh;
+    overflow: scroll;
 }
 
 .page-title {
@@ -28,6 +29,7 @@ body {
     margin-bottom: 50px;
     text-align: center;
     display: block;
+    margin-top: 60px;
 }
 
 .table-box a {
