@@ -13,6 +13,15 @@ body{
     height: 100%;
     margin-top: 8%;
 }
+
+h4{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
 .main{
     background-color: #32252C;
     height: 100vh;
@@ -76,26 +85,20 @@ form{
 }
 
 
-#botaoo{
+.botaoo{
     height: 8%;
     width: 30%;
     border: none;
     outline: none;
-    border-radius: 8px;
+    border-radius: 6px;
     color: #D6C0B4;
-    margin-top:-1%;
+    margin-top: 5%;
     left: 10%;
     top: 2%;
     transform: translate(-10%,-2%);
-    
+    background:#9C1111;
+    margin-left: 10%;
 }
-
-.botao button {
-    width: 100%; 
-    margin: 0 auto; 
-    height: 8%;
-    margin-top: 2%;
-  }
 
     
 .botoes{
@@ -109,13 +112,8 @@ form{
     }
 
 
-    #botaoo{
-        height: 40px;
-        width: 55%;
-        font-size: 150%;
-        left: -2%;
-        top: 2%;
-        transform: translate(+2%,-2%);
+    .botaoo{
+        margin-top: 2%;
     }
 
 
@@ -132,32 +130,31 @@ form{
 }
     @media screen and (max-width: 768px) {
         .area{
-            height: 48%;
+            height: 65%;
         }
+
         
     }
 
-    @media screen and (max-width: 766px) {
-        .area{
-            height: 65%;
-        }
-        
-    }
 
     @media screen and (max-width: 540px) {
         .area{
             height: 70%;
+        }
+        .botaoo{
+            font-size: 12px;
+            height: 30px;
         }
         
     }
 
     @media screen and (max-width: 414px) {
         .area{
-            height: 56%;
+            height: 65%;
             width: 83%;
         }
 
-        #botaoo{
+        .botaoo{
         left: -2%;
         top: -32%;
         transform: translate(+2%,+32%);
@@ -167,6 +164,11 @@ form{
     @media screen and (max-width: 375px) {
         .area{
             height: 70%;
+        }
+
+        .botaoo{
+            width: 35%;
+            margin-left: 10px;
         }
         
     }
