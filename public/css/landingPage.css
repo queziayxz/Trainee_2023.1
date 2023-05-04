@@ -1,214 +1,114 @@
-@charset "UTF-8";
-
-/* Vermelho: #9C1111
-Marrom: #32252C
-Branco: #D6C0B4 */
 
 *{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Montserrat', sans-serif;
-    color: #D6C0B4;
-    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
-main{
-    background-color: #32252C ;    
+body{
+	font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100vh;
 }
 
-#intro{
-    /* display: flex;
-    justify-content: left;
-    align-items: center; */
-    flex-wrap: wrap;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-}
-
-#intro img{
-    width: 350px;
-}
-
-#imgIntro {
-    margin-bottom: -15px;
-}
-
-#pIntro{
-    font-size: 1.3em;
-    padding-left: 20px;
-}
-
-#h2intro{
-    padding:35px;
-    text-align: center;
-    font-size: 1.4em;
-}
-
-h2{
-    padding-bottom: 15px;
-    text-align: center;
-    font-size: 1.4em;
-
-}
-
-#posts{
+.meio{
+    background-color: #32252C;
+    height: 100vh;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+.user-img{
+    background-color: #32252C ;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.post{
+    background-color: #32252C ;
+    ;
+    height: 30%;
+    width: 100%;
+    color: #D6C0B4;
+
+}
+.post h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    width: 400;
+}
+
+.post h3{
+    text-align: center;
+    overflow: hidden;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 13px;
+}
+
+.post-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
     justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-   
+    background-color: #32252C;
+    margin-bottom: 0px;
+
+    
 }
 
 
-#pPost{
-    font-size: 1em;
-    padding-bottom: 70px;
-    padding-left: 20px;
+.post-img img{
+    width: 60%;
+    height: 80%; 
 }
 
-#imgPost img{
-    width: 350px;
-    border-radius: 5px;
+.descricao{
+    background-color: #32252C;
+    padding-bottom: 20px;
+}
+.descricao p{
+    color: #D6C0B4;
+    text-align: justify;
+    font-weight: 100;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-.aPost{
-    text-align:end;
-    margin-right: 10%;
-    font-size: 1em;
-}
-
-.aPost a:hover{
-    color: #9C1111;
-}
-
-
-.cor{
-    background-color: #9C1111 ;
-    height: 5px;
-    width: 80%;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-#listPost ol{
-    padding-left: 50px;
-    line-height: 40px;
-    list-style: decimal;
-}
-
-#listPost a{
+.botao a {position: fixed;
+    left: 90%;
+    right: -30%;
+    top: 85%; 
     text-decoration: none;
 }
+ .botao img{
+    
+    height: 10%;
+    width: 10%;
+ }
 
-#listPost a:hover{
-    text-decoration: underline;
+.data{
+    background-color: #32252C;
 }
 
-#rs{
-    text-align: center;
+.data h6{
+    margin-left: 1%;
+    font-weight: 100;
+    color: white;
 }
 
-#rs img{
-        width: 50px;
-        margin: 10px;
-        border-radius: 50%;
-        box-shadow: 2px 2px 5px black;
-        box-sizing: border-box;
-}
-
-#rs img:hover{
-    border: 2px solid #9C1111;
-    transform: translate(-3px,-3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
-    transition: 0.2s border .2s;
-}
+ @media (max-width: 1000px) {
 
 
-@media (max-width:1000px){
-
-    #intro{
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    #imgIntro{
-        margin: auto;
-    }
-
-    #imgIntro img{
-        width: 300px;
-    }
-
-    h2{
-        font-size: 1.3em;
-        padding-top: 20px;
-    }
-
-    #posts{
-        flex-wrap: wrap;
+    .descricao p {
         text-align: left;
     }
-    #imgPost img{
+
+    .botao a{
+        height: 300px;
         width: 300px;
+        left: 85%;
     }
-
-    #pPosts{  
-        width: 100%;
-        padding-left: 0px;
-    }
-
-    .aPost{
-        margin-top: -60px;
-        font-size: 1em;
-    }
-
-    .aPost a{
-      text-decoration: underline;
-    }
-
-    #listPost{
-        margin-bottom: 60px;
-    }
-
-    #listPost a{
-        text-decoration: underline;
-    }
-
-    #small{
-        font-size: 1.2em;
-        }
-    
-}
-
-@media(max-width:280px){
-    #imgPost img{
-        width: 100%;
-    }
-
-    h2{
-        font-size: 1.2em;
-    }
-
-    #imgIntro img{
-        margin: auto;
-        width: 190px;
-    }
-    
-    #rs img{
-        width: 30px;
-        margin: 3px;
-        margin-bottom: 10px;
-    }
-
-    #listPost a{
-        text-decoration: underline;
-    }
-
-    #small{
-    font-size: 1em;
-    }
-
-
 }
