@@ -5,6 +5,7 @@
 
 body{
     display: flex;
+    overflow: hidden;
 }
 
 
@@ -104,12 +105,12 @@ form{
     @media screen and (max-width: 912px) {
 
     .area{
-        height: 42%;
+        height: 420px;
     }
 
 
     #botaoo{
-        height: 80px;
+        height: 40px;
         width: 55%;
         font-size: 150%;
         left: -2%;
@@ -132,6 +133,13 @@ form{
     @media screen and (max-width: 768px) {
         .area{
             height: 48%;
+        }
+        
+    }
+
+    @media screen and (max-width: 766px) {
+        .area{
+            height: 65%;
         }
         
     }
