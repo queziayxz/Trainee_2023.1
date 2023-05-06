@@ -1,0 +1,480 @@
+body{
+    background-color: #32252C ;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+
+}
+h1{
+    font-size: 30px;
+    
+    font-weight: 400;
+    font-weight: bold;
+    text-align: center;
+    
+
+}
+h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-weight: bold;
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.formulario-vizualizar{
+    display: flex;
+    
+    width: 50%;
+    
+    
+    
+}
+.coluna-esquerda, .coluna-direita{
+    width: 50%;
+    
+}
+.coluna-direita-item textarea{
+    resize: vertical;
+    width: 50%;
+    background-color: #32252C;
+    
+    
+
+}
+.coluna-esquerd-item textarea{
+    resize: vertical;
+    width: 50%;
+    background-color: #32252C;
+    
+    
+
+}
+.coluna-direita{
+    width: 100%;
+    height: 50%;
+}
+.coluna-esquerd{
+    width: 60%;
+    height: 100%;
+    
+    
+}
+.area-fundo{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.area{
+    background-color: #D6C0B4;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 60%; 
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 25px black;
+}
+.area-vizualizar{
+    background-color: #D6C0B4;
+    display: flex;
+    align-items: start;
+    flex-direction: row-reverse;
+    width: 50%;
+    height: 80%; 
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 25px black;
+}
+.area-fundo-vizualizar{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.texto2{
+    font-size: 20px;
+}
+.area form {
+    
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.area-vizualizar form {
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.area input {
+    margin-top: 10px;
+    height: 45px;
+    width: 100%;
+    color: #D6C0B4;
+    background-color: #32252C;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    
+}
+.area-vizualizar input {
+    margin-top: 10px;
+    height: 45px;
+    width: 100%;
+    color: #D6C0B4;
+    background-color: #32252C;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    
+}
+
+#exampleFormControlTextarea1{
+    height: 100%;
+    width: 100%;
+    color: #D6C0B4;
+    background-color: #32252C;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-top: 10px;
+
+    
+}
+.img{
+    width: 100%;
+    
+    border-radius: 8px;
+}
+input[type="file"]{
+    display: none;
+}
+#img{
+    padding-top: 10px;
+    height: 45px;
+    width: 100%;
+    background-color: #32252C;
+    color: #D6C0B4;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 1s;
+    
+    
+}
+.titulo{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+#exampleFormControlTextarea1::placeholder{
+    padding-left: 1px;
+    color: #D6C0B4;
+    font-size: 14px;
+}
+#img:hover{
+    color: #32252C;
+    background-color: #D6C0B4;
+}
+input::placeholder{
+    padding-left: 1px;
+    color: #D6C0B4;
+    font-size: 14px;
+    
+}
+ .btn {
+    padding: 10px 8px;
+    width: 60px;
+    text-align: center;
+    color: #D6C0B4;
+    background: #9C1111;
+    border: 1px solid #D6C0B4;
+    border-radius: 8px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    
+}
+.btnC {
+    padding: 10px 8px;
+    width: 120px;
+    text-align: center;
+    color: #D6C0B4;
+    background: #9C1111;
+    border: 1px solid #D6C0B4;
+    border-radius: 8px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    
+} 
+
+.btn:hover{
+    background: red;
+    
+}
+.btnC:hover{
+    background: red;
+    
+}
+.conteudo{
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.area-excluir{
+    background-color: #D6C0B4;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 60%; 
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 25px black;
+}
+.area-fundo-excluir{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.area-excluir form {
+    
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+.area-excluir input {
+    margin-top: 10px;
+    height: 45px;
+    width: 180%;
+    color: #D6C0B4;
+    background-color: #32252C;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    
+}
+
+.coluna-esquerd-item textarea{
+    resize: vertical;
+    width: 50%;
+    height: 10%;
+    
+    
+    
+
+}
+
+
+
+@media (max-width: 1000px){
+    .data{
+        font-size: 10px;
+        font-weight: bold;
+    }  
+  
+    .formulario{
+        
+        height: 50%;
+        width: 50%;
+        
+    }
+    .coluna-esquerd{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        
+    }
+    h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-weight: bold;   
+    }
+    .coluna-direita-item textarea{
+        resize: vertical;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .area form, .area-excluir, .area-vizualizar{
+        display: flex;
+        
+    }
+    .area{
+        
+        display: flex;
+        align-items: center;
+        width: 60%;
+        height: 84%; 
+        flex-direction: column;
+        
+        
+    }
+    #exampleFormControlTextarea1::placeholder{
+        padding-left: 1px;
+        color: #D6C0B4;
+        font-size: 14px;
+
+    }
+    #exampleFormControlTextarea1{
+        height: 70%;
+        width: 100%;
+        
+    
+        
+    }
+    #img{
+        padding-top: 10px;
+        height: 35px;
+        width: 100%;
+        background-color: #32252C;
+        color: #D6C0B4;
+        text-transform: revert;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 8px;
+        
+        
+    
+
+    }
+    .img{
+        width: 100%;
+       }
+    .titulo{
+        font-size: 20px;
+        font-weight: bold;
+   
+}
+.area-excluir{
+    width: 70%;
+    height: 50%;
+
+   }
+   .area-vizualizar {
+    background-color: #D6C0B4;
+    display: flex;
+    align-items: start;
+    flex-direction: row-reverse;
+    width: 40%;
+    height: 80%;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 25px black;
+
+
+
+.btnC{
+    padding: 10px 8px;
+    width: 75px;
+    
+    
+    
+} 
+}
+}
+
+
+
+@media (max-width: 469px){
+   .area-excluir{
+    width: 100%;
+   }
+   .img{
+    width: 100%;
+   }
+    h2{
+        font-size: 10px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-weight: bold;
+       
+
+    }
+    .coluna-esquerd{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .area-vizualizar{
+        width: 100%;
+        padding: 10px;
+    }
+    .coluna-esquerda{
+        width: 100%;
+    }
+    .area-excluir{
+        padding: 10px;
+        
+
+    }
+    
+    .btnC {
+        padding: 10px 8px;
+        width: 112px;
+        text-align: center;
+        color: #D6C0B4;
+        background: #9C1111;
+        border: 1px solid #D6C0B4;
+        border-radius: 8px;
+        user-select: none;
+        cursor: pointer;
+        margin-top: 10px;
+
+        
+        
+    } 
+    
+    .data{
+        font-size: 10px;
+        font-weight: bold;
+        
+              
+    }
+}
+
+    
+
+
+
+
+
+
+
+
+
