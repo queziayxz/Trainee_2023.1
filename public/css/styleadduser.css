@@ -14,19 +14,22 @@ body{
     margin-top: 8%;
 }
 
-h4{
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 15%;
-    padding-bottom: 10%;
-}
+
 
 .main{
     background-color: #32252C;
     height: 100vh;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+}
+
+h4{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    width: 400;
 }
 
 form{
@@ -130,7 +133,7 @@ form{
 }
     @media screen and (max-width: 768px) {
         .area{
-            height: 65%;
+            height: 62%;
         }
 
         
@@ -139,7 +142,7 @@ form{
 
     @media screen and (max-width: 540px) {
         .area{
-            height: 70%;
+            height: 67%;
         }
         .botaoo{
             font-size: 12px;
