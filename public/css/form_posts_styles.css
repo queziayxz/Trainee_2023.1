@@ -22,7 +22,7 @@ h2{
 }
 
 .coluna-esquerda, .coluna-direita{
-    width: 50%;  
+    width: 90%;  
 }
 .coluna-direita-item textarea{
     resize: vertical;
@@ -126,7 +126,7 @@ input::placeholder{
     outline: none;
     border-radius: 8px;
     padding-left: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 
     
 }
