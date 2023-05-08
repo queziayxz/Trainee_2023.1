@@ -1,8 +1,8 @@
-// Get the modal
+
 
 var modal2 = document.getElementById("modal-excluir");
 
-// Get the button that opens the modal
+
 
 var btn = document.getElementById("mybtnDel");
 

@@ -18,12 +18,12 @@ h2 {
 }
 /* modal */
 #modal-visu {
-  display: none; /* Hidden by default */
+  display: none; 
  
   
 }
 #modal-excluir {
-    display: none; /* Hidden by default */
+    display: none; 
     
     
   }
