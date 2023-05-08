@@ -56,25 +56,7 @@ h2 {
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-.closes{
-  color: #9c1111;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
 
-.closes:hover,
-.closes:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 
 
@@ -286,13 +268,13 @@ input[type="file"] {
 
 /* Botoes */
 
-.btn:hover {
+.btnVoltar:hover {
   background: red;
 }
-.btnC:hover {
+.btnVoltarC:hover {
   background: red;
 }
-.btn {
+.btnVoltar {
   padding: 10px 8px;
   width: 60px;
   text-align: center;
@@ -304,7 +286,7 @@ input[type="file"] {
   cursor: pointer;
   margin-top: 10px;
 }
-.btnC {
+.btnVoltarC {
   padding: 10px 8px;
   width: 120px;
   text-align: center;
@@ -400,7 +382,7 @@ input[type="file"] {
     border-radius: 8px;
     box-shadow: 0px 10px 25px black;
 
-    .btnC {
+    .btnVoltarC {
       padding: 10px 8px;
       width: 75px;
     }
@@ -438,7 +420,7 @@ input[type="file"] {
     padding: 10px;
   }
 
-  .btnC {
+  .btnVoltarC {
     padding: 10px 8px;
     width: 112px;
     text-align: center;

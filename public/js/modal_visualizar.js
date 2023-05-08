@@ -7,7 +7,7 @@ var modal = document.getElementById("modal-visu");
 var btn = document.getElementById("mybtnVisu");
 
 
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("btnVoltar")[0];
 
  
 btn.onclick = function() {

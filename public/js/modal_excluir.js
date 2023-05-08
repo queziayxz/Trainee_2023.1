@@ -7,7 +7,7 @@ var modal2 = document.getElementById("modal-excluir");
 var btn = document.getElementById("mybtnDel");
 
 
-var span = document.getElementsByClassName("closes")[0];
+var span = document.getElementsByClassName("btnVoltarC")[0];
 
 
 btn.onclick = function() {
