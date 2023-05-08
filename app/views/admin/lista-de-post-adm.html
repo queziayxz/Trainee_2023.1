@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../../../public/css/listaPostAdmin.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
         <script type="text/javascript" src="../../../public/js/index.js"></script>
-
+        <link rel="stylesheet" href="../../../public/css/form_posts_styles.css">
         <title>Lista de Posts - Radiator Springs Gazette</title>
         <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
     </head>
@@ -34,9 +34,9 @@
                         <td class="texto">Você sabia?</td>
                         <td class="texto">15/09/2023</td>
                         <td class="option-button">
-                            <a href="#"><button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button></a>
-                            <a href="#"><button class="icon-button" title="Visualizar"><i class="fa-solid fa-file"></i></button></a>
-                            <a href="#"><button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Editar" id="mybtn"><i class="fa-solid fa-pen-to-square"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
                         </td>
                     </tr>
                     <tr class="table-line animacao-linha">
@@ -44,9 +44,9 @@
                         <td class="texto">Curiosidades</td>
                         <td class="texto">06/06/2023</td>
                         <td class="option-button">
-                            <a href="#"><button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button></a>
-                            <a href="#"><button class="icon-button" title="Visualizar"><i class="fa-solid fa-file"></i></button></a>
-                            <a href="#"><button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Editar" id="mybtn"><i class="fa-solid fa-pen-to-square"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
                         </td>
                     </tr>
                     <tr class="table-line animacao-linha">
@@ -54,9 +54,9 @@
                         <td class="texto">Você sabia?</td>
                         <td class="texto">30/01/2023</td>
                         <td class="option-button">
-                            <a href="#"><button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button></a>
-                            <a href="#"><button class="icon-button" title="Visualizar"><i class="fa-solid fa-file"></i></button></a>
-                            <a href="#"><button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Editar" id="mybtn"><i class="fa-solid fa-pen-to-square"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
                         </td>
                     </tr>
                     <tr class="table-line animacao-linha">
@@ -64,15 +64,63 @@
                         <td class="texto">Curiosidades</td>
                         <td class="texto">05/10/2023</td>
                         <td class="option-button">
-                            <a href="#"><button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button></a>
-                            <a href="#"><button class="icon-button" title="Visualizar"><i class="fa-solid fa-file"></i></button></a>
-                            <a href="#"><button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Editar" id="mybtn"><i class="fa-solid fa-pen-to-square"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
+                            <a href="#"><button class="icon-button" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        
+        <!-- Modal visualizar -->
+        <div id="modal-visu" class="modal">
+            <!-- Conteudo Modal visualizar -->
+        <section class="area-vizualizar">
+            <form class="formulario-vizualizar">
+                <span class="close">&times;</span>
+                <div class="coluna-esquerd">                
+                <div class="coluna-esquerd-item mb-3"></div>
+                <h1>Título do Post</h1>
+                <img src="../../../public/assets/relampago.jpg"   class="img" alt="imagem post">
+                <p class="conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis fuga in consectetur, et harum nobis commodi saepe placeat porro laboriosam ex? Molestiae beatae explicabo quisquam repellat ex ad dolorem.</p>        
+                <div class="coluna-esquerda-item mb-3" >                 
+                  <p class="data">Data: dd/mm/yyyy</p>        
+                </div>
+              <button type="button" class="btn" id="myBtn">Voltar</button>
+              </div>
+            </form>
+          </section>
+        </div>
+
+       <!--   Modal visualizar -->
+          <div id="modal-excluir" class="modal2"> 
+
+            <section class="area-excluir">
+                <form class="formulario-excluir">
+                    <span class="closes">&times;</span>
+                    <div class="coluna-esquerda">
+                    <p class="titulo">Excluir Posts</p>
+                    <p class="texto2">Tem certeza que deseja excluir seu post?</p>
+                  <div>
+                      <button type="button" class="btnC">Cancelar</button>
+                      <button type="button" class="btnC">Excluir</button>
+                    </div>
+                  </div>
+                </form>
+                  </section>
+                  </div> 
+                
+                
+                
+                
+          
+        
+
+      
     </body>
-    <script type="text/javascript" src="../../../public/js/index.js"></script>
+    <script type="text/javascript" src="../../../public/js/modal_add_edit.js"></script>
+    <script type="text/javascript" src="../../../public/js/modal_excluir.js"></script>
     <script src="https://kit.fontawesome.com/f9c72cff41.js" crossorigin="anonymous"></script>
-</html>
+
+    </html>
