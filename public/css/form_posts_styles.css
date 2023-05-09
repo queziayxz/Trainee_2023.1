@@ -33,9 +33,16 @@ h2 {
     
   }
 
+  #modal-edita {
+    display: none; 
+   
+    
+  }
+
 .modal, 
 .modal2,
-.modal3{
+.modal3,
+.modal4{
   display: none; 
   position: fixed;
   z-index: 1;
