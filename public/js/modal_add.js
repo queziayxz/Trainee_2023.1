@@ -19,7 +19,7 @@ span.onclick = function() {
 }
 
 
-window.onclick = function(event) {
+window3.onclick = function(event) {
   if (event.target == modal3) {
     modal3.style.display = "none";
   }
