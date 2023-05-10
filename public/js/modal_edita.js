@@ -6,7 +6,7 @@ var modal4 = document.getElementById("modal-edita");
 var btn = document.getElementById("mybtnEdita");
 
 
-var span = document.getElementsByClassName("btn")[0];
+var span = document.getElementsByClassName("btn2")[0];
 
 
 btn.onclick = function() {

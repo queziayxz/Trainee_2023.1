@@ -17,23 +17,11 @@ h2 {
   font-weight: bold;
 }
 /* modal */
+
+#modal-edita,
+#modal-add,
+#modal-excluir,
 #modal-visu {
-  display: none; 
- 
-  
-}
-#modal-excluir {
-    display: none; 
-    
-  }
-
-#modal-add {
-    display: none; 
-   
-    
-  }
-
-  #modal-edita {
     display: none; 
    
     
@@ -63,20 +51,13 @@ h2 {
 
 
 
-.close{
-  color: #9c1111;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
 
 
 
 
 .coluna-esquerda,
 .coluna-direita {
-  width: 90%;
+  width: 100%;
 }
 .coluna-direita-item textarea {
   resize: vertical;
@@ -312,6 +293,55 @@ input[type="file"] {
   cursor: pointer;
   margin-top: 10px;
 }
+.control-label{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-weight: bold;
+}
+.form-control{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-weight: bold;
+}
+.btnVoltarC {
+  padding: 10px 8px;
+  width: 120px;
+  text-align: center;
+  color: #d6c0b4;
+  background: #9c1111;
+  border: 1px solid #d6c0b4;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn {
+  padding: 10px 8px;
+  width: 120px;
+  text-align: center;
+  color: #d6c0b4;
+  background: #9c1111;
+  border: 1px solid #d6c0b4;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn2 {
+  padding: 10px 8px;
+  width: 120px;
+  text-align: center;
+  color: #d6c0b4;
+  background: #9c1111;
+  border: 1px solid #d6c0b4;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
 
 @media (max-width: 1000px) {
   .data {
@@ -354,7 +384,7 @@ input[type="file"] {
   }
   #exampleFormControlTextarea1::placeholder {
     padding-left: 1px;
-    color: #d6c0b4;
+    color: #9c1111;
     font-size: 14px;
   }
   #exampleFormControlTextarea1 {

@@ -40,18 +40,12 @@
             <td class="texto">Você sabia?</td>
             <td class="texto">15/09/2023</td>
             <td class="option-button">
-              <a href="#"
-                ><button class="icon-button" title="Editar" id="mybtnEdita">
-                  <i class="fa-solid fa-pen-to-square"></i></button
-              ></a>
-              <a href="#"
-                ><button class="icon-button" title="Visualizar" id="mybtnVisu">
-                  <i class="fa-solid fa-file"></i></button
-              ></a>
-              <a href="#"
-                ><button class="icon-button" title="Remover" id="mybtnDel">
-                  <i class="fa-solid fa-trash"></i></button
-              ></a>
+              <a href="#"><button class="icon-button" title="Editar" id="mybtnEdita">
+                  <i class="fa-solid fa-pen-to-square"></i></button></a>
+              <a href="#"><button class="icon-button" title="Visualizar" id="mybtnVisu">
+                  <i class="fa-solid fa-file"></i></button></a>
+              <a href="#"><button class="icon-button" title="Remover" id="mybtnDel">
+                  <i class="fa-solid fa-trash"></i></button></a>
             </td>
           </tr>
           <tr class="table-line animacao-linha">
@@ -150,7 +144,7 @@
             <p class="titulo">Excluir Posts</p>
             <p class="texto2">Tem certeza que deseja excluir seu post?</p>
             <div>
-              <button type="button" class="btnVoltarC">Cancelar</button>
+              <button type="button" class="btnVoltarC" id="myBtn">Cancelar</button>
               <button type="button" class="btnVoltarC">Excluir</button>
             </div>
           </div>
@@ -165,7 +159,7 @@
   
             <form class="formulario">
               <div class="coluna-esquerda">
-                <h1>Editar Post</h1>
+                <h1>Adicionar Post</h1>
                 <div class="coluna-esquerda-item mb-3" id="titulo">
                   <br>
                   <label for="exampleFormControlInput1" class="form-label">Título:</label>
@@ -194,7 +188,7 @@
         
                     </div>
         
-                  </form>
+                  
                 </div>
         
                 <div class="coluna-esquerda-item mb-3">
@@ -204,9 +198,10 @@
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div>
-                  <button type="button" class="btnVoltar" id="myBtn">Voltar</button>
-                  <button type="button" class="btnVoltar" id="myBtn">Voltar</button>
+                  <button type="button" class="btn">Voltar</button>
+                  <button type="button" class="btn">Publicar</button>
                 </div>
+              </form>
         
                 
             </div>
@@ -239,7 +234,7 @@
                   <br>
                   <label for="exampleFormControlInput1" class="form-label">Título:</label>
                   <br>
-                  <input class="form-control" id="exampleFormControlInput1" placeholder="">
+                  <input class="form-control" id="exampleFormControlInput1" placeholder="titulo">
                 </div>
         
                 <div class="coluna-esquerda-item mb-3">
@@ -273,8 +268,8 @@
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div>
-                  <button type="button" class="btnVoltarC">Cancelar</button>
-                  <button type="button" class="btnVoltarC">Publicar</button>
+                  <button type="button" class="btn">Voltar</button>
+                  <button type="button" class="btn">Confirmar</button>
                 </div>
         
                 
@@ -300,7 +295,7 @@
            
 
   </body>
-    <script src="../../../public/js/modal_edita.js"></script>
+    <script type="text/javascript"src="../../../public/js/modal_edita.js"></script>
     <script type="text/javascript" src="../../../public/js/modal_add.js"></script>
     <script type="text/javascript" src="../../../public/js/modal_visualizar.js"></script>
     <script type="text/javascript" src="../../../public/js/modal_excluir.js"></script>

@@ -6,7 +6,7 @@ var modal3 = document.getElementById("modal-add");
 var btn = document.getElementById("mybtnAdd");
 
 
-var span = document.getElementsByClassName("btnVoltarC")[0];
+var span = document.getElementsByClassName("btn")[0];
 
 
 btn.onclick = function() {
