@@ -263,7 +263,9 @@ input[type="file"] {
 
 /* Botoes */
 
-.btnVoltar:hover {
+.btnVoltar:hover,
+.btn:hover,
+.btn2:hover{
   background: red;
 }
 .btnVoltarC:hover {
@@ -426,10 +428,7 @@ input[type="file"] {
     border-radius: 8px;
     box-shadow: 0px 10px 25px black;
 
-    .btnVoltarC {
-      padding: 10px 8px;
-      width: 75px;
-    }
+
   }
 }
 
