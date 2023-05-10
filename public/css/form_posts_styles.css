@@ -16,6 +16,12 @@ h2 {
   font-weight: 400;
   font-weight: bold;
 }
+.form-label{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-weight: bold;
+}
 /* modal */
 
 #modal-edita,
@@ -59,16 +65,7 @@ h2 {
 .coluna-direita {
   width: 100%;
 }
-.coluna-direita-item textarea {
-  resize: vertical;
-  width: 50%;
-  background-color: #32252c;
-}
-.coluna-esquerd-item textarea {
-  resize: vertical;
-  width: 50%;
-  background-color: #32252c;
-}
+
 .coluna-direita {
   width: 100%;
   height: 50%;
@@ -141,7 +138,7 @@ input::placeholder {
 #exampleFormControlTextarea1 {
   height: 100%;
   width: 100%;
-  color: #d6c0b4;
+  color: #9c1111;
   background-color: #32252c;
   border: none;
   outline: none;
