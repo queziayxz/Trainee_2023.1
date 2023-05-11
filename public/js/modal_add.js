@@ -19,8 +19,10 @@ span.onclick = function() {
 }
 
 
-window.onclick = function(event) {
+window.addEventListener('click', function (event) {
+  console.log(modal3);
+  console.log(event.target);
   if (event.target == modal3) {
     modal3.style.display = "none";
   }
-}
+});
