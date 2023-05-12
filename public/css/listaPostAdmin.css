@@ -201,7 +201,9 @@ td, tr {
 }
 
 @media (max-width: 319px) {
-
+.conteudo{
+    font-size: 10px;
+}
 .table-box tbody {
     font-size: 12px;
 }
