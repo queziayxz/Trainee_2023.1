@@ -17,7 +17,7 @@
     <div class="table-box">
       <div>
         <h1 class="page-title">Lista de Posts</h1>
-        <button class="add-button" title="Adicionar novo usuário" id="mybtnAdd"><i class="fa-solid fa-file-circle-plus"></i> Adicionar Post</button>
+        <button  data-modal="modal-add" class="add-button botao-modal" title="Adicionar novo usuário" id="mybtnAdd"><i class="fa-solid fa-file-circle-plus"></i> Adicionar Post</button>
       </div>
       <table>
         <thead>
@@ -34,9 +34,9 @@
             <td class="texto">Você sabia?</td>
             <td class="texto">15/09/2023</td>
             <td class="option-button">
-              <button class="icon-button" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button class="icon-button" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button class="icon-button" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
+              <button data-modal="modal-edita" class="icon-button botao-modal"  title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
+              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
+              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
             </td>
           </tr>
           <tr class="table-line animacao-linha">
@@ -44,9 +44,9 @@
             <td class="texto">Curiosidades</td>
             <td class="texto">06/06/2023</td>
             <td class="option-button">
-              <button class="icon-button" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button class="icon-button" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button class="icon-button" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
+              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
+              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
+              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
             </td>
           </tr>
           <tr class="table-line animacao-linha">
@@ -54,9 +54,9 @@
             <td class="texto">Você sabia?</td>
             <td class="texto">30/01/2023</td>
             <td class="option-button">
-              <button class="icon-button" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button class="icon-button mybtnVisu" title="Visualizar"><i class="fa-solid fa-file"></i></button></a>
-              <button class="icon-button" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
+              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
+              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-file"></i></button></a>
+              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
             </td>
           </tr>
           <tr class="table-line animacao-linha">
@@ -64,9 +64,9 @@
             <td class="texto">Curiosidades</td>
             <td class="texto">05/10/2023</td>
             <td class="option-button">
-              <button class="icon-button" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button class="icon-button" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button class="icon-button" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
+              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
+              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
+              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
             </td>
           </tr>
         </tbody>
@@ -74,7 +74,7 @@
     </div>
 
     <!-- Modal visualizar -->
-    <div id="modal-visu" class="modal">
+    <div id="modal-visu" class="modal modal-p">
       <!-- Conteudo Modal Visualizar -->
       <section class="area-vizualizar">
         <form class="formulario-vizualizar">
@@ -95,14 +95,14 @@
             <div class="coluna-esquerda-item mb-3">
               <p class="dataa">Data: dd/mm/yyyy</p>
             </div>
-            <button type="button" class="btnVoltar" id="myBtn"> Voltar</button>
+            <button type="button" class="btnVoltar botao-modal fechar-modal" id="myBtn"> Voltar</button>
           </div>
         </form>
       </section>
     </div>
 
     <!--   Modal Excluir -->
-    <div id="modal-excluir" class="modal2">
+    <div id="modal-excluir" class="modal2 modal-p">
        <!-- Conteudo Modal Excluir -->
         <section class="area-excluir">
         <form class="formulario-excluir">
@@ -110,8 +110,8 @@
             <p class="titulo">Excluir Posts</p>
             <p class="texto2">Tem certeza que deseja excluir seu post?</p>
             <div class="botoes_excluir_cancelar">
-              <button type="button" class="btnVoltarC" id="myBtn">Cancelar</button>
-              <button type="button" class="btnVoltarC">Excluir</button>
+              <button type="button" class="btnVoltarC botao-modal fechar-modal" id="myBtn">Cancelar</button>
+              <button type="button" class="btnVoltarC botao-modal fechar-modal">Excluir</button>
             </div>
           </div>
         </form>
@@ -120,7 +120,7 @@
 
     <!-- Modal Adicionar -->
 
-    <div id="modal-add" class="modal3">
+    <div id="modal-add" class="modal3 modal-p">
         <section class="area-posts">
   
             <form class="formulario">
@@ -164,8 +164,8 @@
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div class="botoes_excluir_cancelar">
-                  <button type="button" class="btn">Voltar</button>
-                  <button type="button" class="btn">Publicar</button>
+                  <button type="button" class="btn botao-modal fechar-modal">Voltar</button>
+                  <button type="button" class="btn botao-modal fechar-modal">Publicar</button>
                 </div>
               </form>
         
@@ -179,9 +179,7 @@
             
           
                 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-              integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-              crossorigin="anonymous"></script>
+            
           </form>
         </section>
     </div>
@@ -190,7 +188,7 @@
     <!-- Modal Editar -->
 
 
-    <div  id="modal-edita" class="modal4">
+    <div  id="modal-edita" class="modal4 modal-p">
         <section class="area-posts">
   
             <form class="formulario">
@@ -234,8 +232,8 @@
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div class="botoes_excluir_cancelar">
-                  <button type="button" class="btn2">Cancelar</button>
-                  <button type="button" class="btn2">Confirmar</button>
+                  <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>
+                  <button type="button" class="btn2 botao-modal fechar-modal">Confirmar</button>
                 </div>
         
                 
@@ -261,9 +259,6 @@
            
 
   </body>
-    <script type="text/javascript"src="../../../public/js/modal_edita.js"></script>
-    <script type="text/javascript" src="../../../public/js/modal_add.js"></script>
-    <script type="text/javascript" src="../../../public/js/modal_visualizar.js"></script>
     <script type="text/javascript" src="../../../public/js/modal_excluir.js"></script>
     <script src="https://kit.fontawesome.com/f9c72cff41.js" crossorigin="anonymous"></script>
 </html>

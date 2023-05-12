@@ -1,21 +1,41 @@
-var modal2 = document.getElementById("modal-excluir");
+const botoes = document.getElementsByClassName('botao-modal');
+const fechar = document.getElementsByClassName('fechar-modal');
 
-var btn = document.getElementById("mybtnDel");
+const botaoP = [...botoes].filter((el) => {
+  return el.dataset.modal != null;
+});
 
-var span = document.getElementsByClassName("btnVoltarC")[0];
+const modalAberto = () => {
+  const modal = document.getElementsByClassName('modal-p');
+  const modalA = [...modal].filter((el) => {
+    if(el.style.display == 'block') {
+      return el;
+    }
+  })
 
-btn.onclick = function () {
-  modal2.style.display = "block";
-};
+  return modalA[0];
+}
 
-span.onclick = function () {
-  modal2.style.display = "none";
-};
+const toggleModal = (id) => {
+  console.log(id)
+  if(id == undefined) {
+    const aberto = modalAberto();
+    console.log(aberto);
+    aberto.style.display = 'none';
+  } else {
+    const modalAberto = document.getElementById(id);
+    modalAberto.style.display = 'block';
+  }
+  
+}
+
+[...botaoP, ...fechar].forEach((el) => {
+  el.addEventListener('click', () => toggleModal(el.dataset.modal));
+})
 
 window.addEventListener('click', function (event) {
-  console.log(modal2);
-  console.log(event.target);
-  if (event.target == modal2) {
-    modal2.style.display = "none";
+  const modal = modalAberto();
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-});
+}); 
