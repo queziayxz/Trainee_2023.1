@@ -1,19 +1,40 @@
-var modal = document.getElementById("modal-visualizar");
-var btn = document.getElementById("open-modal");
-var span = document.getElementsByClassName("close")[0];
+const botoes = document.getElementsByClassName('botao-modal');
+const fechar = document.getElementsByClassName('fechar-modal');
 
-btn.onclick = function() {
-  modal.style.display = "block";
+const botaoP = [...botoes].filter((el) => {
+  return el.dataset.modal != null;
+});
+
+const modalAberto = () => {
+  const modal = document.getElementsByClassName('modal-p');
+  const modalA = [...modal].filter((el) => {
+    if(el.style.display == 'block') {
+      return el;
+    }
+  })
+
+  return modalA[0];
 }
 
-span.onclick = function() {
-  modal.style.display = "none";
+const toggleModal = (id) => {
+  
+  if(id === undefined) {
+    const aberto = modalAberto();
+    aberto.style.display = 'none';
+  } else {
+    const modalAberto = document.getElementById(id);
+    modalAberto.style.display = 'block';
+  }
+  
 }
+
+[...botaoP, ...fechar].forEach((el) => {
+  el.addEventListener('click', () => toggleModal(el.dataset.modal));
+})
 
 window.addEventListener('click', function (event) {
-  console.log(modal);
-  console.log(event.target);
-  if (event.target == modal) {
-    modal.style.display = "none";
+  const modal3 = modalAberto();
+  if (event.target == modal3) {
+    modal3.style.display = "none";
   }
-});
+}); 
