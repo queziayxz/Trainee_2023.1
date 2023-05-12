@@ -19,7 +19,7 @@
         <div class="table-box">
             <div>
                 <h1 class="page-title">Lista de Usuários</h1>
-                <button class="add-button" title="Adicionar novo usuário"><i class="fa-solid fa-user-plus"></i> Adicionar Usuário</button>
+                <button id="botao-add" class="add-button"  title="Adicionar novo usuário"><i class="fa-solid fa-user-plus"></i> Adicionar Usuário</button>
             </div>
             <table>
                 <thead>
@@ -36,7 +36,7 @@
                         <td class="email">Gabriel de Oliveira Vieira</td>
                         <td class="email">gabrieloliviera9768@gmail.com</td>
                         <td class="option-button">
-                            <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="icon-button" id="botao-editar" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button id="open-modal" class="icon-button" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
@@ -113,8 +113,70 @@
             </div>
         </div>
 
+        <div class="main">
+            <div id="modal-edit" class="modal-edition">
+
+                <div class="area">
+                    <div class="texto">
+                        <h1>EDITAR USUÁRIO</h1>
+                    </div>
+                    <div class="campos">
+                        <div class="form-bar">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" value="Fulano da Silva">
+                        </div>
+                        <div class="form-bar">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" value="fulano@gmail.com">
+                        </div>
+                        <div class="form-bar">
+                            <label for="senha">Senha:</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput1" value="fluminense123">
+                        </div>
+                        <div class="form-bar">
+                            <button type="button" class="botaoo2">Cancelar</button>
+                            <button type="button"  class="botaoo">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "main">
+            <div id="modal-add" class = "modal-addition">
+                <div class = "area">
+                    <form>
+                        <div class = texto>
+                            <h1>ADICIONAR USUÁRIO</h1>
+                        </div>
+                        <div class = "campos">
+                            <div class = "form-bar">
+                                <input  class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                            </div>
+                            <div class = "form-bar">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                            </div>
+        
+                            <div class = "form-bar">
+                                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Senha">
+                            </div>
+                            <div class = "form-bar">
+                            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Confirme sua senha"> </form>
+                            </div>
+                                <div class = "botao">
+                                        <button type="button" class="close"><i class="fa-solid fa-arrow-left-long"></i>  Voltar</button>
+                                        <button type="button" class="close">Adicionar</button>
+                                </div>
+                        </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+
     </body>
     
     <script type="text/javascript" src="../../../public/js/modalVisualizaUser.js"></script>
+    <script type="text/javascript" src="../../../public/js/modalEdit.js"></script>
+    <script type="text/javascript" src="../../../public/js/modalAdd.js"></script>
     <script src="https://kit.fontawesome.com/f9c72cff41.js" crossorigin="anonymous"></script>
 </html>

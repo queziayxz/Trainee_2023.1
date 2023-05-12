@@ -15,8 +15,10 @@ span.onclick = function() {
 }
 
 
-window.onclick = function(event) {
+window.addEventListener('click', function (event) {
+  console.log(modal2);
+  console.log(event.target);
   if (event.target == modal2) {
     modal2.style.display = "none";
   }
-}
+});
