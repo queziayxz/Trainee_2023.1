@@ -90,6 +90,7 @@ td, tr {
     color: #D6C0B4;
     background-color: #32252C;
     transition: 0.4s;
+    opacity: 0.93;
 }
 
 .icon-button {
