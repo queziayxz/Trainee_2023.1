@@ -243,6 +243,11 @@ form{
     }
 
     @media screen and (max-width: 280px){
+        .area{
+            height: 67%;
+            padding: 0 10px;
+        }
+
         #exampleFormControlInput1::placeholder{
             padding-left: 1px;
             color: #D6C0B4;
