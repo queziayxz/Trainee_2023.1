@@ -74,7 +74,7 @@ form{
 }
 
 .texto h1{
-    margin-top: 10px;
+    margin-top: 20px;
     color: #32252C;
     text-align: center;
     padding-top: 4%;
@@ -208,7 +208,7 @@ form{
     @media screen and (max-width: 912px) {
 
     .area{
-        height: 440px;
+        height: 480px;
         padding: 0 30px;
     }
 
@@ -248,13 +248,37 @@ form{
     @media screen and (max-width: 768px) {
         .area{
             height: 70%;
-            width: 60%;
+            width: 70%;
             border-radius: 25px;
         }
 
+        .form-bar {
+            font-size: 18px;
+        }
+
+        .close {
+            font-size: 13px;
+        }
         
     }
 
+    @media (max-width: 700px) {
+        .area {
+            width: 80%;
+        }
+
+        .form-bar {
+            font-size: 16px;
+        }
+
+        #exampleFormControlInput1 {
+            font-size: 16px;
+        }
+
+        .close {
+            font-size: 13px;
+        }
+    }
 
     @media screen and (max-width: 540px) {
         .texto h1 {
@@ -295,6 +319,10 @@ form{
             font-size: 24px;
         }
 
+        .form-bar{
+            font-size: 14px;
+        }
+
         .close {
             font-size: 14px;
         }
@@ -308,7 +336,7 @@ form{
 
     @media screen and (max-width: 280px){
         .area{
-            height: 67%;
+            height: 55%;
             padding: 0 10px;
         }
 
@@ -321,5 +349,21 @@ form{
         #botaoo{
             font-size: 120%;
             height: 60px;
+        }
+
+        .texto h1 {
+            font-size: 16px;
+        }
+
+        #exampleFormControlInput1 {
+            font-size: 13px;
+        }
+
+        .close {
+            font-size: 12px;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-bottom: 10px;
+            padding-top: 6px;
         }
     }
