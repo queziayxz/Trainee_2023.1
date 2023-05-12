@@ -49,7 +49,7 @@ body{
     color: #D6C0B4;
     background: #9C1111;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
     font-size: 15px;
@@ -78,6 +78,7 @@ form{
     padding-top: 4%;
     width: 400;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .area{
@@ -108,7 +109,7 @@ form{
     background-color: #32252C ;
     border: none;
     outline: none;
-    border-radius: 8px;
+    border-radius: 5px;
     color: #D6C0B4;
     position: relative;
     font-size: 18px;

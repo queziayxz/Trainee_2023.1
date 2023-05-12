@@ -17,7 +17,6 @@ const modalAberto = () => {
 }
 
 const toggleModal = (id) => {
-  
   if(id === undefined) {
     const aberto = modalAberto();
     aberto.style.display = 'none';
@@ -34,21 +33,6 @@ const toggleModal = (id) => {
 
 window.addEventListener('click', function (event) {
   const modal = modalAberto();
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-});
-
-var btn = document.getElementById("fechar-modal");
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.addEventListener('click', function (event) {
-  console.log(modal);
-  console.log(event.target);
   if (event.target == modal) {
     modal.style.display = "none";
   }
