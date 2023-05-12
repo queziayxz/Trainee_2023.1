@@ -276,6 +276,10 @@ input[type="file"] {
 
 /* Botoes */
 
+input[type=date]::-webkit-calendar-picker-indicator
+{
+  filter:  invert(100%) sepia(3%) saturate(7352%) hue-rotate(331deg) brightness(81%) contrast(98%);
+}
 .btnVoltar:hover,
 .btn:hover,
 .btn2:hover{
