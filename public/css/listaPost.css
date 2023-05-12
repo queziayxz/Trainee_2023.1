@@ -7,7 +7,7 @@ html, body {
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #32252C;
+    background-color: #D6C0B4;
 }
 
 .search-box {
@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #D6C0B4;
+    background-color: #32252C;
 
 }
 
@@ -32,11 +32,11 @@ body {
     padding: 0 0 0 10px;
     font-size: 16px;
     line-height: 40px;
-    color: #000000;
+    color: #D6C0B4;
 }
 
 .search-text::placeholder {
-    color: #32252C;
+    color: #D6C0B4;
 }
 
 .search-button {
@@ -78,7 +78,7 @@ body {
 
 .miniatura-text h2 {
     font-size: 16px;
-    color: #D6C0B4;
+    color: #32252C;
 }
 
 .link-img {
