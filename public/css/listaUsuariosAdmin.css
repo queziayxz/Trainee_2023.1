@@ -30,13 +30,11 @@ body {
     text-align: center;
     display: block;
     margin-top: 60px;
-    font-weight: 500;
 }
 
 .add-button {
     background: #9C1111;
 	color: #D6C0B4;
-    font-weight: 400;
 	font-weight: bold;
 	font-size: 25px;
     cursor: pointer;
