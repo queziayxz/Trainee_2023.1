@@ -327,7 +327,11 @@ form{
         }
 
         .close {
-            font-size: 14px;
+            font-size: 12px;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-bottom: 10px;
+            padding-top: 6px;
         }
 
         .botaoo{
@@ -360,13 +364,5 @@ form{
 
         #exampleFormControlInput1 {
             font-size: 13px;
-        }
-
-        .close {
-            font-size: 12px;
-            padding-left: 7px;
-            padding-right: 7px;
-            padding-bottom: 10px;
-            padding-top: 6px;
         }
     }
