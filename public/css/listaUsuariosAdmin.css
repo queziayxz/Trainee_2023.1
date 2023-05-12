@@ -32,10 +32,6 @@ body {
     margin-top: 60px;
 }
 
-.table-box a {
-    text-decoration: none;
-}
-
 .add-button {
     background: #9C1111;
 	color: #D6C0B4;
@@ -53,7 +49,7 @@ body {
 }
 
 .add-button:hover {
-    opacity: 0.75;
+    opacity: 0.8;
     transition: 0.3s;
 }
 
@@ -95,6 +91,7 @@ td, tr {
     color: #D6C0B4;
     background-color: #32252C;
     transition: 0.4s;
+    opacity: 0.93;
 }
 
 .icon-button {
