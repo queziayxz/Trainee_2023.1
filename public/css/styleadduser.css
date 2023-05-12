@@ -85,7 +85,7 @@ form{
         background-color: #D6C0B4;
         height: 70%;
         width: 50%;
-        border-radius: 30px;
+        border-radius: 8px;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -247,7 +247,6 @@ form{
         .area{
             height: 70%;
             width: 70%;
-            border-radius: 25px;
         }
 
         .form-bar {
@@ -285,7 +284,6 @@ form{
         .area{
             height: 67%;
             padding: 0 20px;
-            border-radius: 20px;
         }
 
         #exampleFormControlInput1 {

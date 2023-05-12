@@ -33,8 +33,23 @@ const toggleModal = (id) => {
 })
 
 window.addEventListener('click', function (event) {
-  const modal3 = modalAberto();
-  if (event.target == modal3) {
-    modal3.style.display = "none";
+  const modal = modalAberto();
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-}); 
+});
+
+var btn = document.getElementById("fechar-modal");
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.addEventListener('click', function (event) {
+  console.log(modal);
+  console.log(event.target);
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
