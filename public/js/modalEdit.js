@@ -2,7 +2,7 @@ var modal3 = document.getElementById("modal-edit");
 
 var btn = document.getElementById("botao-editar");
 
-var span = document.getElementsByClassName("botaoo2")[0];
+var span = document.getElementsByClassName("botao2")[0];
 
  
 btn.onclick = function() {
