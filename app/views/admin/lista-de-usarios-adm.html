@@ -37,7 +37,7 @@
                         <td class="email">gabrieloliviera9768@gmail.com</td>
                         <td class="option-button">
                             <button class="icon-button" id="botao-editar" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button id="open-modal" class="icon-button" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
+                            <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
@@ -47,7 +47,7 @@
                         <td class="email">vane_el@gmail.com</td>
                         <td class="option-button">
                             <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="icon-button" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
+                            <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
@@ -57,7 +57,7 @@
                         <td class="email">davi73737@gmail.com</td>
                         <td class="option-button">
                             <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="icon-button" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
+                            <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
@@ -67,7 +67,7 @@
                         <td class="email">pamela_nasc@gmail.com</td>
                         <td class="option-button">
                             <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="icon-button" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
+                            <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
@@ -77,7 +77,7 @@
                         <td class="email">pamela_nasc@gmail.com</td>
                         <td class="option-button">
                             <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="icon-button" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
+                            <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
@@ -85,17 +85,16 @@
             </table>
         </div>
 
-       
         <div class="main">
-            <div id="modal-visualizar" class="modal-visu-user">
+            <div id="modal-visualizar" class="modal-visu-user modal-p">
                 <div class="area">
                     <div class="texto">
-                        <h1>DETALHES DO USUÁRIO</h1>
+                        <h1>Detalhes do Usuário</h1>
                     </div>
                     <div class="campos">
                         <div class="form-bar">
                             <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" value="Fulano da Silva" readonly>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" value="Fulano da Silva pereira sousa" readonly>
                         </div>
                         <div class="form-bar">
                             <label for="email">Email:</label>
@@ -107,7 +106,7 @@
                         </div>
                     </div>
                     <div class="btn-voltar">
-                        <button type="button" class="close"><i class="fa-solid fa-arrow-left-long"></i>  Voltar</button>
+                        <button type="button" class="fechar-modal botao-modal close"><i class="fa-solid fa-arrow-left-long"></i>  Voltar</button>
                     </div>
                 </div>
             </div>
@@ -118,7 +117,7 @@
 
                 <div class="area">
                     <div class="texto">
-                        <h1>EDITAR USUÁRIO</h1>
+                        <h1>Editar Usuário</h1>
                     </div>
                     <div class="campos">
                         <div class="form-bar">
@@ -147,7 +146,7 @@
                 <div class = "area">
                     <form>
                         <div class = texto>
-                            <h1>ADICIONAR USUÁRIO</h1>
+                            <h1>Adicionar Usuário</h1>
                         </div>
                         <div class = "campos">
                             <div class = "form-bar">
