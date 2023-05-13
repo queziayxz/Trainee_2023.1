@@ -286,14 +286,14 @@ input[type=date]::-webkit-calendar-picker-indicator
 {
   filter:  invert(100%) sepia(3%) saturate(7352%) hue-rotate(331deg) brightness(81%) contrast(98%);
 }
-.btnVoltar:hover,
+/* .btnVoltar:hover,
 .btn:hover,
 .btn2:hover{
   background: red;
 }
 .btnVoltarC:hover {
   background: red;
-}
+} */
 .btnVoltar {
   padding: 10px 8px;
   width: 60px;
