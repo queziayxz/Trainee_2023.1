@@ -19,7 +19,7 @@
         <div class="table-box">
             <div>
                 <h1 class="page-title">Lista de Usuários</h1>
-                <button id="botao-add" class="add-button"  title="Adicionar novo usuário"><i class="fa-solid fa-user-plus"></i> Adicionar Usuário</button>
+                <button data-modal="modal-add" class="add-button botao-modal"  title="Adicionar novo usuário"><i class="fa-solid fa-user-plus"></i> Adicionar Usuário</button>
             </div>
             <table>
                 <thead>
@@ -36,7 +36,7 @@
                         <td class="email">Gabriel de Oliveira Vieira</td>
                         <td class="email">gabrieloliviera9768@gmail.com</td>
                         <td class="option-button">
-                            <button class="icon-button" id="botao-editar" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button data-modal="modal-edit" class="icon-button botao-modal" id="botao-editar" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
@@ -46,7 +46,7 @@
                         <td class="email">Vanessa Epíndola Lima</td>
                         <td class="email">vane_el@gmail.com</td>
                         <td class="option-button">
-                            <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button data-modal="modal-edit" class="icon-button botao-modal" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
@@ -56,7 +56,7 @@
                         <td class="email">Davi Guerra Sousa</td>
                         <td class="email">davi73737@gmail.com</td>
                         <td class="option-button">
-                            <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button data-modal="modal-edit" class="icon-button botao-modal" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
@@ -66,7 +66,7 @@
                         <td class="email">Pamela Silva do Nascimento</td>
                         <td class="email">pamela_nasc@gmail.com</td>
                         <td class="option-button">
-                            <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button data-modal="modal-edit" class="icon-button botao-modal" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
@@ -76,7 +76,7 @@
                         <td class="email">Pamela Silva do Nascimento</td>
                         <td class="email">pamela_nasc@gmail.com</td>
                         <td class="option-button">
-                            <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button data-modal="modal-edit" class="icon-button botao-modal" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
                             <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
@@ -113,7 +113,7 @@
         </div>
 
         <div class="main">
-            <div id="modal-edit" class="modal-edition">
+            <div id="modal-edit" class="modal-edition modal-p">
 
                 <div class="area">
                     <div class="texto">
@@ -133,8 +133,8 @@
                             <input type="password" class="form-control" id="exampleFormControlInput1" value="fluminense123">
                         </div>
                         <div class="botao2">
-                            <button type="button" class="close">Cancelar</button>
-                            <button type="button"  class="close">Confirmar</button>
+                            <button type="button" class="close botao-modal fechar-modal">Cancelar</button>
+                            <button type="button"  class="close botao-modal fechar-modal">Confirmar</button>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
         </div>
 
         <div class = "main">
-            <div id="modal-add" class = "modal-addition">
+            <div id="modal-add" class = "modal-addition modal-p">
                 <div class = "area">
                     <form>
                         <div class = texto>
@@ -163,8 +163,8 @@
                                 <input type="password" class="form-control" id="exampleFormControlInput1">
                             </div>
                                 <div class = "botao">
-                                        <button type="button" class="close"><i class="fa-solid fa-arrow-left-long"></i>  Voltar</button>
-                                        <button type="button" class="close">Adicionar</button>
+                                        <button type="button" class="close botao-modal fechar-modal"><i class="fa-solid fa-arrow-left-long"></i>  Voltar</button>
+                                        <button type="button" class="close botao-modal fechar-modal">Adicionar</button>
                                 </div>
                         </div>
                   </form>
@@ -193,8 +193,6 @@
 
     </body>
     
-    <script type="text/javascript" src="../../../public/js/modalVisualizaUser.js"></script>
-    <script type="text/javascript" src="../../../public/js/modalEdit.js"></script>
-    <script type="text/javascript" src="../../../public/js/modalAdd.js"></script>
+    <script type="text/javascript" src="../../../public/js/modals.js"></script>
     <script src="https://kit.fontawesome.com/f9c72cff41.js" crossorigin="anonymous"></script>
 </html>

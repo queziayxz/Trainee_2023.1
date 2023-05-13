@@ -327,6 +327,14 @@ form{
             width: 83%;
         }
 
+        .texto h1 {
+            font-size: 19px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
         .botaoo{
         left: -2%;
         top: -32%;
