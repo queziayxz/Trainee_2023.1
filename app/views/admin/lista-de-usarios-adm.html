@@ -38,7 +38,7 @@
                         <td class="option-button">
                             <button class="icon-button" id="botao-editar" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
-                            <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
+                            <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
                     <tr class="table-line animacao-linha">
@@ -48,7 +48,7 @@
                         <td class="option-button">
                             <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
-                            <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
+                            <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
                     <tr class="table-line animacao-linha">
@@ -58,7 +58,7 @@
                         <td class="option-button">
                             <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
-                            <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
+                            <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
                     <tr class="table-line animacao-linha">
@@ -68,7 +68,7 @@
                         <td class="option-button">
                             <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
-                            <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
+                            <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
                     <tr class="table-line animacao-linha">
@@ -78,7 +78,7 @@
                         <td class="option-button">
                             <button class="icon-button" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
                             <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
-                            <button class="icon-button" title="Remover"><i class="fa-solid fa-trash"></i></button>
+                            <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
                 </tbody>
@@ -168,6 +168,25 @@
                                 </div>
                         </div>
                   </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div id="modalExcluirUser" class="modal-excluir-user modal-p">
+                <div class="area">
+                    <div class="texto">
+                        <h1 class = "excluir">EXCLUIR USUÁRIO</h1>
+                    </div>
+                        <h4>
+                            Tem certeza que deseja excluir o usuário Fulano da Silva?
+                        </h4>
+                            <div class="botoes">
+                                <button type="button" class="close botao-modal fechar-modal">Excluir</button>
+                                <button type="button" class="close botao-modal fechar-modal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
