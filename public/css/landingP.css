@@ -8,12 +8,12 @@ Branco: #D6C0B4 */
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
-    color: #D6C0B4;
+    /* color: #D6C0B4; */
     font-weight: bold;
 }
 
 main{
-    background-color: #32252C ;    
+    background-color: #D6C0B4 ;    
 }
 
 #intro{
@@ -77,10 +77,15 @@ h2{
     text-align:end;
     margin-right: 10%;
     font-size: 1em;
+    
+}
+
+.aPost a{
+    color:#32252C;
 }
 
 .aPost a:hover{
-    color: #9C1111;
+    color:#9C1111;
 }
 
 
