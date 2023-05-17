@@ -8,6 +8,7 @@ html, body {
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #D6C0B4;
+    overflow-x: hidden;
 }
 
 .principal {
@@ -39,10 +40,12 @@ body {
     font-size: 16px;
     line-height: 40px;
     color: #D6C0B4;
+    font-family: "Montserrat", sans-serif;
 }
 
 .search-text::placeholder {
     color: #D6C0B4;
+    font-family: "Montserrat", sans-serif;
 }
 
 .search-button {
@@ -84,6 +87,7 @@ body {
 .miniatura-text h2 {
     font-size: 16px;
     color: #32252C;
+    margin-bottom: 10px;
 }
 
 .button {
@@ -95,24 +99,24 @@ body {
 .ler {
     padding-left: 15px;
     padding-right: 15px;
-    width: auto;
     text-align: center;
     color: #D6C0B4;
     background: #9C1111;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
     font-size: 15px;
     font-weight: bold;
     height: 30px;
     box-shadow: 0px 0.5px 5px black;
+    width: 100%;
 }
 
-.ler a {
-    width: auto;
-    height: auto;
-    display: flex;
+.button a {
+    padding-top: -10px;
+    font-size: 15px;
+    color: #D6C0B4;
+    text-decoration: none;
 }
 
 .fa-solid, .fas {
@@ -126,6 +130,10 @@ body {
 }
 
 /* Seta de subir */
+button {
+    font-family: "Montserrat", sans-serif;
+}
+
 .botao a {position: fixed;
     left: 92.5%;
     right: -30%;
@@ -183,13 +191,17 @@ body {
 }
 
 .button {
-    display: flex;
     flex-direction: column-reverse;
     margin: 0 auto;
+    margin-top: 15px;
 }
 
-.button {
-    margin-top: 15px;
+.button a {
+    width: 100%;
+}
+
+.Ler {
+    width: 100%;
 }
 
 .link-img {
@@ -210,13 +222,21 @@ body {
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 362px) {
     .search-box {
         margin-bottom: 0;
     }
 
     .main {
-        width: 95%;
+        width: 97%;
+    }
+
+    .miniatura {
+        width: 71%;
+    }
+
+    .miniatura h2 {
+        margin-bottom: 30px;
     }
 
     .ler {
