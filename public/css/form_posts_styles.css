@@ -146,6 +146,7 @@ input::placeholder {
   border: none;
   outline: none;
   border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
 }
 .area-posts form {
   display: flex;
@@ -238,6 +239,8 @@ input[type="file"] {
   border: none;
   outline: none;
   border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+
 }
 .texto2 {
   font-size: 20px;
@@ -283,6 +286,8 @@ input[type="file"] {
   border: none;
   outline: none;
   border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+
 }
 .formulario-vizualizar {
   display: flex;
