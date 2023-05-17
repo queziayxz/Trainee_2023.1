@@ -26,6 +26,7 @@ h2 {
 #txtDate{
   padding-right: 3px;
   padding-left: 12px;
+  width: 97%;
 }
 
 .data2{
@@ -36,6 +37,7 @@ h2 {
 .conteudo2{
   margin-top: 12px;
 }
+
 
 .form-label{
   font-size: 15px;
@@ -140,7 +142,7 @@ input::placeholder {
 .area-posts input {
   margin-top: 10px;
   height: 40px;
-  width: 100%;
+  width: 97%;
   color: #d6c0b4;
   background-color: #32252c;
   border: none;
@@ -174,7 +176,7 @@ input[type="file"] {
 #img {
   padding-top: 0px;
   height: 40px;
-  width: 100%;
+  width: 97%;
   background-color: #32252c;
   color: #d6c0b4;
   text-transform: uppercase;
