@@ -58,6 +58,7 @@ body{
 input::placeholder{
     color: #D6C0B4;
     font-size: 14px;
+    font-family: "Montserrat", sans-serif;
 }
 form [type="submit"]{
     display: block;
