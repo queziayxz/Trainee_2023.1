@@ -78,17 +78,41 @@ body {
 
 .miniatura-text h1 {
     font-size: 20px;
-}
-
-.miniatura-text a {
-    text-decoration: none;
     color: #9C1111;
-    text-decoration: underline;
 }
 
 .miniatura-text h2 {
     font-size: 16px;
     color: #32252C;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ler a {
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.ler {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+    text-align: center;
+    color: #D6C0B4;
+    background: #9C1111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    box-shadow: 0px 1.5px 5px black;
 }
 
 .link-img {
@@ -130,14 +154,6 @@ body {
     padding-top: 60px;
 }
 
-.miniatura a {
-    text-decoration: none;
-    font-weight: bold;
-    width: 100%;
-    display: block;
-    text-align: center;
-}
-
 .miniatura-text {
     text-align: center;
     max-width: 90%;
@@ -153,10 +169,25 @@ body {
     font-size: 14px;
 }
 
+.button {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+}
+
+.button {
+    margin-top: 15px;
+}
 .link-img {
     height: auto;
     width: 100%;
     margin: 0 auto;
 }
 
+}
+
+@media (max-width: 340px) {
+    .ler {
+        font-size: 13px;
+    }
 }
