@@ -52,7 +52,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #9C1111;
+    color: #D6C0B4;
     font-size: 25px;
 }
 
@@ -92,12 +92,6 @@ body {
     flex-direction: row-reverse;
 }
 
-.ler a {
-    width: auto;
-    height: auto;
-    display: flex;
-}
-
 .ler {
     padding-left: 15px;
     padding-right: 15px;
@@ -112,7 +106,17 @@ body {
     font-size: 15px;
     font-weight: bold;
     height: 30px;
-    box-shadow: 0px 1.5px 5px black;
+    box-shadow: 0px 0.5px 5px black;
+}
+
+.ler a {
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.fa-solid, .fas {
+    margin-right: 6px;
 }
 
 .link-img {
@@ -123,10 +127,12 @@ body {
 
 /* Seta de subir */
 .botao a {position: fixed;
-    left: 90%;
+    left: 92.5%;
     right: -30%;
     top: 85%; 
     text-decoration: none;
+    color: #32252C;
+    font-size: 45px;
 }
  .botao img{
     height: 10%;
@@ -193,6 +199,12 @@ body {
 
 }
 
+@media (max-width: 530px) {
+    .botao a {
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 340px) {
     .search-box {
         margin-bottom: 0;
@@ -204,5 +216,9 @@ body {
 
     .ler {
         font-size: 13px;
+    }
+
+    .botao a {
+        font-size: 25px;
     }
 }
