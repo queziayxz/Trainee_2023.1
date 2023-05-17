@@ -191,10 +191,15 @@ body {
 .button {
     margin-top: 15px;
 }
+
 .link-img {
     height: auto;
     width: 100%;
     margin: 0 auto;
+}
+
+.botao a {position: fixed;
+    left: 88.5%;
 }
 
 }
