@@ -59,7 +59,7 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 75%;
 }
 
 .miniatura {
@@ -115,6 +115,10 @@ body {
 .search-button {
     margin-right: 5px;
     padding-right: 5px;
+}
+
+.main {
+    width: 85%;
 }
 
 .miniatura {
