@@ -18,7 +18,7 @@ h2 {
 }
 .dataa{
   font-size: 15px;
-  
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -94,6 +94,7 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   display: flex;
+  font-family: "Montserrat", sans-serif;
   justify-content: space-around;
 }
 input::placeholder {
@@ -105,6 +106,7 @@ input::placeholder {
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 .coluna-esquerd-item textarea {
   resize: vertical;
@@ -189,7 +191,7 @@ input[type="file"] {
   align-items: center;
   font-size: 14px;
   padding-left: 13px;
-  
+  font-family: "Montserrat", sans-serif;
 }
 #exampleFormControlTextarea1::placeholder {
   padding-left: 10px;
@@ -243,11 +245,12 @@ input[type="file"] {
   outline: none;
   border-radius: 8px;
   font-family: "Montserrat", sans-serif;
-
+  
 }
 .texto2 {
   font-size: 20px;
   display: flex;
+  font-family: "Montserrat", sans-serif;
   justify-content: space-around;
 }
 
@@ -408,6 +411,7 @@ h1{
 .conteudoo {
   font-size: 14px;
   line-height: 14px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 .form-label{
