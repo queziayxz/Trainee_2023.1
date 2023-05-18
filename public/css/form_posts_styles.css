@@ -62,7 +62,7 @@ h2 {
   display: none; 
   position: fixed;
   z-index: 1;
-  padding-top: 40px;
+  
   left: 0;
   top: 0;
   width: 100%;
@@ -70,13 +70,13 @@ h2 {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.8);
+  margin: 0 auto;
   
 }
 .modal2{
   display: none; 
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
@@ -153,6 +153,10 @@ input::placeholder {
   border-radius: 8px;
   box-shadow: 0px 10px 25px black;
   margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
   
 }
 .area-posts input {
@@ -233,6 +237,10 @@ input[type="file"] {
   border-radius: 8px;
   box-shadow: 0px 10px 25px black;
   margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
 
 }
 .area-fundo-excluir {
@@ -280,6 +288,10 @@ input[type="file"] {
   border-radius: 8px;
   box-shadow: 0px 10px 25px black;
   margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
 
 }
 .area-fundo-vizualizar {
