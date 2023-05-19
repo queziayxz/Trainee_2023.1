@@ -140,7 +140,7 @@ button {
     top: 85%; 
     text-decoration: none;
     color: #32252C;
-    font-size: 45px;
+    font-size: 40px;
 }
  .botao img{
     height: 10%;
@@ -219,6 +219,7 @@ body {
 @media (max-width: 530px) {
     .botao a {
         font-size: 30px;
+        left: 87%;
     }
 }
 
@@ -245,5 +246,6 @@ body {
 
     .botao a {
         font-size: 25px;
+        left: 88.5%;
     }
 }
