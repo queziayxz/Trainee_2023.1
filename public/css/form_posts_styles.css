@@ -411,7 +411,11 @@ input[type=date]::-webkit-calendar-picker-indicator
 }
 
 
- @media (max-width: 1000px) {
+ @media (max-width: 635px) {
+  .area-excluir{
+    width: 65%;
+    height: 50%;
+  }
  
 }
 
