@@ -73,8 +73,8 @@ body{
 
 h4{
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
     padding-top: 10%;
     padding-bottom: 5%;
     width: 400;
@@ -89,7 +89,6 @@ form{
     margin-top: 20px;
     color: #32252C;
     text-align: center;
-    padding-top: 4%;
     width: 400;
     font-size: 30px;
     font-weight: bold;
@@ -108,8 +107,12 @@ form{
 }
 
 .area1 {
-    height: 50%;
-    width: 40%;
+    height: 42%;
+    width: 35%;
+}
+
+.area-visualizar {
+    height: 61%;
 }
 
 .form-bar{
@@ -154,6 +157,30 @@ form{
     justify-content: flex-end;
     align-items: center;
 }
+
+.btn2 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 9px 7px;
+    width: 120px;
+    text-align: center;
+    color: #d6c0b4;
+    background: #9c1111;
+    border: 1px solid #d6c0b4;
+    border-radius: 8px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.botoes_excluir_cancelar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
 .close{
    /* width: 21%;*/
     margin-left: 5px;
@@ -226,9 +253,13 @@ form{
         background-color: rgba(0,0,0,0.8);
     }
 
-   @media (max-width: 1070px){
+   @media (max-width: 1150px){
         .area1{
             height: 52%;
+        }
+
+        .area-visualizar {
+            height: 65%;
         }
    }
 
@@ -241,6 +272,10 @@ form{
 
     .area1 {
         height: 55%;
+    }
+
+    .area-visualizar {
+        height: 61%;
     }
 
     .botaoo{
@@ -292,6 +327,10 @@ form{
             height: 57%;
         }
 
+        .area-visualizar {
+            height: 62%;
+        }
+
         .form-bar {
             font-size: 18px;
         }
@@ -311,6 +350,11 @@ form{
             height: 53%;
         }
 
+        .area-visualizar {
+            height: 58%;
+        }
+
+
         .form-bar {
             font-size: 16px;
         }
@@ -322,6 +366,12 @@ form{
         .close {
             font-size: 13px;
         }
+
+        .btn2 {
+            padding: 8px 6px;
+            font-size: 16px;
+        }
+        
     }
 
     @media (max-width: 660px){
@@ -331,6 +381,10 @@ form{
 
         .area1{
             height: 52%;
+        }
+
+        .area-visualizar {
+            height: 59%;
         }
     }
 
@@ -347,6 +401,10 @@ form{
             height: 52%;
         }
 
+        .area-visualizar {
+            height: 55%;
+        }
+
         #exampleFormControlInput1 {
             font-size: 13px;
         }
@@ -354,6 +412,11 @@ form{
         .botaoo{
             font-size: 12px;
             height: 30px;
+        }
+
+        .btn2 {
+            padding: 7px 6px;
+            font-size: 14px;
         }
         
     }
@@ -366,6 +429,10 @@ form{
 
         .area1 {
             height: 45%;
+        }
+
+        .area-visualizar {
+            height: 51%;
         }
 
         .texto h1 {
@@ -381,6 +448,11 @@ form{
         top: -32%;
         transform: translate(+2%,+32%);
         }
+
+        .btn2 {
+            padding: 6px 6px;
+            font-size: 13px;
+        }
     }
 
     @media screen and (max-width: 375px) {
@@ -391,6 +463,10 @@ form{
 
         .area1 {
             height: 42%;
+        }
+
+        .area-visualizar {
+            height: 51%;
         }
 
         .texto h1 {
@@ -427,6 +503,10 @@ form{
             height: 40%;
         }
 
+        .area-visualizar {
+            height: 48%;
+        }
+
         #exampleFormControlInput1::placeholder{
             padding-left: 1px;
             color: #D6C0B4;
@@ -439,7 +519,7 @@ form{
         }
 
         .texto h1 {
-            font-size: 16px;
+            font-size: 19px;
         }
 
         #exampleFormControlInput1 {
