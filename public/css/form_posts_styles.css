@@ -228,6 +228,9 @@ input[type="file"] {
   align-items: center;
   justify-content: flex-end;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
+
+  
 }
 .area-excluir {
   background-color: #d6c0b4;
@@ -243,6 +246,7 @@ input[type="file"] {
   left: 50%;
   position: fixed;
   transform: translate(-50%, -50%);
+  
 
 }
 .area-fundo-excluir {
@@ -252,6 +256,7 @@ input[type="file"] {
   align-items: center;
   justify-content: center;
   align-items: center;
+
 }
 .area-excluir form {
   display: flex;
@@ -346,6 +351,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   user-select: none;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+
 }
 .btnVoltarC {
   padding: 10px 8px;
@@ -358,6 +365,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   user-select: none;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+
 }
 .control-label{
   font-size: 15px;
@@ -384,6 +393,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   user-select: none;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+
 }
 .btn {
   padding: 10px 8px;
@@ -396,6 +407,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   user-select: none;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+
 }
 .btn2 {
   padding: 10px 8px;
@@ -408,6 +421,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   user-select: none;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+
 }
 
 
