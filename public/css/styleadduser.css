@@ -20,6 +20,10 @@ body{
     font-size: 20px;
 }
 
+.form-bar label {
+    font-weight: bold;
+}
+
 /* modal visualizar */
 .modal-excluir-user {
     display: none; 
