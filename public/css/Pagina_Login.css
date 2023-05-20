@@ -47,6 +47,7 @@ body{
     outline: none;
     border-radius: 8px;
     padding-left: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 .login img{
     width: 150px;
@@ -67,8 +68,11 @@ form [type="submit"]{
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-
+    font-family: "Montserrat", sans-serif;
 }
+    
+
+
 
 
 @media (max-width: 1000px) {

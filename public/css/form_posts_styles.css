@@ -1,3 +1,5 @@
+/* Geral */
+
 body {
   background-color: #32252c;
   font-family: "Montserrat", sans-serif;
@@ -17,7 +19,7 @@ h2 {
 }
 .dataa{
   font-size: 15px;
-  
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -29,7 +31,6 @@ h2 {
 }
 
 .data2{
-  
   margin-top: 12px;
 }
 
@@ -55,14 +56,27 @@ h2 {
     
   }
 
-.modal, 
-.modal2,
+.modal,
 .modal3,
 .modal4{
   display: none; 
   position: fixed;
   z-index: 1;
-  padding-top: 40px;
+  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+  margin: 0 auto;
+  
+}
+.modal2{
+  display: none; 
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
@@ -72,6 +86,7 @@ h2 {
   background-color: rgba(0,0,0,0.8);
   
 }
+
 
 
 
@@ -93,7 +108,9 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   display: flex;
+  font-family: "Montserrat", sans-serif;
   justify-content: space-around;
+  margin: 0 auto;
 }
 input::placeholder {
   padding-left: 10px;
@@ -104,6 +121,7 @@ input::placeholder {
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 .coluna-esquerd-item textarea {
   resize: vertical;
@@ -136,6 +154,10 @@ input::placeholder {
   border-radius: 8px;
   box-shadow: 0px 10px 25px black;
   margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
   
 }
 .area-posts input {
@@ -188,13 +210,14 @@ input[type="file"] {
   align-items: center;
   font-size: 14px;
   padding-left: 13px;
-  
+  font-family: "Montserrat", sans-serif;
 }
 #exampleFormControlTextarea1::placeholder {
   padding-left: 10px;
   color: #d6c0b4;
   font-size: 14px;
 }
+
 
 /* Excluir post */
 
@@ -205,17 +228,25 @@ input[type="file"] {
   align-items: center;
   justify-content: flex-end;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
+
+  
 }
 .area-excluir {
   background-color: #d6c0b4;
   display: flex;
   align-items: center;
-  width: 35%;
-  height: 40%;
-  padding: 35px;
+  width: 30%;
+  height: 28%;
+  padding: 25px;
   border-radius: 8px;
   box-shadow: 0px 10px 25px black;
   margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  
 
 }
 .area-fundo-excluir {
@@ -225,6 +256,7 @@ input[type="file"] {
   align-items: center;
   justify-content: center;
   align-items: center;
+
 }
 .area-excluir form {
   display: flex;
@@ -242,11 +274,12 @@ input[type="file"] {
   outline: none;
   border-radius: 8px;
   font-family: "Montserrat", sans-serif;
-
+  
 }
 .texto2 {
   font-size: 20px;
   display: flex;
+  font-family: "Montserrat", sans-serif;
   justify-content: space-around;
 }
 
@@ -262,6 +295,10 @@ input[type="file"] {
   border-radius: 8px;
   box-shadow: 0px 10px 25px black;
   margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
 
 }
 .area-fundo-vizualizar {
@@ -302,14 +339,7 @@ input[type=date]::-webkit-calendar-picker-indicator
 {
   filter:  invert(100%) sepia(3%) saturate(7352%) hue-rotate(331deg) brightness(81%) contrast(98%);
 }
-/* .btnVoltar:hover,
-.btn:hover,
-.btn2:hover{
-  background: red;
-}
-.btnVoltarC:hover {
-  background: red;
-} */
+
 .btnVoltar {
   padding: 10px 8px;
   width: 60px;
@@ -321,6 +351,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   user-select: none;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+
 }
 .btnVoltarC {
   padding: 10px 8px;
@@ -333,6 +365,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   user-select: none;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+
 }
 .control-label{
   font-size: 15px;
@@ -359,6 +393,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   user-select: none;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+
 }
 .btn {
   padding: 10px 8px;
@@ -371,6 +407,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   user-select: none;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+
 }
 .btn2 {
   padding: 10px 8px;
@@ -383,10 +421,16 @@ input[type=date]::-webkit-calendar-picker-indicator
   user-select: none;
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+
 }
 
 
- @media (max-width: 1000px) {
+ @media (max-width: 635px) {
+  .area-excluir{
+    width: 65%;
+    height: 50%;
+  }
  
 }
 
@@ -414,6 +458,7 @@ h1{
 .conteudoo {
   font-size: 14px;
   line-height: 14px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 .form-label{
