@@ -1,0 +1,251 @@
+/* Lista de Posts */
+/* Resetando o CSS */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #D6C0B4;
+    overflow-x: hidden;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-box {
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 50px;
+    width: 600px;
+    padding: 0px 0 0px 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #32252C;
+    margin-bottom: 40px;
+}
+
+.search-text {
+    width: 500px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #D6C0B4;
+    font-family: "Montserrat", sans-serif;
+}
+
+.search-text::placeholder {
+    color: #D6C0B4;
+    font-family: "Montserrat", sans-serif;
+}
+
+.search-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 0 50% 50% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D6C0B4;
+    font-size: 25px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.miniatura {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-top: 45px;
+    border-bottom: solid 3px #32252C;
+    flex-direction: row;
+    display: flex;
+}
+
+.miniatura-text {
+    display: block;
+    margin-left: 20px;
+}
+
+.miniatura-text h1 {
+    font-size: 20px;
+    color: #9C1111;
+}
+
+.miniatura-text h2 {
+    font-size: 16px;
+    color: #32252C;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ler {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    color: #D6C0B4;
+    background: #9C1111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    box-shadow: 0px 0.5px 5px black;
+    width: 100%;
+}
+
+.button a {
+    padding-top: -10px;
+    font-size: 15px;
+    color: #D6C0B4;
+    text-decoration: none;
+}
+
+.fa-solid, .fas {
+    margin-right: 6px;
+}
+
+.link-img {
+    width: 280px;
+    height: 170px;
+    display: inline-block;
+}
+
+/* Seta de subir */
+button {
+    font-family: "Montserrat", sans-serif;
+}
+
+.botao a {position: fixed;
+    left: 92.5%;
+    right: -30%;
+    top: 85%; 
+    text-decoration: none;
+    color: #32252C;
+    font-size: 40px;
+}
+ .botao img{
+    height: 10%;
+    width: 10%;
+ }
+
+@media (max-width: 1100px) {
+
+body {
+    display: block;
+}
+
+.search-box {
+    max-width: 85%;
+}
+
+.search-button {
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.main {
+    width: 85%;
+}
+
+.miniatura {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0px;
+    padding-top: 60px;
+}
+
+.miniatura-text {
+    text-align: center;
+    max-width: 90%;
+    margin: 5px 0 45px 0;
+}
+
+.miniatura h1 {
+    margin-bottom: 9px;
+    font-size: 18px;
+}
+
+.miniatura h2 {
+    font-size: 14px;
+}
+
+.button {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.button a {
+    width: 100%;
+}
+
+.Ler {
+    width: 100%;
+}
+
+.link-img {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.botao a {position: fixed;
+    left: 88.5%;
+}
+
+}
+
+@media (max-width: 530px) {
+    .botao a {
+        font-size: 30px;
+        left: 87%;
+    }
+}
+
+@media (max-width: 362px) {
+    .search-box {
+        margin-bottom: 0;
+    }
+
+    .main {
+        width: 97%;
+    }
+
+    .miniatura {
+        width: 71%;
+    }
+
+    .miniatura h2 {
+        margin-bottom: 30px;
+    }
+
+    .ler {
+        font-size: 13px;
+    }
+
+    .botao a {
+        font-size: 25px;
+        left: 88.5%;
+    }
+}

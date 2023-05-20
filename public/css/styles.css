@@ -11,7 +11,7 @@ body{
 }
 
 .meio{
-    background-color: #32252C;
+    background-color: #D6C0B4;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -19,17 +19,17 @@ body{
 }
 
 .user-img{
-    background-color: #32252C ;
+    background-color: #D6C0B4 ;
     padding-top: 0;
     margin-bottom: 0;
 }
 
 .post{
-    background-color: #32252C ;
+    background-color: #D6C0B4 ;
     ;
     height: 30%;
     width: 100%;
-    color: #D6C0B4;
+    color: #32252C;
 
 }
 .post h1{
@@ -53,7 +53,7 @@ body{
     display: flex;
     align-items: center; 
     justify-content: center;
-    background-color: #32252C;
+    background-color: #D6C0B4;
     margin-bottom: 0px;
 
     
@@ -66,13 +66,13 @@ body{
 }
 
 .descricao{
-    background-color: #32252C;
+    background-color: #D6C0B4;
     padding-bottom: 20px;
 }
 .descricao p{
-    color: #D6C0B4;
+    color: #32252C;
     text-align: justify;
-    font-weight: 100;
+    font-weight: 400;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -81,6 +81,8 @@ body{
     left: 90%;
     right: -30%;
     top: 85%; 
+    color: #32252C;
+    font-size: 40px;
     text-decoration: none;
 }
  .botao img{
@@ -89,14 +91,15 @@ body{
     width: 10%;
  }
 
+
 .data{
-    background-color: #32252C;
+    background-color: #D6C0B4;
 }
 
 .data h6{
     margin-left: 1%;
-    font-weight: 100;
-    color: white;
+    font-weight: 400;
+    color: 32252C;
 }
 
  @media (max-width: 1000px) {
