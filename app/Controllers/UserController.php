@@ -35,6 +35,7 @@ class UserController
 
     public function delete()
     {
- 
+        App::get('database')->delete('usuarios', $_POST['id']);
+        header('Location: /admin');
     }
 }
