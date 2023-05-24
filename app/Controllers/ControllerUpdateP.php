@@ -13,8 +13,6 @@ class UserController
 
     }
 
-  
-
     public function store()
     {
 
@@ -22,7 +20,15 @@ class UserController
 
     public function edit()
     {
-  
+        $parameters = [
+            'title' => $_POST['title'],
+            'arquivo' => $_POST['arquivo'],
+            'date' => $_POST['date'],
+            'conteudo' => $_POST['conteudo'],
+            // 'author' => $_POST['author'],
+        ];
+        App::get('database')->edit('posts',$_POST['id'],$parameters);
+        header('location: /admin/lista-de-post-adm.html');
     }
 
     public function delete()
@@ -34,25 +40,17 @@ class UserController
     {
         $parameters = [
             'title' => $_POST['title'],
-            'content' => $_POST['content'],
-            'image' => $_POST['image'],
-            'created_at' => $_POST['created_at'],
-            'author' => $_POST['author'],
+            'arquivo' => $_POST['arquivo'],
+            'date' => $_POST['date'],
+            'conteudo' => $_POST['conteudo'],
+            // 'author' => $_POST['author'],
         ];
-        App::get('radiator_springs')->insert('posts',$parameters);
+        App::get('database')->insert('posts',$parameters);
         header('location: /admin/lista-de-post-adm.html');
     } 
      public function update()
     {
-        $parameters = [
-            'title' => $_POST['title'],
-            'content' => $_POST['content'],
-            'image' => $_POST['image'],
-            'created_at' => $_POST['created_at'],
-            'author' => $_POST['author'],
-        ];
-        App::get('radiator_springs')->edit($_POST['id'],'posts',$parameters);
-        header('location: /admin/lista-de-post-adm.html');
+       
     }
 }
 
