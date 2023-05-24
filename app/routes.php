@@ -2,6 +2,7 @@
 use App\Controllers\ControllerUpdateP;
 use App\Core\Router;
 
-$router ->post('admin/lista-de-post-adm.html',)
+$router ->post('admin', 'ControllerUpdateP@create');
+$router ->post('admin', 'ControllerUpdateP@edit');
 
 ?>
