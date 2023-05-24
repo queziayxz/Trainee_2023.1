@@ -7,6 +7,18 @@ use Exception;
 
 class UserController
 {
+    public function index()
+    {
+        $usuarios = App::get('database')->selectAll('users');
+
+        $tables = [
+            'usuarios' => $usuarios,
+        ];
+
+        $users = $tables['usuarios'];
+
+        return view('admin/lista-de-usuarios-adm', compact('users'));
+    }
 
     public function show()
     {

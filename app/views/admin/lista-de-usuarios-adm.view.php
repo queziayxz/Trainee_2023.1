@@ -31,56 +31,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="table-line animacao-linha">
-                        <td>1</td>
-                        <td class="email">Gabriel de Oliveira Vieira</td>
-                        <td class="email">gabrieloliviera9768@gmail.com</td>
-                        <td class="option-button">
-                            <button data-modal="modal-edit" class="icon-button botao-modal" id="botao-editar" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
-                            <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr class="table-line animacao-linha">
-                        <td>2</td>
-                        <td class="email">Vanessa Epíndola Lima</td>
-                        <td class="email">vane_el@gmail.com</td>
-                        <td class="option-button">
-                            <button data-modal="modal-edit" class="icon-button botao-modal" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
-                            <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr class="table-line animacao-linha">
-                        <td>3</td>
-                        <td class="email">Davi Guerra Sousa</td>
-                        <td class="email">davi73737@gmail.com</td>
-                        <td class="option-button">
-                            <button data-modal="modal-edit" class="icon-button botao-modal" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
-                            <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr class="table-line animacao-linha">
-                        <td>4</td>
-                        <td class="email">Pamela Silva do Nascimento</td>
-                        <td class="email">pamela_nasc@gmail.com</td>
-                        <td class="option-button">
-                            <button data-modal="modal-edit" class="icon-button botao-modal" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
-                            <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr class="table-line animacao-linha">
-                        <td>5</td>
-                        <td class="email">Pamela Silva do Nascimento</td>
-                        <td class="email">pamela_nasc@gmail.com</td>
-                        <td class="option-button">
-                            <button data-modal="modal-edit" class="icon-button botao-modal" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
-                            <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
+                    <?php foreach($users as $user) : ?>
+                        <tr class="table-line animacao-linha">
+                            <td><?php echo $user->id ?></td>
+                            <td class="email"><?php echo $user->name; ?></td>
+                            <td class="email"><?php echo $user->email; ?></td>
+                            <td class="option-button">
+                                <button data-modal="modal-edit" class="icon-button botao-modal" id="botao-editar" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button data-modal="modal-visualizar" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-user"></i></i></button>
+                                <button data-modal="modalExcluirUser" class="icon-button botao-modal" title="Remover"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
         </div>
