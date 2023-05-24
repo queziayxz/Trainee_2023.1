@@ -21,7 +21,7 @@ class PostController
     }
     public function show()
     {
-
+        
     }
 
     public function create()
