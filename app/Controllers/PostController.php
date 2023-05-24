@@ -34,7 +34,9 @@ class PostController
 
     public function delete()
     {
-        App::get('database')->delete('posts', $_POST['id']);
+        $id = $_POST['id'];
+
+        App::get('database')->delete('posts', $id);
         header('Location: /admin');
     }
 }

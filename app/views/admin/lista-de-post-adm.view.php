@@ -108,7 +108,7 @@
     <div id="modal-excluir" class="modal2 modal-p">
        <!-- Conteudo Modal Excluir -->
         <section class="area-excluir">
-        <form class="formulario-excluir">
+        <form action="/admin/delete" method="POST" class="formulario-excluir">
           <div class="coluna-esquerda">
             <p class="titulo">Excluir Posts</p>
             <p class="texto2">Tem certeza que deseja excluir seu post?</p>
