@@ -126,14 +126,14 @@
     <div id="modal-add" class="modal3 modal-p">
       <!-- Conteudo Modal Adicionar -->  
         <section class="area-posts">
-            <form class="formulario">
+            <form action="/admin/create" method="POST" class="formulario" >
               <div class="coluna-esquerda">
                 <h1>Adicionar Post</h1>
                 <div class="coluna-esquerda-item mb-3" id="titulo">
                   <br>
                   <label for="exampleFormControlInput1" class="form-label">Título:</label>
                   <br>
-                  <input class="form-control" id="exampleFormControlInput1" placeholder="">
+                  <input class="form-control" id="exampleFormControlInput1" placeholder="" name='title'>
                 </div>
         
                 <div class="coluna-esquerda-item mb-3">
@@ -147,7 +147,7 @@
         
         
                 <div class="coluna-esquerda-item mb-3 data2" >
-                  <form method="post">
+                  <!-- <form method="post"> -->
         
                     <div class="form-group">
                       <br>
@@ -164,13 +164,13 @@
                   <br>
                   <label for="exampleFormControlInput1" class="form-label">Conteúdo:</label>
                   <br>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="conteudo">
                 </div>
                 <div class="botoes_excluir_cancelar">
                   <button type="button" class="btn botao-modal fechar-modal">Voltar</button>
                   <button type="button" class="btn botao-modal fechar-modal">Publicar</button>
                 </div>
-              </form>
+              <!-- </form> -->
         
                 
             </div>
