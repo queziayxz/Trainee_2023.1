@@ -5,8 +5,21 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class UserController
+class PostController
 {
+
+    public function index()
+    {
+        $postagens = App::get('database')->selectAll('posts');
+
+        $tables = [
+            'post' => $postagens,
+        ];
+
+        $posts = $tables['post'];
+
+        return view('admin/lista-de-post-adm', compact('posts'));
+    }
 
     public function show()
     {
@@ -28,7 +41,7 @@ class UserController
             'author' => $_POST['author'],
         ];
         App::get('database')->edit('posts',$_POST['id'],$parameters);
-        header('location: /admin/lista-de-post-adm.html');
+        header('location: /admin');
     }
 
     public function delete()
@@ -40,13 +53,14 @@ class UserController
     {
         $parameters = [
             'title' => $_POST['title'],
-            'arquivo' => $_POST['arquivo'],
-            'date' => $_POST['date'],
-            'conteudo' => $_POST['conteudo'],
+            'image' => $_POST['image'],
+            'created_at' => $_POST['created_at'],
+            'content' => $_POST['content'],
             'author' => $_POST['author'],
         ];
+        // var_dump($parameters);
         App::get('database')->insert('posts',$parameters);
-        header('location: /admin/lista-de-post-adm.html');
+        header('location: /posts');
     } 
      public function update()
     {

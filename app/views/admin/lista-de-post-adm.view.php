@@ -29,46 +29,18 @@
           </tr>
         </thead>
         <tbody>
+          <?php foreach($posts as $post): ?>
           <tr class="table-line animacao-linha">
-            <td>1</td>
-            <td class="texto">Você sabia?</td>
-            <td class="texto">15/09/2023</td>
+            <td><?php echo $post->id; ?></td>
+            <td class="texto"><?php echo $post->title; ?></td>
+            <td class="texto"><?php echo $post->created_at; ?></td>
             <td class="option-button">
               <button data-modal="modal-edita" class="icon-button botao-modal"  title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
               <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
               <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
             </td>
           </tr>
-          <tr class="table-line animacao-linha">
-            <td>2</td>
-            <td class="texto">Curiosidades</td>
-            <td class="texto">06/06/2023</td>
-            <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
-            </td>
-          </tr>
-          <tr class="table-line animacao-linha">
-            <td>3</td>
-            <td class="texto">Você sabia?</td>
-            <td class="texto">30/01/2023</td>
-            <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
-            </td>
-          </tr>
-          <tr class="table-line animacao-linha">
-            <td>4</td>
-            <td class="texto">Curiosidades</td>
-            <td class="texto">05/10/2023</td>
-            <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
-            </td>
-          </tr>
+          <?php endforeach; ?>
         </tbody>
       </table>
     </div>
@@ -126,7 +98,7 @@
     <div id="modal-add" class="modal3 modal-p">
       <!-- Conteudo Modal Adicionar -->  
         <section class="area-posts">
-            <form action="/admin/create" method="POST" class="formulario" >
+            <form action="/posts/create" method="POST" class="formulario" >
               <div class="coluna-esquerda">
                 <h1>Adicionar Post</h1>
                 <div class="coluna-esquerda-item mb-3" id="titulo">
@@ -141,7 +113,7 @@
                   <label for="exampleFormControlInput1" class="form-label">Selecionar Imagem:</label>
                   <br>
                   <label for="arquivo" id="img">Enviar Arquivo</label>
-                  <input class="form-control" type="file" name="arquivo" id="arquivo">
+                  <input class="form-control" type="file" name="image" id="arquivo">
         
                 </div>
         
@@ -153,7 +125,7 @@
                       <br>
                       <label class="control-label data2" for="date">Data:</label>
                       <br>
-                      <input type="date" id="txtDate" name="date" class="meu-input">
+                      <input type="date" id="txtDate" name="created_at" class="meu-input">
         
                     </div>
         
@@ -164,7 +136,7 @@
                   <br>
                   <label for="exampleFormControlInput1" class="form-label">Conteúdo:</label>
                   <br>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="conteudo">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="content">
                 </div>
                 <input type="hidden" name="author" value="1">
 
@@ -204,7 +176,7 @@
                   <label for="exampleFormControlInput1" class="form-label">Selecionar Imagem:</label>
                   <br>
                   <label for="arquivo" id="img">Enviar Arquivo</label>
-                  <input class="form-control" type="file" name="arquivo" id="arquivo">
+                  <input class="form-control" type="file" name="image" id="arquivo">
                   <br>
                 </div>
                 <br>
@@ -215,7 +187,7 @@
                       <br>
                       <label class="control-label" for="date">Data:</label>
                       <br>
-                      <input type="date" id="txtDate" name="date">
+                      <input type="date" id="txtDate" name="created_at">
         
                     </div>
                 </div>
@@ -224,7 +196,7 @@
                   <br>
                   <label for="exampleFormControlInput1" class="form-label">Conteúdo:</label>
                   <br>
-                  <input type="text" class="form-control conteudo3" id="exampleFormControlInput1" placeholder="" name="conteudo">
+                  <input type="text" class="form-control conteudo3" id="exampleFormControlInput1" placeholder="" name="content">
                 </div>
 
                 <input type="hidden" name="author" value="1">

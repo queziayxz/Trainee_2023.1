@@ -1,8 +1,7 @@
 <?php
-use App\Controllers\ControllerUpdateP;
-use App\Core\Router;
+use App\Controllers\PostController;
 
-$router ->post('admin/create', 'ControllerUpdateP@create');
-$router ->post('admin', 'ControllerUpdateP@edit');
-
+$router ->post('posts/create', 'PostController@create');
+$router ->post('posts/edit', 'PostController@edit');
+$router->get('posts', 'PostController@index');
 ?>
