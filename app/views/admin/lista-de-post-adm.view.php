@@ -166,6 +166,8 @@
                   <br>
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="conteudo">
                 </div>
+                <input type="hidden" name="author" value="1">
+
                 <div class="botoes_excluir_cancelar">
                   <button type="button" class="btn botao-modal fechar-modal">Voltar</button>
                   <button type="submit" class="btn botao-modal fechar-modal">Publicar</button>
@@ -224,11 +226,13 @@
                   <br>
                   <input type="text" class="form-control conteudo3" id="exampleFormControlInput1" placeholder="" name="conteudo">
                 </div>
+
+                <input type="hidden" name="author" value="1">
+
                 <div class="botoes_excluir_cancelar">
                   <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>
                   <button type="submit" class="btn2 botao-modal fechar-modal">Confirmar</button>
                 </div>
-        
                 
             </div>
  

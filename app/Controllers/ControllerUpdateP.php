@@ -25,7 +25,7 @@ class UserController
             'arquivo' => $_POST['arquivo'],
             'date' => $_POST['date'],
             'conteudo' => $_POST['conteudo'],
-            // 'author' => $_POST['author'],
+            'author' => $_POST['author'],
         ];
         App::get('database')->edit('posts',$_POST['id'],$parameters);
         header('location: /admin/lista-de-post-adm.html');
@@ -43,7 +43,7 @@ class UserController
             'arquivo' => $_POST['arquivo'],
             'date' => $_POST['date'],
             'conteudo' => $_POST['conteudo'],
-            // 'author' => $_POST['author'],
+            'author' => $_POST['author'],
         ];
         App::get('database')->insert('posts',$parameters);
         header('location: /admin/lista-de-post-adm.html');
