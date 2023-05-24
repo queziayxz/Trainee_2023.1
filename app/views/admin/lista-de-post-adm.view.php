@@ -112,6 +112,7 @@
           <div class="coluna-esquerda">
             <p class="titulo">Excluir Posts</p>
             <p class="texto2">Tem certeza que deseja excluir seu post?</p>
+            <input type="hidden" name="id" value="$posts->id">
             <div class="botoes_excluir_cancelar">
               <button type="button" class="btnVoltarC botao-modal fechar-modal" id="myBtn">Cancelar</button>
               <button type="button" class="btnVoltarC botao-modal fechar-modal">Excluir</button>

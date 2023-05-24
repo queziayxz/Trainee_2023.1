@@ -27,7 +27,7 @@ class QueryBuilder
 
             $statement->execute(compact('id'));
         } catch (Exception $e) {
-            die("An error occurred when trying to delete from database: {$e->getMessage()}");
+            die($e->getMessage());
         }
     }
 
