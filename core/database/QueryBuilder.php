@@ -13,4 +13,18 @@ class QueryBuilder
     {
         $this->pdo = $pdo;
     }
+    public function selectAll($table)
+    {
+        $sql = "select * from {$table}";
+
+        try {
+            $stat = $this->pdo->prepare($sql);
+
+            $stat->execute();
+
+            return $stat->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
 }

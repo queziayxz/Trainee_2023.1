@@ -29,46 +29,18 @@
           </tr>
         </thead>
         <tbody>
+          <?php foreach($posts as $post): ?>
           <tr class="table-line animacao-linha">
-            <td>1</td>
-            <td class="texto">Você sabia?</td>
-            <td class="texto">15/09/2023</td>
+            <td><?php echo $post->id; ?></td>
+            <td class="texto"><?php echo $post->title; ?></td>
+            <td class="texto"><?php echo $post->created_at; ?></td>
             <td class="option-button">
               <button data-modal="modal-edita" class="icon-button botao-modal"  title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
               <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
               <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
             </td>
           </tr>
-          <tr class="table-line animacao-linha">
-            <td>2</td>
-            <td class="texto">Curiosidades</td>
-            <td class="texto">06/06/2023</td>
-            <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
-            </td>
-          </tr>
-          <tr class="table-line animacao-linha">
-            <td>3</td>
-            <td class="texto">Você sabia?</td>
-            <td class="texto">30/01/2023</td>
-            <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
-            </td>
-          </tr>
-          <tr class="table-line animacao-linha">
-            <td>4</td>
-            <td class="texto">Curiosidades</td>
-            <td class="texto">05/10/2023</td>
-            <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
-            </td>
-          </tr>
+          <?php endforeach; ?>
         </tbody>
       </table>
     </div>
