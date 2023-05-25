@@ -37,6 +37,6 @@ class PostController
         $id = $_POST['id'];
 
         App::get('database')->delete('posts', $id);
-        header('Location: /admin');
+        header('Location: /posts');
     }
 }
