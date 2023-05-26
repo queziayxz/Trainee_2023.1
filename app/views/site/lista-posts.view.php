@@ -28,10 +28,10 @@
             <?php foreach($posts as $post): ?>
                 <div class="miniatura">
 
-                        <img class="link-img" src="<?= $post->image?>">
+                        <img class="link-img" src="../../../public/img/toystory.jpg">
                     <div class="miniatura-text">
                         <h1><?php echo $post->title?></h1>
-                        <h2><?php echo substr($post->content, 0, 60) . "...";?></h2>
+                        <h2><?php echo substr($post->content, 0, 120) . "...";?></h2>
                         <div class="button">
                             <a href="https://www.disney.com.br/novidades/6-curiosidades-sobre-a-animacao-carros-que-voce-nao-sabia"><button class="ler" title="Ler Post Completo">Ler Post Completo</button></a>
                         </div>
