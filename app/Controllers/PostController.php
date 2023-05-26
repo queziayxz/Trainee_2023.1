@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class PostControllerAdm
+class PostController
 {
     public function index()
     {
@@ -18,6 +18,18 @@ class PostControllerAdm
         $posts = $tables['post'];
 
         return view('admin/lista-de-post-adm', compact('posts'));
+    }
+    public function listaPosts()
+    {
+        $postagens = App::get('database')->selectAll('posts');
+
+        $tables = [
+            'post' => $postagens,
+        ];
+
+        $posts = $tables['post'];
+
+        return view('site/lista-posts', compact('posts'));
     }
     public function show()
     {
