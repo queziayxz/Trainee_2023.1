@@ -31,6 +31,18 @@ class PostController
 
         return view('site/lista-posts', compact('posts'));
     }
+    public function postIndividual()
+    {
+        $postagens = App::get('database')->selectAll('posts');
+
+        $tables = [
+            'post' => $postagens,
+        ];
+
+        $posts = $tables['post'];
+
+        return view('site/post-individual', compact('posts'));
+    }
     public function show()
     {
         
