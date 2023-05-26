@@ -28,7 +28,7 @@
             <?php foreach($posts as $post): ?>
                 <div class="miniatura">
 
-                        <img class="link-img" src="../../../public/img/toystory.jpg">
+                        <img class="link-img" src="<?= $post->image?>">
                     <div class="miniatura-text">
                         <h1><?php echo $post->title?></h1>
                         <h2><?php echo substr($post->content, 0, 120) . "...";?></h2>
