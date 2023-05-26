@@ -29,6 +29,7 @@
           </tr>
         </thead>
         <tbody>
+        <?php foreach($posts as $post): ?>
           <tr class="table-line animacao-linha">
             <td>1</td>
             <td class="texto">Você sabia?</td>
@@ -39,36 +40,7 @@
               <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
             </td>
           </tr>
-          <tr class="table-line animacao-linha">
-            <td>2</td>
-            <td class="texto">Curiosidades</td>
-            <td class="texto">06/06/2023</td>
-            <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
-            </td>
-          </tr>
-          <tr class="table-line animacao-linha">
-            <td>3</td>
-            <td class="texto">Você sabia?</td>
-            <td class="texto">30/01/2023</td>
-            <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
-            </td>
-          </tr>
-          <tr class="table-line animacao-linha">
-            <td>4</td>
-            <td class="texto">Curiosidades</td>
-            <td class="texto">05/10/2023</td>
-            <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal" title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
-            </td>
-          </tr>
+          <?php endforeach; ?>
         </tbody>
       </table>
     </div>
@@ -112,10 +84,10 @@
           <div class="coluna-esquerda">
             <p class="titulo">Excluir Posts</p>
             <p class="texto2">Tem certeza que deseja excluir seu post?</p>
-            <input type="hidden" name="id" value="posts->id">
+            <input type="hidden" name="id" value="<?= $posts->id ?>">
             <div class="botoes_excluir_cancelar">
               <button type="button" class="btnVoltarC botao-modal fechar-modal" id="myBtn">Cancelar</button>
-              <button type="button" class="btnVoltarC botao-modal fechar-modal">Excluir</button>
+              <button type="submit" class="btnVoltarC botao-modal fechar-modal">Excluir</button>
             </div>
           </div>
         </form>
