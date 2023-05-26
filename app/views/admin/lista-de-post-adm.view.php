@@ -31,26 +31,23 @@
         <tbody>
           <?php foreach($posts as $post): ?>
             <!-- Modal visualizar -->
-    <div id="modal-visu" class="modal modal-p">
+    <div id="modal-visu<?= $post->id?>" class="modal modal-p">
       <!-- Conteudo Modal Visualizar -->
       <section class="area-vizualizar">
         <form class="formulario-vizualizar">
           <div class="coluna-esquerd">
             <div class="coluna-esquerd-item mb-3"></div>
-            <h1>Título do Post</h1>
+            <h1><?php echo $post->title?></h1>
             <img
-              src="../../../public/assets/relampago.jpg"
+              src="<?= $post->image?>"
               class="img"
               alt="imagem post"
             />
             <p class="conteudoo">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              blanditiis fuga in consectetur, et harum nobis commodi saepe
-              placeat porro laboriosam ex? Molestiae beatae explicabo quisquam
-              repellat ex ad dolorem.
+            <?php echo $post->content?>
             </p>
             <div class="coluna-esquerda-item mb-3">
-              <p class="dataa">Data: dd/mm/yyyy</p>
+              <p class="dataa">Data: <?php echo date('d/m/Y', strtotime($post->created_at))?></p>
             </div>
             <div class="botoes_excluir_cancelar">
             <button type="button" class="btn2 botao-modal fechar-modal" id="myBtn"> Voltar</button>
@@ -62,7 +59,7 @@
     </div>
 
     <!--   Modal Excluir -->
-    <div id="modal-excluir" class="modal2 modal-p">
+    <div id="modal-excluir<?= $post->id?>" class="modal2 modal-p">
        <!-- Conteudo Modal Excluir -->
         <section class="area-excluir">
         <form class="formulario-excluir">
@@ -140,7 +137,7 @@
     <!-- Modal Editar -->
 
 
-    <div  id="modal-edita" class="modal4 modal-p">
+    <div  id="modal-edita<?= $post->id?>" class="modal4 modal-p">
          <!-- Conteudo Modal Editar -->
       <section class="area-posts">
   
@@ -201,11 +198,11 @@
           <tr class="table-line animacao-linha">
             <td><?php echo $post->id; ?></td>
             <td class="texto"><?php echo $post->title; ?></td>
-            <td class="texto"><?php echo $post->created_at; ?></td>
+            <td class="texto"><?php echo date('d/m/Y', strtotime($post->created_at)); ?></td>
             <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal"  title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
+              <button data-modal="modal-edita<?= $post->id?>" class="icon-button botao-modal"  title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
+              <button data-modal="modal-visu<?= $post->id?>" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
+              <button data-modal="modal-excluir<?= $post->id?>" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
             </td>
           </tr>
           <?php endforeach; ?>
