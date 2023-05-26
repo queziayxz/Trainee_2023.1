@@ -1,5 +1,8 @@
 <?php
 
 use AppController\UserController;
-use App\core\Router;
+
+
+$router->get('usuarios', 'UserController@index');
+$router->post('usuarios/create', 'UserController@create');
 ?>

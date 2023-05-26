@@ -13,4 +13,56 @@ class QueryBuilder
     {
         $this->pdo = $pdo;
     }
+
+    public function selectAll($table)
+    {
+        $sql = "select * from {$table}";
+
+        try {
+            $stat = $this->pdo->prepare($sql);
+
+            $stat->execute();
+
+            return $stat->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+    public function delete($table, $id)
+    {
+        $sql = sprintf(
+            'DELETE FROM %s WHERE %s;',
+            $table,
+            "id = :id"
+        );
+
+        try {
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute(compact('id'));
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+    public function insert($table, $parameters)
+    {
+        $sql = sprintf(
+            'INSERT INTO %s (%s) VALUES (%s)',
+            $table , implode(', ', array_keys($parameters)),
+            ':' . implode(', :', array_keys($parameters))
+            
+        );
+            try{
+                $stnt = $this ->pdo->prepare($sql);
+                $stnt->execute($parameters);
+    
+            } catch (Exception $e)
+            {
+                die($e->getMessage());
+            }
+        
+    }
+
 }
