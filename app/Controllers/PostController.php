@@ -41,7 +41,7 @@ class PostController
             'author' => $_POST['author'],
         ];
         App::get('database')->edit('posts',$_POST['id'],$parameters);
-        header('location: /admin');
+        header('location: /posts');
     }
 
     public function delete()

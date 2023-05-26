@@ -98,7 +98,7 @@
     <div id="modal-add" class="modal3 modal-p">
       <!-- Conteudo Modal Adicionar -->  
         <section class="area-posts">
-            <form action="/posts/create" method="POST" class="formulario" >
+            <form enctype="multipart/form-data" action="/posts/create" method="POST" class="formulario" >
               <div class="coluna-esquerda">
                 <h1>Adicionar Post</h1>
                 <div class="coluna-esquerda-item mb-3" id="titulo">
