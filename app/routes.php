@@ -1,10 +1,10 @@
 <?php
 
 
-use App\Controllers\PostController;
+use App\Controllers\PostControllerAdm;
 
 
-$router->get('posts', 'PostController@index');
+$router->get('posts/admin', 'PostControllerAdm@index');
 
 ?>
 
