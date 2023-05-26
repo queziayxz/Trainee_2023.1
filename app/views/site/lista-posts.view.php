@@ -10,6 +10,7 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
         <title>Posts - Radiator Springs Gazette</title>
         <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
     </head>
@@ -24,50 +25,19 @@
             </div>
 
             <div class="main">
+            <?php foreach($posts as $post): ?>
                 <div class="miniatura">
-                        <img class="link-img" src="../../../public/assets/post.jpg">
+
+                        <img class="link-img" src="<?= $post->image?>">
                     <div class="miniatura-text">
-                        <h1>6 curiosidades sobre a animação Carros que você não sabia</h1>
-                        <h2>Saiba mais sobre a divertida história do Universo Pixar, que traz Relâmpago McQueen e seus amigos em aventuras nas pistas</h2>
+                        <h1><?php echo $post->title?></h1>
+                        <h2><?php echo substr($post->content, 0, 60) . "...";?></h2>
                         <div class="button">
                             <a href="https://www.disney.com.br/novidades/6-curiosidades-sobre-a-animacao-carros-que-voce-nao-sabia"><button class="ler" title="Ler Post Completo">Ler Post Completo</button></a>
                         </div>
                     </div>
                 </div>
-
-                <div class="miniatura">
-                    <img class="link-img" src="../../../public/assets/post.jpg">
-                    <div class="miniatura-text">
-                        <h1>6 curiosidades sobre a animação Carros que você não sabia</h1>
-                        <h2>Saiba mais sobre a divertida história do Universo Pixar, que traz Relâmpago McQueen e seus amigos em aventuras nas pistas</h2>
-                        <div class="button">
-                            <a href="https://www.disney.com.br/novidades/6-curiosidades-sobre-a-animacao-carros-que-voce-nao-sabia"><button class="ler" title="Ler Post Completo">Ler Post Completo</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="miniatura">
-                    <img class="link-img" src="../../../public/assets/post.jpg">
-                    <div class="miniatura-text">
-                        <h1>6 curiosidades sobre a animação Carros que você não sabia</h1>
-                        <h2>Saiba mais sobre a divertida história do Universo Pixar, que traz Relâmpago McQueen e seus amigos em aventuras nas pistas</h2>
-                        <div class="button">
-                            <a href="https://www.disney.com.br/novidades/6-curiosidades-sobre-a-animacao-carros-que-voce-nao-sabia"><button class="ler" title="Ler Post Completo">Ler Post Completo</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="miniatura">
-                    <img class="link-img" src="../../../public/assets/post.jpg">
-                    <div class="miniatura-text">
-                        <h1>6 curiosidades sobre a animação Carros que você não sabia</h1>
-                        <h2>Saiba mais sobre a divertida história do Universo Pixar, que traz Relâmpago McQueen e seus amigos em aventuras nas pistas</h2>
-                        <div class="button">
-                            <a href="https://www.disney.com.br/novidades/6-curiosidades-sobre-a-animacao-carros-que-voce-nao-sabia"><button class="ler" title="Ler Post Completo">Ler Post Completo</button></a>
-                        </div>
-                    </div>
-                </div>
-
+                <?php endforeach; ?>
             </div>
         </div>
 
