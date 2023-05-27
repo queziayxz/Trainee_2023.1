@@ -111,7 +111,7 @@ form{
 }
 
 .area1 {
-    height: 36%;
+    height: 44%;
     width: 35%;
 }
 
@@ -184,6 +184,7 @@ form{
     align-items: center;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+    
 }
 
 .close{
