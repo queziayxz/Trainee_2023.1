@@ -55,11 +55,11 @@
                                         </div>
                                         <div class="form-bar">
                                             <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="fulano@gmail.com" readonly>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->email; ?>" readonly>
                                         </div>
                                         <div class="form-bar">
                                             <label for="senha">Senha:</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="fluminense123" readonly>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->password; ?>" readonly>
                                         </div>
                                     </div>
                                     <div class="botoes_excluir_cancelar">
