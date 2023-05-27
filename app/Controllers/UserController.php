@@ -30,12 +30,20 @@ class UserController
 
     public function update()
     {
-        
+        $parameters = [
+            'nome' => $_POST['name'],
+            'email' => $_POST['email'],
+            'senha' => $_POST['password'],
+        ];
+        app::get('database')->edit('users', $_POST['id'], $parameters);
+
+        header('Location: /admin');
+
     }
 
     public function delete()
     {
-        App::get('database')->delete('usuarios', $_POST['id']);
+        App::get('database')->delete('users', $_POST['id']);
         header('Location: /admin');
     }
 }
