@@ -77,15 +77,15 @@
                                     <div class="campos">
                                         <div class="form-bar">
                                             <label for="nome">Nome:</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="Fulano da Silva">
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $user->name; ?>">
                                         </div>
                                         <div class="form-bar">
                                             <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="fulano@gmail.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="<?= $user->email; ?>">
                                         </div>
                                         <div class="form-bar">
                                             <label for="senha">Senha:</label>
-                                            <input type="password" class="form-control" id="exampleFormControlInput1" value="fluminense123">
+                                            <input type="password" class="form-control" id="exampleFormControlInput1" value="<?= $user->password; ?>">
                                         </div>
                                         <div class="botoes_excluir_cancelar">
                                             <button type="button" class="fechar-modal botao-modal btn2">Cancelar</button>
@@ -147,81 +147,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="main">
-            <div id="modal-visualizar<?php echo $user->id ?>" class="modal-visu-user modal-p">
-                <div class="area area-visualizar">
-                    <div class="texto">
-                        <h1>Detalhes do Usuário</h1>
-                    </div>
-                    <div class="campos">
-                        <div class="form-bar">
-                            <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->name; ?>" readonly>
-                        </div>
-                        <div class="form-bar">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" value="fulano@gmail.com" readonly>
-                        </div>
-                        <div class="form-bar">
-                            <label for="senha">Senha:</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" value="fluminense123" readonly>
-                        </div>
-                    </div>
-                    <div class="botoes_excluir_cancelar">
-                        <button type="button" class="fechar-modal botao-modal btn2">Voltar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                        <div class="main">
-                            <div id="modal-edit" class="modal-edition modal-p">
-
-                                <div class="area area-visualizar">
-                                    <div class="texto">
-                                        <h1>Editar Usuário</h1>
-                                    </div>
-                                    <div class="campos">
-                                        <div class="form-bar">
-                                            <label for="nome">Nome:</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="Fulano da Silva">
-                                        </div>
-                                        <div class="form-bar">
-                                            <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="fulano@gmail.com">
-                                        </div>
-                                        <div class="form-bar">
-                                            <label for="senha">Senha:</label>
-                                            <input type="password" class="form-control" id="exampleFormControlInput1" value="fluminense123">
-                                        </div>
-                                        <div class="botoes_excluir_cancelar">
-                                            <button type="button" class="fechar-modal botao-modal btn2">Cancelar</button>
-                                            <button type="button" class="fechar-modal botao-modal btn2">Confirmar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="main">
-                            <div id="modalExcluirUser" class="modal-excluir-user modal-p">
-                                <div class="area area1">
-                                    <div class="texto">
-                                        <h1 class = "excluir">Excluir Usuário</h1>
-                                    </div>
-                                        <h4>
-                                            Tem certeza que deseja excluir o usuário Fulano da Silva?
-                                        </h4>
-                                            <div class="botoes_excluir_cancelar">
-                                                <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>
-                                                <button type="button" class="btn2 botao-modal fechar-modal">Excluir</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
     </body>
     
