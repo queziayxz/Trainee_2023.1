@@ -7,6 +7,19 @@ use Exception;
 
 class UserController
 {
+    public function index()
+    {
+        $usuarios = App::get('database')->selectAll('users');
+
+        $tables = [
+            'usuarios' => $usuarios,
+        ];
+
+        $users = $tables['usuarios'];
+
+        return view('admin/lista-de-usuarios-adm', compact('users'));
+    }
+
 
     public function show()
     {
@@ -37,13 +50,13 @@ class UserController
         ];
         app::get('database')->edit('users', $_POST['id'], $parameters);
 
-        header('Location: /admin');
+        header('Location: /usuarios');
 
     }
 
     public function delete()
     {
         App::get('database')->delete('users', $_POST['id']);
-        header('Location: /admin');
+        header('Location: /usuarios');
     }
 }

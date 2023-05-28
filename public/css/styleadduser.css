@@ -22,6 +22,7 @@ body{
 
 .form-bar label {
     font-weight: bold;
+    font-size: 20px;
 }
 
 /* modal visualizar */
@@ -85,9 +86,9 @@ h4{
     font-size: 25px;
 }
 
-form{
+/* form{
     height: 100%;
-}
+} */
 
 .texto h1{
     margin-top: 20px;
@@ -174,6 +175,7 @@ form{
     user-select: none;
     cursor: pointer;
     margin-top: 10px;
+    font-size: 20px;
 }
 
 .botoes_excluir_cancelar{
@@ -447,6 +449,11 @@ form{
             font-size: 18px;
         }
 
+        .form-bar label {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
         .botaoo{
         left: -2%;
         top: -32%;
@@ -508,12 +515,20 @@ form{
         }
 
         .area-visualizar {
-            height: 48%;
+            height: 45.5%;
         }
 
+        .form-bar {
+            margin-bottom: 9px;
+        }
+        
         #exampleFormControlInput1::placeholder{
             padding-left: 1px;
             color: #D6C0B4;
+            font-size: 16px;
+        }
+
+        .form-bar label {
             font-size: 16px;
         }
 
