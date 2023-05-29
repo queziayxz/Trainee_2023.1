@@ -8,11 +8,11 @@ class QueryBuilder
 {
     protected $pdo;
 
-
     public function __construct($pdo)
     {
         $this->pdo = $pdo;
     }
+
     public function selectAll($table)
     {
         $sql = "select * from {$table}";
@@ -27,7 +27,7 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
-    
+
     public function selectPost($id, $table)
     {
         $sql = sprintf("SELECT * FROM %s WHERE %s", $table, "id = $id");
@@ -60,4 +60,4 @@ class QueryBuilder
         }
     }
 
-    }
+}

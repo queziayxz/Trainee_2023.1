@@ -31,8 +31,6 @@
     <div class = "botao">
         <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
     </div>
-
-    <script src="https://kit.fontawesome.com/f9c72cff41.js" crossorigin="anonymous"></script>
-    
 </body>
+    <script src="https://kit.fontawesome.com/f9c72cff41.js" crossorigin="anonymous"></script>
 </html>
