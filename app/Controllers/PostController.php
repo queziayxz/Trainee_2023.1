@@ -19,7 +19,7 @@ class PostController
 
         return view('admin/lista-de-post-adm', compact('posts'));
     }
-    
+
     public function listaPosts()
     {
         $postagens = App::get('database')->selectAll('posts');
@@ -90,6 +90,6 @@ class PostController
         $id = $_POST['id'];
 
         App::get('database')->delete('posts', $id);
-        header('Location: /posts');
+        header('Location: /posts/admin');
     }
 }
