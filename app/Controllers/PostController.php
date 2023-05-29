@@ -33,7 +33,8 @@ class PostController
     }
     public function postIndividual()
     {
-        $postagens = App::get('database')->selectAll('posts');
+        $id = $_POST['id'];
+        $postagens = App::get('database')->selectPost($id, 'posts');
 
         $tables = [
             'post' => $postagens,
@@ -43,14 +44,31 @@ class PostController
 
         return view('site/post-individual', compact('posts'));
     }
+    public function landingPage()
+    {
+        $postagens = App::get('database')->selectAll('posts');
+
+        $tables = [
+            'post' => $postagens,
+        ];
+
+        $posts = $tables['post'];
+
+        return view('site/landingPage', compact('posts'));
+    }
+
+
+
+
+
     public function show()
     {
-        
+
     }
 
     public function create()
     {
- 
+
     }
 
     public function store()
@@ -60,17 +78,17 @@ class PostController
 
     public function edit()
     {
-  
+
     }
 
     public function update()
     {
-        
+
     }
 
     public function delete()
     {
- 
+
     }
 }
 

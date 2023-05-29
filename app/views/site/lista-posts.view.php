@@ -33,7 +33,10 @@
                         <h1><?php echo $post->title?></h1>
                         <h2><?php echo substr($post->content, 0, 120) . "...";?></h2>
                         <div class="button">
-                            <a href="https://www.disney.com.br/novidades/6-curiosidades-sobre-a-animacao-carros-que-voce-nao-sabia"><button class="ler" title="Ler Post Completo">Ler Post Completo</button></a>
+                            <form method="post" action="posts/postIndividual">
+                                <input type="hidden" name="id" value="<?php echo $post->id?>">
+                                <a href=""><button type="submit" class="ler" title="Ler Post Completo">Ler Post Completo</button></a>  
+                            </form>
                         </div>
                     </div>
                 </div>
