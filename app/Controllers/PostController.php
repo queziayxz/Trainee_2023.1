@@ -35,9 +35,9 @@ class PostController
     {
         $parameters = [
             'title' => $_POST['title'],
-            'arquivo' => $_POST['arquivo'],
-            'date' => $_POST['date'],
-            'conteudo' => $_POST['conteudo'],
+            'image' => $_POST['image'],
+            'created_at' => $_POST['created_at'],
+            'content' => $_POST['content'],
             'author' => $_POST['author'],
         ];
         App::get('database')->edit('posts',$_POST['id'],$parameters);

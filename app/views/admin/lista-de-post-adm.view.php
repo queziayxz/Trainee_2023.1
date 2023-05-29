@@ -161,7 +161,7 @@
          <!-- Conteudo Modal Editar -->
       <section class="area-posts">
   
-            <form class="formulario">
+            <form class="formulario" action="/posts/edit" method="POST">
               <div class="coluna-esquerda">
                 <h1 class="">Editar Post</h1>
                 <div class="coluna-esquerda-item mb-3" id="titulo">
