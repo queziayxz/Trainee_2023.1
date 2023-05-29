@@ -7,6 +7,19 @@ use Exception;
 
 class PostController
 {
+    public function index()
+    {
+        $postagens = App::get('database')->selectAll('posts');
+
+        $tables = [
+            'post' => $postagens,
+        ];
+
+        $posts = $tables['post'];
+
+        return view('admin/lista-de-post-adm', compact('posts'));
+    }
+
     public function show()
     {
 

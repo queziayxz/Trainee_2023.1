@@ -31,15 +31,34 @@
         <tbody>
         <?php foreach($posts as $post): ?>
           <tr class="table-line animacao-linha">
-            <td>1</td>
-            <td class="texto">Você sabia?</td>
-            <td class="texto">15/09/2023</td>
+            <td><?= $post->id ?></td>
+            <td class="texto"><?= $post->title ?></td>
+            <td class="texto"><?= $post->created_at ?></td>
             <td class="option-button">
-              <button data-modal="modal-edita" class="icon-button botao-modal"  title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
+              <button data-modal="modal-edita<?= $post->id ?>" class="icon-button botao-modal"  title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
+              <button data-modal="modal-visu<?= $post->id ?>" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
+              <button data-modal="modal-excluir<?= $post->id ?>" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
             </td>
           </tr>
+
+          <!--   Modal Excluir -->
+    <div id="modal-excluir<?= $post->id ?>" class="modal2 modal-p">
+       <!-- Conteudo Modal Excluir -->
+        <section class="area-excluir">
+        <form action="/posts/delete" method="POST" class="formulario-excluir">
+          <div class="coluna-esquerda">
+            <p class="titulo">Excluir Posts</p>
+            <p class="texto2">Tem certeza que deseja excluir seu post?</p>
+            <input type="hidden" name="id" value="<?= $post->id ?>">
+            <div class="botoes_excluir_cancelar">
+              <button type="button" class="btnVoltarC botao-modal fechar-modal" id="myBtn">Cancelar</button>
+              <button type="submit" class="btnVoltarC botao-modal fechar-modal">Excluir</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
           <?php endforeach; ?>
         </tbody>
       </table>
@@ -76,23 +95,7 @@
       </section>
     </div>
 
-    <!--   Modal Excluir -->
-    <div id="modal-excluir" class="modal2 modal-p">
-       <!-- Conteudo Modal Excluir -->
-        <section class="area-excluir">
-        <form action="/posts/delete" method="POST" class="formulario-excluir">
-          <div class="coluna-esquerda">
-            <p class="titulo">Excluir Posts</p>
-            <p class="texto2">Tem certeza que deseja excluir seu post?</p>
-            <input type="hidden" name="id" value="<?= $posts->id ?>">
-            <div class="botoes_excluir_cancelar">
-              <button type="button" class="btnVoltarC botao-modal fechar-modal" id="myBtn">Cancelar</button>
-              <button type="submit" class="btnVoltarC botao-modal fechar-modal">Excluir</button>
-            </div>
-          </div>
-        </form>
-      </section>
-    </div>
+    
 
     <!-- Modal Adicionar -->
 
