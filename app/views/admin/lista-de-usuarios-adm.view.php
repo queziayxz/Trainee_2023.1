@@ -78,16 +78,17 @@
                                     <div class="campos">
                                         <div class="form-bar">
                                             <label for="nome">Nome:</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->name ?>">
+                                            <input type="text" name="name" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->name ?>">
                                         </div>
                                         <div class="form-bar">
                                             <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->email ?>">
+                                            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->email ?>">
                                         </div>
                                         <div class="form-bar">
                                             <label for="senha">Senha:</label>
-                                            <input type="password" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->password ?>">
+                                            <input type="password" name="password" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->password ?>">
                                         </div>
+                                        <input type="hidden" name="id" value="<?= $user->id ?>">
                                         <div class="botoes_excluir_cancelar">
                                             <button type="button" class="fechar-modal botao-modal btn2">Cancelar</button>
                                             <button type="submit" class="fechar-modal botao-modal btn2">Confirmar</button>
@@ -106,7 +107,7 @@
                                         <h4>
                                             Tem certeza que deseja excluir o usuário Fulano da Silva?
                                         </h4>
-                                        <input type="hidden" name="id" value="<?= $posts->id ?>">
+                                        <input type="hidden" name="id" value="<?= $user->id ?>">
                                             <div class="botoes_excluir_cancelar">
                                                 <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>
                                                 <button type="submit" class="btn2 botao-modal fechar-modal">Excluir</button>

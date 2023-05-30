@@ -44,9 +44,9 @@ class UserController
     public function update()
     {
         $parameters = [
-            'nome' => $_POST['name'],
+            'name' => $_POST['name'],
             'email' => $_POST['email'],
-            'senha' => $_POST['password'],
+            'password' => $_POST['password'],
         ];
         app::get('database')->edit('users', $_POST['id'], $parameters);
 
