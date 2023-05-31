@@ -51,22 +51,20 @@ class PostController
 
     public function create()
     {
+        $arquivo = $_FILES['image']['name'];
+        $novoNome = uniqid();
+        $pasta = 'public/img/';
+        $extencao = strtolower(pathinfo($arquivo, PATHINFO_EXTENSION));
+        $deuCerto = move_uploaded_file($_FILES['image']['tmp_name'], $pasta . $novoNome . "." . $extencao);
 
         $parameters = [
             'title' => $_POST['title'],
-            'image' => $_FILES['image'],
+            'image' => $pasta . $novoNome . "." . $extencao,
             'created_at' => $_POST['created_at'],
             'content' => $_POST['content'],
             'author' => $_POST['author'],
         ];
-        
-        $arquivo = $parameters['image']['name'];
-        $novoNome = uniqid();
-        $pasta = 'public/img/';
-        $extencao = strtolower(pathinfo($arquivo, PATHINFO_EXTENSION));
-        $deuCerto = move_uploaded_file($parameters['image']['tmp_name'], $pasta . $novoNome . "." . $extencao);
-        
-        // var_dump($arquivo);
+
         App::get('database')->insert('posts',$parameters);
         header('location: /posts');
     }
