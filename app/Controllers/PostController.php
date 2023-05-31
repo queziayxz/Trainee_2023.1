@@ -46,7 +46,8 @@ class PostController
     }
     public function landingPage()
     {
-        $postagens = App::get('database')->selectAll('posts');
+       
+        $postagens = App::get('database')->selectUltimosPosts('posts');
 
         $tables = [
             'post' => $postagens,

@@ -43,4 +43,22 @@ class QueryBuilder
 
 
     }
+    public function selectUltimosPosts($table)
+    {
+        $sql = sprintf("SELECT * FROM %s ORDER BY %s desc LIMIT %s", $table, 'id', "5");
+        
+        try {
+            $stat = $this->pdo->prepare($sql);
+
+            $stat->execute();
+
+            return $stat->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+
+
+    }
+
 }
+
