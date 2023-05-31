@@ -12,4 +12,5 @@ $router->post('posts/delete', 'PostController@delete'); // Deletar post
 $router->get('home', 'PostController@landingPage'); // Landing Page
 $router->get('posts', 'PostController@listaPosts'); // Lista de posts do usuario
 $router->post('posts/postIndividual', 'PostController@postIndividual'); // Post individual
+
 ?>

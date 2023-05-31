@@ -11,13 +11,13 @@
           <div class="navbar-nav">
             <ul class="navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link fw-bold " href="#">Home</a>
+                <a class="nav-link fw-bold " href="home">Home</a>
               </li>
               <li class="nav-item" >
-                <a class="nav-link fw-bold" href="#">Nossos posts</a>
+                <a class="nav-link fw-bold" href="posts">Nossos posts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">Login</a>
+                <a class="nav-link fw-bold" href="login">Login</a>
               </li>
             </ul>
           </div>
