@@ -22,6 +22,7 @@
         <?php require('app/views/includes/SideBar.php'); ?>
 
         <div class="table-box">
+
             <div>
                 <h1 class="page-title">Lista de Usuários</h1>
                 <button data-modal="modal-add" class="add-button botao-modal"  title="Adicionar novo usuário"><i class="fa-solid fa-user-plus"></i> Adicionar Usuário</button>

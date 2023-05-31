@@ -172,11 +172,7 @@ input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-/* .area-posts form {
-  display: flex;
-  width: 100%;
-  align-items: center;
-} */
+
 #exampleFormControlTextarea1 {
   height: 100%;
   width: 100%;
@@ -258,12 +254,7 @@ input[type="file"] {
   align-items: center;
 
 }
-/* .area-excluir form {
-  display: flex;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: center;
-} */
+
 .area-excluir input {
   margin-top: 10px;
   height: 45px;
@@ -311,12 +302,7 @@ input[type="file"] {
   align-items: center;
 }
 
-/* .area-vizualizar form {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin: 0 auto;
-} */
+
 .area-vizualizar input {
   margin-top: 10px;
   height: 45px;
@@ -330,10 +316,7 @@ input[type="file"] {
   
 
 }
-/* .formulario-vizualizar {
-  display: flex;
-  width: 50%;
-} */
+
 
 /* Botoes */
 

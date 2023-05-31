@@ -1,3 +1,7 @@
+.d-flex {
+  position: absolute;
+}
+
 .sidebar
 {
     background-color: #32252C;
@@ -10,7 +14,6 @@
 .sidebar a:hover{
     color: #91827a;
 }
-
 
 #wrapper {
     overflow-x: hidden;

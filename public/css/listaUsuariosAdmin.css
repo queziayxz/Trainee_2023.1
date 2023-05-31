@@ -3,7 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-size: 0;
+    /* font-size: 0; */
 }
 
 body {
@@ -19,6 +19,7 @@ body {
     overflow: hidden;
     height: 100vh;
     overflow-y: auto;
+    font-family: "Montserrat", sans-serif;
 }
 
 .page-title {
@@ -30,6 +31,7 @@ body {
     text-align: center;
     display: block;
     margin-top: 60px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .add-button {
@@ -46,6 +48,7 @@ body {
     display: block;
     margin: 0 auto;
     margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .add-button:hover {
@@ -66,20 +69,23 @@ body {
 	color: #D6C0B4;
 	font-weight: bold;
     background-color: #32252C;
+    font-family: "Montserrat", sans-serif;
 }
 
 .table-title td{
     border: 3px solid #32252C;
     color: #D6C0B4;
+    font-family: "Montserrat", sans-serif;
 }
 
-td, tr {
+.table-box td, tr {
 	border: 1.6px solid #32252C;
     border-left: none;
     border-right: none;
     border-top: none;
     padding: 8px 15px;
     font-weight: bold;
+    font-family: "Montserrat", sans-serif;
 }
 
 .animacao-linha {
@@ -108,6 +114,7 @@ td, tr {
     margin-bottom: 3%;
     transition: 0.3s;
     padding: 2px 6px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .icon-button:hover {
