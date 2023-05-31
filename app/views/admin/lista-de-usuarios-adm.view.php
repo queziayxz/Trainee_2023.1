@@ -5,17 +5,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/public/css/sidebar.css">
         <link rel="stylesheet" href="../../../public/css/listaUsuariosAdmin.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
-        
-        <title>Lista de Usuários - Radiator Springs Gazette</title>
-        <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
-        
         <link rel="stylesheet" href="../../../public/css/styleadduser.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+        <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
+
+        <title>Lista de Usuários - Radiator Springs Gazette</title>
     </head>
 
-    <body>
+    <body class="estilos">
+
+    <?php require('app/views/includes/SideBar.php'); ?>
+
         <div class="table-box">
             <div>
                 <h1 class="page-title">Lista de Usuários</h1>
@@ -150,7 +155,16 @@
 
     </body>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../../../public/js/modals.js"></script>
     <script src="https://kit.fontawesome.com/f9c72cff41.js" crossorigin="anonymous"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
     
 </html>
