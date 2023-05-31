@@ -47,7 +47,7 @@
          <!-- Conteudo Modal Editar -->
       <section class="area-posts">
   
-            <form class="formulario" action="/posts/edit" method="POST">
+            <form enctype="multipart/form-data" class="formulario" action="/posts/edit" method="POST">
               <div class="coluna-esquerda">
                 <h1 class="">Editar Post</h1>
 
@@ -87,6 +87,7 @@
                 </div>
 
                 <input type="hidden" name="author" value="1">
+                <input type="hidden" name="id" value="<?php echo $post->id;?>">
 
                 <div class="botoes_excluir_cancelar">
                   <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>

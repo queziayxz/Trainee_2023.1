@@ -23,7 +23,7 @@ class QueryBuilder
         );
 
         try{
-            $stnt = $this ->pdo->prepare($sql);
+            $stnt = $this->pdo->prepare($sql);
             $stnt->execute($parameters);
 
         } catch (Exception $e)
@@ -33,28 +33,28 @@ class QueryBuilder
 
     }
 
-    public function edit($table,$id,$parametros)
+    public function edit($table,$id, $parametros)
     {
         $sql = sprintf(
-            'UPDATE %s SET $s WHERE %s',
-            $table ,
-             implode(', ', array_map(function($parametros){
+            'UPDATE %s 
+            SET %s
+            WHERE %s;',
+            $table,
+            implode(', ', array_map(function ($parametros){
                 return "{$parametros} = :{$parametros}";
-             }, array_keys($parametros))),
-             'id = :id'
+            }, array_keys($parametros))),
+            'id = :id'
         );
 
         $parametros['id'] = $id;
 
         try{
-            $stnt = $this ->pdo->prepare($sql);
-            $stnt->execute($parametros);
-
-        } catch (Exception $e)
-        {
-            die($e->getMessage());
+            $statement = $this->pdo->prepare($sql);
+            $statement->execute($parametros);
+        }catch(Exception $e){
+            die("Ocorreu um erro ao tentar atualizar o banco de dados: {$e->getMessage()}");
         }
-
+        // var_dump($sql);
     }
 
     public function selectAll($table)

@@ -33,15 +33,22 @@ class PostController
 
     public function edit()
     {
+        $arquivo = $_FILES['image']['name'];
+        $novoNome = uniqid();
+        $pasta = 'public/img/';
+        $extencao = strtolower(pathinfo($arquivo, PATHINFO_EXTENSION));
+        $deuCerto = move_uploaded_file($_FILES['image']['tmp_name'], $pasta . $novoNome . "." . $extencao);
+
         $parameters = [
             'title' => $_POST['title'],
-            'image' =>  $_FILES['image'],
+            'image' =>  $pasta . $novoNome . "." . $extencao,
             'created_at' => $_POST['created_at'],
             'content' => $_POST['content'],
             'author' => $_POST['author'],
         ];
         App::get('database')->edit('posts',$_POST['id'],$parameters);
         header('location: /posts');
+        var_dump($_FILES['image']);
     }
 
     public function delete()
