@@ -74,7 +74,7 @@
       <h2 id="small">Acesse nosso Facebook</h2>
       <div id="rs">
         <a href="#" target="_blank">
-          <img src="../../../public/assets/img/logo-facebook.jpg" alt="face"
+          <img src="../../../public/assets/logo-facebook.jpg" alt="face"
         /></a>
         <!-- <a href="#" target="_blank">
           <img src="../../../public/assets/img/logo-instagram.jpg" alt="insta"

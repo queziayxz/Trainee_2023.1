@@ -14,11 +14,11 @@ Branco: #D6C0B4 */
 
 body {
     width: 100%;
-    overflow: hidden;
 }
 
 main{
-    background-color: #D6C0B4 ;    
+    background-color: #D6C0B4 ; 
+    overflow: hidden;  
 }
 
 #intro{
