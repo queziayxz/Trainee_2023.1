@@ -4,16 +4,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../../public/css/listaPostAdmin.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,400"
-      rel="stylesheet"/>
     <link rel="stylesheet" href="../../../public/css/form_posts_styles.css" />
-    <title>Lista de Posts - Radiator Springs Gazette</title>
     <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg" />
+
+    <title>Lista de Posts - Radiator Springs Gazette</title>
   </head>
 
   <body>
+
+    <?php require('app/views/includes/SideBar.php'); ?>
+
     <div class="table-box">
       <div>
         <h1 class="page-title">Lista de Posts</h1>
@@ -213,6 +218,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
               integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
               crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
 
 

@@ -4,7 +4,7 @@ use App\Controllers\PostController;
 use App\Controllers\UserController;
 
 // Rotas do Adm
-$router->get('usuarios', 'UserController@index'); // Index do usuario
+$router->get('usuarios/admin', 'UserController@index'); // Index do usuario
 $router->get('posts/admin', 'PostController@index'); // Index do post
 $router->post('posts/delete', 'PostController@delete'); // Deletar post
 
