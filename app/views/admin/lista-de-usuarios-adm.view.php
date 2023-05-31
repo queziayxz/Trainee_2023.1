@@ -19,7 +19,7 @@
 
     <body>
 
-    <?php require('app/views/includes/SideBar.php'); ?>
+        <?php require('app/views/includes/SideBar.php'); ?>
 
         <div class="table-box">
             <div>
