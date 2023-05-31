@@ -11,8 +11,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/css/navbar_footer.css" />
     <link rel="stylesheet" href="../../../public/css/landingP.css" />
+    <link rel="stylesheet" href="/public/css/navbar_footer.css" />
     <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
 
     <title>Radiator Springs</title>
@@ -25,7 +25,7 @@
     <main>
       <section id="intro">
         <div id="imgIntro">
-          <img src="../../../public/assets/img/img2_blog.png" alt="" />
+          <img src="../../../public/assets/logo2.jpg" alt="imagem principal" />
         </div>
         <div id="pIntro">
           <p>
@@ -46,7 +46,7 @@
       <?php foreach($posts as $post): ?>
       <section class="posts">
         <div class="imgPost">
-          <img src="<?php echo $post->image?>" alt="" />
+          <img src="<?php echo $post->image?>" alt="Imagem do post" />
         </div>
 
         <div class="pPost">
@@ -54,15 +54,17 @@
           <p>
           <?php echo substr($post->content, 0, 120) . "...";?>
           </p>
-        </div>
-      </section>
 
-  <div class="button">
+        </div>
+
+        <div class="button">
       <form method="post" action="posts/postIndividual">
           <input type="hidden" name="id" value="<?php echo $post->id?>">
           <a href=""><button type="submit" class="ler" title="Ler Post Completo">Ler Post Completo</button></a>  
       </form>
   </div>
+
+      </section>
 
       <div class="cor"></div>
       <?php endforeach; ?>
@@ -82,9 +84,10 @@
           <img src="../../../public/assets/img/logo-youtube.jpg" alt="yt"
         /></a> -->
       </div>
-    </main>
 
-    <?php require('app/views/includes/Footer.php'); ?>
+      <?php require('app/views/includes/Footer.php'); ?>
+
+    </main>
 
   </body>
 

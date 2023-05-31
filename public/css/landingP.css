@@ -36,7 +36,6 @@ main{
 
 #pIntro{
     font-size: 1.3em;
-    padding-left: 20px;
 }
 
 #h2intro{
@@ -165,6 +164,10 @@ h2{
 
 @media (max-width:1000px){
 
+    p {
+        font-size: 16px;
+    }
+
     #intro{
         flex-wrap: wrap;
         text-align: center;
@@ -222,6 +225,18 @@ h2{
         /* margin-left: 119px; */
         }
     
+}
+
+@media (max-width: 650px){
+    .button {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    #imgIntro img {
+        width: 200px;
+    }
 }
 
 @media(max-width:280px){

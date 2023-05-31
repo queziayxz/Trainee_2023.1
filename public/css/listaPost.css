@@ -251,3 +251,9 @@ body {
         left: 88.5%;
     }
 }
+
+@media (max-width: 287px) {
+    .search-text {
+        padding-left: 2px;
+    }
+}

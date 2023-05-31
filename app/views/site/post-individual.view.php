@@ -16,9 +16,10 @@
 </head>
 <body>
 
+    <div class = "meio">
+
     <?php require('app/views/includes/NavBar.php'); ?>
 
-    <div class = "meio">
     <?php foreach($posts as $post): ?>
         <div class="post">
             <h1><?php echo $post->title?></h1>
@@ -36,12 +37,13 @@
             <h6><?php echo date('d/m/Y', strtotime($post->created_at))?></h6>
         </div>
         <?php endforeach; ?>
+
+        <?php require('app/views/includes/Footer.php'); ?>
+
     </div>
     <div class = "botao">
         <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
     </div>
-
-    <?php require('app/views/includes/Footer.php'); ?>
 
 </body>
 
