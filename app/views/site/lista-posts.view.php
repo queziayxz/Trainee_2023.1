@@ -31,7 +31,7 @@
             <div class="main">
             <?php foreach($posts as $post): ?>
                 <div class="miniatura">
-                    <img class="link-img" src="<?= $post->image?>">
+                    <img class="link-img" src="<?= $post->image?>" alt="Imagem do Post">
                     <div class="miniatura-text">
                         <h1><?php echo $post->title?></h1>
                         <h2><?php echo substr($post->content, 0, 120) . "...";?></h2>

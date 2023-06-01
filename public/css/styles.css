@@ -67,7 +67,7 @@ body{
 
 .descricao{
     background-color: #D6C0B4;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 .descricao p{
     color: #32252C;
@@ -95,10 +95,11 @@ body{
 .data{
     background-color: #D6C0B4;
     padding-bottom: 30px;
+    padding-left: 20%;
 }
 
 .data h6{
-    margin-left: 1%;
+    /* margin-left: 1%; */
     font-weight: 400;
     color: 32252C;
 }
@@ -113,6 +114,13 @@ body{
     .botao a{
         height: 300px;
         width: 300px;
+        left: 85%;
+    }
+}
+
+@media (max-width: 280px) {
+    .botao a {
+        font-size: 30px;
         left: 85%;
     }
 }
