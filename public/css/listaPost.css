@@ -63,11 +63,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 75%;
+    padding-bottom: 50px;
 }
 
 .miniatura {
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-bottom: 43px;
     padding-top: 45px;
     border-bottom: solid 3px #32252C;
     flex-direction: row;

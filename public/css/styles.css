@@ -35,7 +35,7 @@ body{
 .post h1{
     text-align: center;
     text-transform: uppercase;
-    padding-top: 20px;
+    padding-top: 30px;
     width: 400;
 }
 
@@ -94,6 +94,7 @@ body{
 
 .data{
     background-color: #D6C0B4;
+    padding-bottom: 30px;
 }
 
 .data h6{
