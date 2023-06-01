@@ -84,7 +84,7 @@ class PostController
         ];
 
         App::get('database')->insert('posts',$parameters);
-        header('location: /posts');
+        header('location: /posts/admin');
 
     }
 
@@ -109,7 +109,7 @@ class PostController
             'author' => $_POST['author'],
         ];
         App::get('database')->edit('posts',$_POST['id'],$parameters);
-        header('location: /posts');
+        header('location: /posts/admin');
 
     }
 

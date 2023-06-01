@@ -30,6 +30,18 @@
         </thead>
         <tbody>
           <?php foreach($posts as $post): ?>
+
+            <tr class="table-line animacao-linha">
+            <td><?php echo $post->id; ?></td>
+            <td class="texto"><?php echo $post->title; ?></td>
+            <td class="texto"><?php echo date('d/m/Y', strtotime($post->created_at)); ?></td>
+            <td class="option-button">
+              <button data-modal="modal-edita<?= $post->id?>" class="icon-button botao-modal"  title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
+              <button data-modal="modal-visu<?= $post->id?>" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
+              <button data-modal="modal-excluir<?= $post->id?>" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
+            </td>
+          </tr>
+
             <!-- Modal visualizar -->
     <div id="modal-visu<?= $post->id?>" class="modal modal-p">
       <!-- Conteudo Modal Visualizar -->
@@ -192,22 +204,12 @@
                 
             </div>
  
-          
-        
+            </form>
+          </section>
         </div>
   
 
-</div>
-<tr class="table-line animacao-linha">
-            <td><?php echo $post->id; ?></td>
-            <td class="texto"><?php echo $post->title; ?></td>
-            <td class="texto"><?php echo date('d/m/Y', strtotime($post->created_at)); ?></td>
-            <td class="option-button">
-              <button data-modal="modal-edita<?= $post->id?>" class="icon-button botao-modal"  title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
-              <button data-modal="modal-visu<?= $post->id?>" class="icon-button botao-modal" title="Visualizar" id="mybtnVisu"><i class="fa-solid fa-file"></i></button></a>
-              <button data-modal="modal-excluir<?= $post->id?>" class="icon-button botao-modal" title="Remover" id="mybtnDel"><i class="fa-solid fa-trash"></i></button></a>
-            </td>
-          </tr>
+<!-- </div> -->
           <?php endforeach; ?>
         </tbody>
       </table>
