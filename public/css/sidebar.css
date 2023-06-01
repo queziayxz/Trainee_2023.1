@@ -5,6 +5,7 @@
 .sidebar
 {
     background-color: #32252C;
+    z-index: 2;
 }
 
 .sidebar a{
@@ -13,6 +14,10 @@
 
 .sidebar a:hover{
     color: #91827a;
+}
+
+.navbar {
+  z-index: 2;
 }
 
 .border-bottom {

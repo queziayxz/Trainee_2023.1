@@ -52,7 +52,7 @@ h2 {
 #modal-excluir,
 #modal-visu {
     display: none; 
-   
+    z-index: 3;
     
   }
 
