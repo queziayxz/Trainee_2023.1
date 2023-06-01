@@ -15,6 +15,10 @@
     color: #91827a;
 }
 
+.border-bottom {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) #D6C0B4!important;
+}
+
 #wrapper {
     overflow-x: hidden;
   }
@@ -46,7 +50,7 @@
   }
   
   .list-group-item {
-    border: none;
+    border-bottom: 2px solid #D6C0B4;
     padding: 20px 30px;
   }
   
@@ -64,5 +68,11 @@
 
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
+  }
+}
+
+@media (max-width: 300px) {
+  div .px-4 {
+    padding-bottom: 0;
   }
 }
