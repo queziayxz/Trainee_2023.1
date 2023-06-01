@@ -13,7 +13,52 @@ class QueryBuilder
     {
         $this->pdo = $pdo;
     }
+    public function selectAll($table)
+    {
+        $sql = "select * from {$table}";
 
+        try {
+            $stat = $this->pdo->prepare($sql);
+
+            $stat->execute();
+
+            return $stat->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+    public function selectPost($id, $table)
+    {
+        $sql = sprintf("SELECT * FROM %s WHERE %s", $table, "id = $id");
+        
+        try {
+            $stat = $this->pdo->prepare($sql);
+
+            $stat->execute();
+
+            return $stat->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+
+
+    }
+    public function selectUltimosPosts($table)
+    {
+        $sql = sprintf("SELECT * FROM %s ORDER BY %s desc LIMIT %s", $table, 'id', "5");
+        
+        try {
+            $stat = $this->pdo->prepare($sql);
+
+            $stat->execute();
+
+            return $stat->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+
+
+    }
     public function insert($table,$parameters)
     {
         $sql = sprintf(
@@ -56,20 +101,5 @@ class QueryBuilder
         }
         // var_dump($sql);
     }
-
-    public function selectAll($table)
-    {
-        $sql = "select * from {$table}";
-
-        try {
-            $stat = $this->pdo->prepare($sql);
-
-            $stat->execute();
-
-            return $stat->fetchAll(PDO::FETCH_CLASS);
-        } catch (Exception $e) {
-            die($e->getMessage());
-        }
-    }
-
 }
+
