@@ -84,7 +84,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-td, tr {
+.table-box td, tr {
 	border: 1.6px solid #32252C;
     border-left: none;
     border-right: none;
@@ -215,15 +215,9 @@ td, tr {
 }
 
 @media (max-width: 319px) {
-.conteudo{
-    font-size: 10px;
-}
+
 .table-box tbody {
     font-size: 12px;
-}
-
-.texto {
-    width: 50px;
 }
 
 .nome-cabecalho {
@@ -241,19 +235,15 @@ td, tr {
     
 .add-button {
     font-size: 20px;
-    width: 80%;
+    width: 67%;
 }
 
 .table-box thead {
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .table-box tbody {
-    font-size: 10px;
-}
-
-.texto {
-    width: 45px;
+    font-size: 11px;
 }
 
 .icon-button {
