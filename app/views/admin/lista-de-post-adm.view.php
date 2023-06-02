@@ -51,7 +51,7 @@
             <div class="coluna-esquerd-item mb-3"></div>
             <h1><?php echo $post->title?></h1>
             <img
-              src="<?= $post->image?>"
+              src="/<?= $post->image?>"
               class="img"
               alt="imagem post"
             />
