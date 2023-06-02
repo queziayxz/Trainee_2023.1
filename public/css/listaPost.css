@@ -72,11 +72,13 @@ body {
     border-bottom: solid 3px #32252C;
     flex-direction: row;
     display: flex;
+    width: 100%;
 }
 
 .miniatura-text {
     display: block;
     margin-left: 20px;
+    width: 100%;
 }
 
 .miniatura-text h1 {

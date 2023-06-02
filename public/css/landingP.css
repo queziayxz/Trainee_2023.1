@@ -52,7 +52,7 @@ h2{
 
 }
 
-#posts{
+.posts{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,13 +62,13 @@ h2{
 }
 
 
-#pPost{
+.pPost{
     font-size: 1em;
     padding-bottom: 70px;
     padding-left: 20px;
 }
 
-#imgPost img{
+.imgPost img{
     width: 350px;
     border-radius: 5px;
 }
@@ -183,15 +183,15 @@ h2{
         padding-top: 20px;
     }
 
-    #posts{
+    .posts{
         flex-wrap: wrap;
         text-align: left;
     }
-    #imgPost img{
+    .imgPost img{
         width: 300px;
     }
 
-    #pPosts{  
+    .pPost{  
         width: 100%;
         padding-left: 0px;
     }
@@ -225,7 +225,7 @@ h2{
 }
 
 @media(max-width:280px){
-    #imgPost img{
+    .imgPost img{
         width: 100%;
     }
 
