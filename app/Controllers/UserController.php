@@ -28,7 +28,15 @@ class UserController
 
     public function create()
     {
- 
+        $parameters = [
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'password' => $_POST['password'],
+        ];
+        //var_dump($parameters);
+        App::get('database')->insert('users', $parameters);
+
+        header('Location: /usuarios/admin');
     }
 
     public function store()

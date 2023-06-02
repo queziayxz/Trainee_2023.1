@@ -16,7 +16,3 @@ $router->post('usuarios/create', 'UserController@create');
 $router->post('usuarios/delete','UserController@delete');
 $router->post('usuarios/update','UserController@update');
 ?>
-
-
-
-?>
