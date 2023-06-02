@@ -171,7 +171,7 @@
                   <label for="exampleFormControlInput1" class="form-label">Selecionar Imagem:</label>
                   <br>
                   <label for="arquivo" id="img">Enviar Arquivo</label>
-                  <input class="form-control" type="file" name="image" id="arquivo" value="<?php echo $post->image;?>">
+                  <input class="form-control" type="file" name="image" id="arquivo" value="<?php echo substr($post->image, 11,strlen($post->image));?>">
                   <br>
                 </div>
                 <br>
