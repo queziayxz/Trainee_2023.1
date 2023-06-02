@@ -89,66 +89,7 @@
 
     <!-- Modal Adicionar -->
 
-    <div id="modal-add" class="modal3 modal-p">
-      <!-- Conteudo Modal Adicionar -->  
-        <section class="area-posts">
-            <form enctype="multipart/form-data" action="/posts/create" method="POST" class="formulario" >
-              <div class="coluna-esquerda">
-                <h1>Adicionar Post</h1>
-                <div class="coluna-esquerda-item mb-3" id="titulo">
-                  <br>
-                  <label for="exampleFormControlInput1" class="form-label">Título:</label>
-                  <br>
-                  <input class="form-control" id="exampleFormControlInput1" placeholder="" name='title'>
-                </div>
-        
-                <div class="coluna-esquerda-item mb-3">
-                  <br>
-                  <label for="exampleFormControlInput1" class="form-label">Selecionar Imagem:</label>
-                  <br>
-                  <label for="arquivo" id="img">Enviar Arquivo</label>
-                  <input class="form-control" type="file" name="image" id="arquivo">
-        
-                </div>
-        
-        
-                <div class="coluna-esquerda-item mb-3 data2" >
-                  <!-- <form method="post"> -->
-        
-                    <div class="form-group">
-                      <br>
-                      <label class="control-label data2" for="date">Data:</label>
-                      <br>
-                      <input type="date" id="txtDate" name="created_at" class="meu-input">
-        
-                    </div>
-        
-                  
-                </div>
-        
-                <div class="coluna-esquerda-item mb-3 conteudo2">
-                  <br>
-                  <label for="exampleFormControlInput1" class="form-label">Conteúdo:</label>
-                  <br>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="content">
-                </div>
-                <input type="hidden" name="author" value="1">
-
-                <div class="botoes_excluir_cancelar">
-                  <button type="button" class="btn botao-modal fechar-modal">Voltar</button>
-                  <button type="submit" class="btn botao-modal fechar-modal">Publicar</button>
-                </div>
-              <!-- </form> -->
-        
-                
-            </div>
-            
-          </form>
-        </section>
-    </div>
-       
-
-    <!-- Modal Editar -->
+        <!-- Modal Editar -->
 
 
   <div  id="modal-edita<?php echo $post->id;?>" class="modal4 modal-p">
@@ -212,20 +153,77 @@
 <!-- </div> -->
           <?php endforeach; ?>
         </tbody>
+
       </table>
     </div>
     
     
     
-    
-    
-    
-    
-    
+    <div id="modal-add" class="modal3 modal-p">
+      <!-- Conteudo Modal Adicionar -->  
+        <section class="area-posts">
+            <form enctype="multipart/form-data" action="/posts/create" method="POST" class="formulario" >
+              <div class="coluna-esquerda">
+                <h1>Adicionar Post</h1>
+                <div class="coluna-esquerda-item mb-3" id="titulo">
+                  <br>
+                  <label for="exampleFormControlInput1" class="form-label">Título:</label>
+                  <br>
+                  <input class="form-control" id="exampleFormControlInput1" placeholder="" name='title'>
+                </div>
+        
+                <div class="coluna-esquerda-item mb-3">
+                  <br>
+                  <label for="exampleFormControlInput1" class="form-label">Selecionar Imagem:</label>
+                  <br>
+                  <label for="arquivo" id="img">Enviar Arquivo</label>
+                  <input class="form-control" type="file" name="image" id="arquivo">
+        
+                </div>
+        
+        
+                <div class="coluna-esquerda-item mb-3 data2" >
+                  <!-- <form method="post"> -->
+        
+                    <div class="form-group">
+                      <br>
+                      <label class="control-label data2" for="date">Data:</label>
+                      <br>
+                      <input type="date" id="txtDate" name="created_at" class="meu-input">
+        
+                    </div>
+        
+                  
+                </div>
+        
+                <div class="coluna-esquerda-item mb-3 conteudo2">
+                  <br>
+                  <label for="exampleFormControlInput1" class="form-label">Conteúdo:</label>
+                  <br>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="content">
+                </div>
+                <input type="hidden" name="author" value="1">
+
+                <div class="botoes_excluir_cancelar">
+                  <button type="button" class="btn botao-modal fechar-modal">Voltar</button>
+                  <button type="submit" class="btn botao-modal fechar-modal">Publicar</button>
+                </div>
+              <!-- </form> -->
+        
+                
+            </div>
+          </form>
+        </section>
+    </div>
+       
+
+
   </body>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
               integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
               crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="../../../public/js/modals.js"></script>
     <script src="https://kit.fontawesome.com/f9c72cff41.js" crossorigin="anonymous"></script>
 </html>
