@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../../public/css/form_posts_styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="/public/css/sidebar.css">
     <link rel="stylesheet" href="../../../public/css/listaPostAdmin.css" />
-    <link rel="stylesheet" href="../../../public/css/form_posts_styles.css" />
     <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg" />
 
     <title>Lista de Posts - Radiator Springs Gazette</title>
@@ -199,8 +199,8 @@
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div class="botoes_excluir_cancelar">
-                  <button type="button" class="btn botao-modal fechar-modal">Voltar</button>
-                  <button type="button" class="btn botao-modal fechar-modal">Publicar</button>
+                  <button type="button" class="btn1 botao-modal fechar-modal">Voltar</button>
+                  <button type="button" class="btn1 botao-modal fechar-modal">Publicar</button>
                 </div>
               </form>
         
