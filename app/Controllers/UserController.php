@@ -49,7 +49,7 @@ class UserController
         //var_dump($parameters);
         App::get('database')->insert('users', $parameters);
 
-        header('Location: /usuarios');
+        header('Location: /usuarios/admin');
     }
 
     public function store()
