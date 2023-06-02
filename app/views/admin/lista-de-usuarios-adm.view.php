@@ -55,11 +55,11 @@
                                         </div>
                                         <div class="form-bar">
                                             <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="fulano@gmail.com" readonly>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->email; ?>" readonly>
                                         </div>
                                         <div class="form-bar">
                                             <label for="senha">Senha:</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="fluminense123" readonly>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->password; ?>" readonly>
                                         </div>
                                     </div>
                                     <div class="botoes_excluir_cancelar">
@@ -126,33 +126,33 @@
         <div class = "main">
             <div id="modal-add" class = "modal-addition modal-p">
                 <div class = "area area-visualizar">
-                    <form>
-                        <div class = texto>
+                    <form action="/usuarios/create" method="POST">
+                        <div class = "texto">
                             <h1>Adicionar Usuário</h1>
                         </div>
                         <div class = "campos">
                             <div class = "form-bar">
                                 <label for="nome">Nome:</label>
-                                <input  class="form-control" id="exampleFormControlInput1">
+                                <input  class="form-control" id="exampleFormControlInput1" name='name'>
                             </div>
                             <div class = "form-bar">
                                 <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" name='email'>
                             </div>
         
                             <div class = "form-bar">
                                 <label for="senha">Senha:</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput1">
+                                <input type="password" class="form-control" id="exampleFormControlInput1" name='password'>
                             </div>
                             <div class="botoes_excluir_cancelar">
                                 <button type="button" class="fechar-modal botao-modal btn2">Voltar</button>
-                                <button type="button" class="fechar-modal botao-modal btn2">Adicionar</button>
+                                <button type="submit" class="fechar-modal botao-modal btn2">Adicionar</button>
                             </div>
                         </div>
                   </form>
                 </div>
             </div>
-
+        </div>
 
     </body>
     

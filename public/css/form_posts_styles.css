@@ -101,7 +101,7 @@ h2 {
   height: 50%;
 }
 .coluna-esquerd {
-  width: 70%;
+  width: 100%;
   height: 100%;
 }
 .titulo {
@@ -172,11 +172,11 @@ input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-.area-posts form {
+/* .area-posts form {
   display: flex;
   width: 100%;
   align-items: center;
-}
+} */
 #exampleFormControlTextarea1 {
   height: 100%;
   width: 100%;
@@ -193,12 +193,12 @@ input::placeholder {
   border-radius: 8px;
 }
 input[type="file"] {
-  display: none;
+  display: block;
 }
 #img {
   padding-top: 0px;
   height: 40px;
-  width: 97%;
+  width: 85%;
   background-color: #32252c;
   color: #d6c0b4;
   text-transform: uppercase;
@@ -211,6 +211,8 @@ input[type="file"] {
   font-size: 14px;
   padding-left: 13px;
   font-family: "Montserrat", sans-serif;
+  position: absolute;
+  pointer-events: none;
 }
 #exampleFormControlTextarea1::placeholder {
   padding-left: 10px;
@@ -258,12 +260,12 @@ input[type="file"] {
   align-items: center;
 
 }
-.area-excluir form {
+/* .area-excluir form {
   display: flex;
   width: 100%;
   align-items: flex-start;
   justify-content: center;
-}
+} */
 .area-excluir input {
   margin-top: 10px;
   height: 45px;
@@ -299,6 +301,7 @@ input[type="file"] {
   left: 50%;
   position: fixed;
   transform: translate(-50%, -50%);
+  overflow-y: auto;
 
 }
 .area-fundo-vizualizar {
@@ -310,12 +313,12 @@ input[type="file"] {
   align-items: center;
 }
 
-.area-vizualizar form {
+/* .area-vizualizar form {
   display: flex;
   width: 100%;
   justify-content: center;
   margin: 0 auto;
-}
+} */
 .area-vizualizar input {
   margin-top: 10px;
   height: 45px;
@@ -326,12 +329,13 @@ input[type="file"] {
   outline: none;
   border-radius: 8px;
   font-family: "Montserrat", sans-serif;
+  
 
 }
-.formulario-vizualizar {
+/* .formulario-vizualizar {
   display: flex;
   width: 50%;
-}
+} */
 
 /* Botoes */
 
@@ -453,6 +457,7 @@ h1{
   border-radius: 8px;
   box-shadow: 0px 10px 25px black;
   margin: 0 auto;
+  overflow-y: auto;
 
 }
 .conteudoo {

@@ -24,7 +24,9 @@ const toggleModal = (id) => {
     aberto.style.display = 'none';
   } else {
     const modalAberto = document.getElementById(id);
+    console.log(modalAberto);
     modalAberto.style.display = 'block';
+    
   }
   
 }

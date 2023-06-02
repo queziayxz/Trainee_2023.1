@@ -112,7 +112,7 @@ h4{
 }
 
 .area1 {
-    height: 36%;
+    height: 44%;
     width: 35%;
 }
 
@@ -185,6 +185,8 @@ h4{
     justify-content: flex-end;
     align-items: center;
     font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    
 }
 
 .close{
