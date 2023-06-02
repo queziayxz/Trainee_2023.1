@@ -50,13 +50,13 @@ class UserController
         ];
         app::get('database')->edit('users', $_POST['id'], $parameters);
 
-        header('Location: /usuarios');
+        header('Location: /usuarios/admin');
 
     }
 
     public function delete()
     {
         App::get('database')->delete('users', $_POST['id']);
-        header('Location: /usuarios');
+        header('Location: /usuarios/admin');
     }
 }
