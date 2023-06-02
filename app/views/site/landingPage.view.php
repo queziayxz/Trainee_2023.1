@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
     </style>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -48,23 +48,23 @@
       <?php foreach($posts as $post): ?>
       <section class="posts">
         <div class="imgPost">
-          <img src="<?php echo $post->image?>" alt="Imagem do post" />
+          <img src="/public/img/postt.jpg" alt="Imagem do post" />
         </div>
 
         <div class="pPost">
           <h2><?php echo $post->title?></h2>
           <p>
-          <?php echo substr($post->content, 0, 120) . "...";?>
+          <?php echo substr($post->content, 0, 200) . "...";?>
           </p>
 
-        </div>
-
-        <div class="button">
+          <div class="button">
       <form method="post" action="posts/postIndividual">
           <input type="hidden" name="id" value="<?php echo $post->id?>">
           <a href=""><button type="submit" class="ler" title="Ler Post Completo">Ler Post Completo</button></a>  
       </form>
   </div>
+
+        </div>
 
       </section>
 
