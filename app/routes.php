@@ -2,7 +2,7 @@
 
 
 use App\Controllers\PostController;
-use AppController\UserController;
+use App\Controllers\UserController;
 
 $router->get('posts/admin', 'PostController@index');
 $router->get('posts', 'PostController@listaPosts');

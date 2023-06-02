@@ -23,15 +23,7 @@ class UserController
 
     public function viewr()
     {
-        $usuarios = App::get('database')->selectAll('users');
-
-        $tables = [
-            'usuarios' => $usuarios,
-        ];
-
-        $users = $tables['usuarios'];
-
-        return view('admin/lista-de-usuarios-adm', compact('users'));
+        
     }
 
     public function show()

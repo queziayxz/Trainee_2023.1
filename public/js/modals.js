@@ -21,6 +21,7 @@ const toggleModal = (id) => {
     const aberto = modalAberto();
     aberto.style.display = 'none';
   } else {
+    console.log(document.getElementById(id.toString));
     const modalAberto = document.getElementById(id);
     modalAberto.style.display = 'block';
   }
