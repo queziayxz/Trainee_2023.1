@@ -101,7 +101,7 @@ form{
 
 .area, .area1{
         background-color: #D6C0B4;
-        height: 70%;
+        height: 68%;
         width: 50%;
         border-radius: 8px;
         position: absolute;
@@ -111,13 +111,13 @@ form{
         padding: 0 50px;
 }
 
-.area1 {
-    height: 36%;
-    width: 35%;
+.area-visualizar {
+    height: 58%;
 }
 
-.area-visualizar {
-    height: 61%;
+.area1 {
+    height: 37%;
+    width: 35%;
 }
 
 .form-bar{
@@ -261,12 +261,12 @@ form{
     }
 
    @media (max-width: 1150px){
+    .area-visualizar {
+        height: 56%;
+    }
+    
         .area1{
             height: 47%;
-        }
-
-        .area-visualizar {
-            height: 63%;
         }
    }
 
