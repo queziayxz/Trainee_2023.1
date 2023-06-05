@@ -18,10 +18,11 @@
     <body>
         <div class="principal">
             <div class="search-box">
-                <input class="search-text" type="text" placeholder="Pesquisar">
-                <a class="search-button" href="#">
-                    <ion-icon name="search"></ion-icon>
-                </a>
+               <form action="" method="GET">
+                <!-- <label for="busca"  placeholder="Buscar por titulo do post"></label> -->
+                <input type="text" name="buscapost" id="buscapost" placeholder="Nome do Post">
+                <button type="submit">Buscar</button>
+               </form>
             </div>
 
             <div class="main">

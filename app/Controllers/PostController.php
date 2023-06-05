@@ -65,7 +65,7 @@ class PostController
     public function show()
     {
         $pesquisa = $mysqli->real_escape_string($_GET['buscapost']);
-        App::get('database')->busca($pesquisa);
+        App::get('database')->busca($pesquisa); 
     }
 
     public function create()
