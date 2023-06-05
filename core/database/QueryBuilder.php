@@ -118,5 +118,19 @@ class QueryBuilder
         }
     }
 
+    public function busca($pesquisa){
+        $sql = "SELECT * FROM posts WHERE title LIKE '%$pesquisa%'";
+        $sql_query = $mysql->query($sql) or die("Não encontrado! " . $mysql->error);
+
+        if($sql_query->num_rows == 0){
+            
+        }
+        else{
+            while($dados = $sql_query->fetch_assoc()){
+                
+            }
+        }
+    }
+
 }
 
