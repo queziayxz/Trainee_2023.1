@@ -77,7 +77,7 @@ body{
 }
 
 .botao a {position: fixed;
-    left: 90%;
+    left: 88%;
     right: -30%;
     top: 85%; 
     color: #32252C;
@@ -108,7 +108,7 @@ body{
     .botao a{
         height: 300px;
         width: 300px;
-        left: 85%;
+        left: 89%;
     }
 }
 
@@ -124,6 +124,25 @@ body{
     .data{
         padding-left: 10%;
     }
+
+    .botao a{
+        left: 92.5%;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .botao a{
+        font-size: 25px;
+        left: 92%;
+    }
+}
+
+@media (max-width: 315px){
+    .botao a{
+        font-size: 20px;
+        left: 92%;
+    }
 }
 
 @media (max-width: 280px) {
@@ -132,7 +151,6 @@ body{
     }
 
     .botao a {
-        font-size: 30px;
-        left: 85%;
+        left: 91.5%;
     }
 }
