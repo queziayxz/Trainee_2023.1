@@ -36,7 +36,7 @@ body{
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
-    width: 400;
+    
 }
 
 .post h3{
@@ -62,7 +62,7 @@ body{
 
 .post-img img{
     width: 60%;
-    height: 80%; 
+    border-radius: 5px;
 }
 
 .descricao{
@@ -73,8 +73,7 @@ body{
     color: #32252C;
     text-align: justify;
     font-weight: 400;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 20px 20%;
 }
 
 .botao a {position: fixed;
@@ -108,7 +107,7 @@ body{
 
 
     .descricao p {
-        text-align: left;
+        
     }
 
     .botao a{
@@ -118,7 +117,25 @@ body{
     }
 }
 
+@media (max-width: 700px) {
+    .post-img img{
+        width: 80%;
+    }
+
+    .descricao p {
+        margin: 15px 10%;
+    }
+
+    .data{
+        padding-left: 10%;
+    }
+}
+
 @media (max-width: 280px) {
+    .descricao p {
+        font-size: 13px;
+    }
+
     .botao a {
         font-size: 30px;
         left: 85%;

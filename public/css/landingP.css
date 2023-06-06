@@ -57,11 +57,10 @@ h2{
 
 .posts{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 80%;
     margin: auto;
-   
 }
 
 
@@ -69,6 +68,8 @@ h2{
     font-size: 1em;
     padding-bottom: 70px;
     padding-left: 20px;
+    overflow-wrap: break-word;
+    width: 100%;
 }
 
 .imgPost img{
@@ -195,6 +196,7 @@ h2{
     .posts{
         flex-wrap: wrap;
         text-align: left;
+        justify-content: center;
     }
     .imgPost img{
         width: 300px;
