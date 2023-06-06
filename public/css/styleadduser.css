@@ -262,15 +262,15 @@ form{
 
    @media (max-width: 1150px){
     .area-visualizar {
-        height: 56%;
+        height: 62%;
     }
     
         .area1{
-            height: 47%;
+            height: 43%;
         }
    }
 
-    @media screen and (max-width: 912px) {
+    @media screen and (max-width: 921px) {
 
     .area{
         height: 480px;
@@ -278,7 +278,7 @@ form{
     }
 
     .area1 {
-        height: 46%;
+        height: 42%;
     }
 
     .area-visualizar {
@@ -318,9 +318,15 @@ form{
 
 }
 
-@media (max-width: 848px) {
+@media (max-width: 809px) {
     .area1{
         height: 48%;
+    }
+}
+
+@media (max-width: 791px) {
+    .area1{
+        height: 50%;
     }
 }
 
@@ -405,7 +411,7 @@ form{
         }
 
         .area1 {
-            height: 42%;
+            height: 39%;
         }
 
         .area-visualizar {
@@ -505,6 +511,13 @@ form{
         
     }
 
+    @media screen and (max-width: 305px){
+        .area{
+            height: 51%;
+            padding: 0 10px;
+        }
+    }
+
     @media screen and (max-width: 280px){
         .area{
             height: 52%;
@@ -512,7 +525,7 @@ form{
         }
 
         .area1{
-            height: 36%;
+            height: 33%;
         }
 
         .area-visualizar {

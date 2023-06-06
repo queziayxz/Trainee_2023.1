@@ -107,7 +107,7 @@
                                         <h1 class = "excluir">Excluir Usuário</h1>
                                     </div>
                                         <h4>
-                                            Tem certeza que deseja excluir o usuário Fulano da Silva?
+                                            Tem certeza que deseja excluir este usuário?
                                         </h4>
                                             <div class="botoes_excluir_cancelar">
                                                 <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>

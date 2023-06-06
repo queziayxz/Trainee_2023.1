@@ -21,7 +21,7 @@
     <div class="table-box">
 
       <?php require('app/views/includes/SideBar.php'); ?>
-      
+
       <div>
         <h1 class="page-title">Lista de Posts</h1>
         <button  data-modal="modal-add" class="add-button botao-modal" title="Adicionar novo post" id="mybtnAdd"><i class="fa-solid fa-file-circle-plus"></i> Adicionar Post</button>
@@ -140,7 +140,7 @@
         </div>
           <tr class="table-line animacao-linha">
             <td><?php echo $post->id; ?></td>
-            <td class="texto"><?php echo $post->title; ?></td>
+            <td class="texto title-td" style="border-bottom: none;"><?php echo $post->title; ?></td>
             <td class="texto"><?php echo date('d/m/Y', strtotime($post->created_at)); ?></td>
             <td class="option-button">
               <button data-modal="modal-edita<?= $post->id?>" class="icon-button botao-modal"  title="Editar" id="mybtnEdita"><i class="fa-solid fa-pen-to-square"></i></button></a>
