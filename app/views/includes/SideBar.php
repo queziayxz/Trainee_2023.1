@@ -1,4 +1,4 @@
-<div class="d-flex" style="height: 100%; width: 100%;" id="wrapper">
+<div class="d-flex" id="wrapper">
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar-wrapper">
         <div class="sidebar-heading text-center py-4 fs-4 text-uppercase border-bottom">Início</div>

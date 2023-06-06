@@ -18,9 +18,10 @@
 
   <body>
 
-    <?php require('app/views/includes/SideBar.php'); ?>
-
     <div class="table-box">
+
+      <?php require('app/views/includes/SideBar.php'); ?>
+      
       <div>
         <h1 class="page-title">Lista de Posts</h1>
         <button  data-modal="modal-add" class="add-button botao-modal" title="Adicionar novo post" id="mybtnAdd"><i class="fa-solid fa-file-circle-plus"></i> Adicionar Post</button>
