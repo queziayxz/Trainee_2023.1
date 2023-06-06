@@ -48,7 +48,7 @@
       <?php foreach($posts as $post): ?>
       <section class="posts">
         <div class="imgPost">
-          <img src="/public/img/postt.jpg" alt="Imagem do post" />
+          <img src="/<?= $post->image?>" alt="Imagem do post" />
         </div>
 
         <div class="pPost">
