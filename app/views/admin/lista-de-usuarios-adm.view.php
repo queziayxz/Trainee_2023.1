@@ -5,25 +5,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel="stylesheet" href="/public/css/sidebar.css">
         <link rel="stylesheet" href="../../../public/css/listaUsuariosAdmin.css">
-        <link rel="stylesheet" href="../../../public/css/styleadduser.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
-        <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
-
+        
         <title>Lista de Usuários - Radiator Springs Gazette</title>
+        <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
+        
+        <link rel="stylesheet" href="../../../public/css/styleadduser.css">
     </head>
 
     <body>
-
         <div class="table-box">
-
             <?php require('app/views/includes/SideBar.php'); ?>
-
-            <div class="titulo-add">
+            <div>
                 <h1 class="page-title">Lista de Usuários</h1>
                 <button data-modal="modal-add" class="add-button botao-modal"  title="Adicionar novo usuário"><i class="fa-solid fa-user-plus"></i> Adicionar Usuário</button>
             </div>
@@ -61,11 +57,11 @@
                                         </div>
                                         <div class="form-bar">
                                             <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="fulano@gmail.com" readonly>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->email; ?>" readonly>
                                         </div>
                                         <div class="form-bar">
                                             <label for="senha">Senha:</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="fluminense123" readonly>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->password; ?>" readonly>
                                         </div>
                                     </div>
                                     <div class="botoes_excluir_cancelar">
@@ -77,44 +73,50 @@
                             <div id="modal-edit<?php echo $user->id ?>" class="modal-edition modal-p">
 
                                 <div class="area area-visualizar">
+                                  <form action="/usuarios/update" method="POST">               
                                     <div class="texto">
                                         <h1>Editar Usuário</h1>
                                     </div>
                                     <div class="campos">
                                         <div class="form-bar">
                                             <label for="nome">Nome:</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $user->name; ?>">
+                                            <input type="text" name="name" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->name ?>">
                                         </div>
                                         <div class="form-bar">
                                             <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" value="<?= $user->email; ?>">
+                                            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->email ?>">
                                         </div>
                                         <div class="form-bar">
                                             <label for="senha">Senha:</label>
-                                            <input type="password" class="form-control" id="exampleFormControlInput1" value="<?= $user->password; ?>">
+                                            <input type="password" name="password" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->password ?>">
                                         </div>
+                                        <input type="hidden" name="id" value="<?= $user->id ?>">
                                         <div class="botoes_excluir_cancelar">
                                             <button type="button" class="fechar-modal botao-modal btn2">Cancelar</button>
-                                            <button type="button" class="fechar-modal botao-modal btn2">Confirmar</button>
+                                            <button type="submit" class="fechar-modal botao-modal btn2">Confirmar</button>
                                         </div>
                                     </div>
+                                </form>   
                                 </div>
                             </div>
 
                             <div id="modalExcluirUser<?php echo $user->id ?>" class="modal-excluir-user modal-p">
                                 <div class="area area1">
+                                  <form action="/usuarios/delete" method="POST">  
                                     <div class="texto">
                                         <h1 class = "excluir">Excluir Usuário</h1>
                                     </div>
                                         <h4>
-                                            Tem certeza que deseja excluir este usuário?
+                                            Tem certeza que deseja excluir o usuário Fulano da Silva?
                                         </h4>
+                                        <input type="hidden" name="id" value="<?= $user->id ?>">
                                             <div class="botoes_excluir_cancelar">
                                                 <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>
-                                                <button type="button" class="btn2 botao-modal fechar-modal">Excluir</button>
+                                                <button type="submit" class="btn2 botao-modal fechar-modal">Excluir</button>
                                             </div>
                                         </div>
                                     </div>
+                                </form>    
                                 </div>
                             </div>
 
@@ -126,27 +128,27 @@
         <div class = "main">
             <div id="modal-add" class = "modal-addition modal-p">
                 <div class = "area area-visualizar">
-                    <form>
-                        <div class = texto>
+                    <form action="/usuarios/create" method="POST">
+                        <div class = "texto">
                             <h1>Adicionar Usuário</h1>
                         </div>
                         <div class = "campos">
                             <div class = "form-bar">
                                 <label for="nome">Nome:</label>
-                                <input  class="form-control" id="exampleFormControlInput1">
+                                <input  class="form-control" id="exampleFormControlInput1" name='name'>
                             </div>
                             <div class = "form-bar">
                                 <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" name='email'>
                             </div>
         
                             <div class = "form-bar">
                                 <label for="senha">Senha:</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput1">
+                                <input type="password" class="form-control" id="exampleFormControlInput1" name='password'>
                             </div>
                             <div class="botoes_excluir_cancelar">
                                 <button type="button" class="fechar-modal botao-modal btn2">Voltar</button>
-                                <button type="button" class="fechar-modal botao-modal btn2">Adicionar</button>
+                                <button type="submit" class="fechar-modal botao-modal btn2">Adicionar</button>
                             </div>
                         </div>
                   </form>

@@ -20,6 +20,7 @@ class UserController
         return view('admin/lista-de-usuarios-adm', compact('users'));
     }
 
+
     public function show()
     {
 
@@ -27,7 +28,15 @@ class UserController
 
     public function create()
     {
- 
+        $parameters = [
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'password' => $_POST['password'],
+        ];
+        //var_dump($parameters);
+        App::get('database')->insert('users', $parameters);
+
+        header('Location: /usuarios/admin');
     }
 
     public function store()
@@ -42,11 +51,20 @@ class UserController
 
     public function update()
     {
-        
+        $parameters = [
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'password' => $_POST['password'],
+        ];
+        app::get('database')->edit('users', $_POST['id'], $parameters);
+
+        header('Location: /usuarios/admin');
+
     }
 
     public function delete()
     {
- 
+        App::get('database')->delete('users', $_POST['id']);
+        header('Location: /usuarios/admin');
     }
 }

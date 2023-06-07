@@ -49,7 +49,8 @@ class PostController
 
     public function landingPage()
     {
-        $postagens = App::get('database')->selectAll('posts');
+       
+        $postagens = App::get('database')->selectUltimosPosts('posts');
 
         $tables = [
             'post' => $postagens,
@@ -67,6 +68,22 @@ class PostController
 
     public function create()
     {
+        $arquivo = $_FILES['image']['name'];
+        $novoNome = uniqid();
+        $pasta = 'public/img/';
+        $extencao = strtolower(pathinfo($arquivo, PATHINFO_EXTENSION));
+        $deuCerto = move_uploaded_file($_FILES['image']['tmp_name'], $pasta . $novoNome . "." . $extencao);
+
+        $parameters = [
+            'title' => $_POST['title'],
+            'image' => $pasta . $novoNome . "." . $extencao,
+            'created_at' => $_POST['created_at'],
+            'content' => $_POST['content'],
+            'author' => $_POST['author'],
+        ];
+
+        App::get('database')->insert('posts',$parameters);
+        header('location: /posts/admin');
 
     }
 
@@ -77,6 +94,34 @@ class PostController
 
     public function edit()
     {
+        if($_FILES['image']['name'] === ''){
+            $parameters = [
+                'title' => $_POST['title'],
+                // 'image' =>  $pasta . $novoNome . "." . $extencao,
+                'created_at' => $_POST['created_at'],
+                'content' => $_POST['content'],
+                'author' => $_POST['author'],
+            ];
+            App::get('database')->edit('posts',$_POST['id'],$parameters);
+            header('location: /posts/admin');
+        }
+        else{
+            $arquivo = $_FILES['image']['name'];
+            $novoNome = uniqid();
+            $pasta = 'public/img/';
+            $extencao = strtolower(pathinfo($arquivo, PATHINFO_EXTENSION));
+            $deuCerto = move_uploaded_file($_FILES['image']['tmp_name'], $pasta . $novoNome . "." . $extencao);
+    
+            $parameters = [
+                'title' => $_POST['title'],
+                'image' =>  $pasta . $novoNome . "." . $extencao,
+                'created_at' => $_POST['created_at'],
+                'content' => $_POST['content'],
+                'author' => $_POST['author'],
+            ];
+            App::get('database')->edit('posts',$_POST['id'],$parameters);
+            header('location: /posts/admin');
+        }
 
     }
 

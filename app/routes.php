@@ -3,14 +3,19 @@
 use App\Controllers\PostController;
 use App\Controllers\UserController;
 
-// Rotas do Adm
-$router->get('usuarios/admin', 'UserController@index'); // Index do usuario
-$router->get('posts/admin', 'PostController@index'); // Index do post
-$router->post('posts/delete', 'PostController@delete'); // Deletar post
+use App\Controllers\PostController;
+use App\Controllers\UserController;
 
-// Rotas do usuario
-$router->get('home', 'PostController@landingPage'); // Landing Page
-$router->get('posts', 'PostController@listaPosts'); // Lista de posts do usuario
-$router->post('posts/postIndividual', 'PostController@postIndividual'); // Post individual
+$router->get('posts/admin', 'PostController@index');
+$router->get('posts', 'PostController@listaPosts');
+$router->post('posts/postIndividual', 'PostController@postIndividual');
+$router->get('home', 'PostController@landingPage');
+$router ->post('posts/create', 'PostController@create');
+$router ->post('posts/edit', 'PostController@edit');
+$router->post('posts/delete', 'PostController@delete');
 
+$router->get('usuarios/admin', 'UserController@index');
+$router->post('usuarios/create', 'UserController@create');
+$router->post('usuarios/delete','UserController@delete');
+$router->post('usuarios/update','UserController@update');
 ?>

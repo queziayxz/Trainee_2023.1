@@ -191,12 +191,12 @@ input::placeholder {
   border-radius: 8px;
 }
 input[type="file"] {
-  display: none;
+  display: block;
 }
 #img {
   padding-top: 0px;
   height: 40px;
-  width: 97%;
+  width: 85%;
   background-color: #32252c;
   color: #d6c0b4;
   text-transform: uppercase;
@@ -209,6 +209,8 @@ input[type="file"] {
   font-size: 14px;
   padding-left: 13px;
   font-family: "Montserrat", sans-serif;
+  position: absolute;
+  pointer-events: none;
 }
 #exampleFormControlTextarea1::placeholder {
   padding-left: 10px;
