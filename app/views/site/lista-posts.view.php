@@ -18,12 +18,11 @@
     <body>
         <div class="principal">
             <div class="search-box">
-               <form action="" method="GET">
-                <!-- <label for="busca"  placeholder="Buscar por titulo do post"></label> -->
-                <input type="text" name="buscapost" id="buscapost" placeholder="Nome do Post">
-                <button type="submit">Buscar</button>
-               </form>
-            </div>
+            <form action="posts/search" method="GET">
+            <input type="text" name="buscapost" id="buscapost" placeholder="Nome do Post">
+            <button type="submit"><ion-icon name="search"></ion-icon></button>
+            </form>
+        </div>
 
             <div class="main">
             <?php foreach($posts as $post): ?>

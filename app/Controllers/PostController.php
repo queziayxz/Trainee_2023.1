@@ -64,15 +64,10 @@ class PostController
 
     public function show()
     {
-        $parameters = [
-            'title' => $_GET['title'],
-            'image' => $pasta . $novoNome . "." . $extencao,
-            'created_at' => $_GET['created_at'],
-            'content' => $_GET['content'],
-            'author' => $_GET['author'],
-        ];
-        $pesquisa = $mysqli->real_escape_string($_GET['buscapost']);
-        App::get('database')->busca($pesquisa,$parameters); 
+       
+        $pesquisa = filter_input(INPUT_GET,'buscapost');
+        $posts = App::get('database')->busca($pesquisa); 
+        return view("site/lista-posts",compact('posts'));
     }
 
     public function create()

@@ -118,18 +118,21 @@ class QueryBuilder
         }
     }
 
-    public function busca($pesquisa,$parameters){
+    public function busca($pesquisa){
         $sql = "SELECT * FROM posts WHERE title LIKE '%$pesquisa%'";
-        $sql_query = $mysql->query($sql) or die("Não encontrado! " . $mysql->error);
 
-        if($sql_query->num_rows == 0){
-            
+        try {
+            $statement = $this->pdo->prepare($sql);
+            $statement->execute();
+
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            $resultado = json_encode($result);
+            return json_decode($resultado);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
         }
-        else{
-            while($dados = $sql_query->fetch_assoc()){
-                return "{$parameters} = :{$parameters}";
-            }
-        }
+       
     }
 
 }
