@@ -90,6 +90,10 @@ form{
     height: 100%;
 }
 
+.area1 form {
+    position: absolute;
+}
+
 .texto h1{
     margin-top: 20px;
     color: #32252C;
@@ -124,6 +128,10 @@ form{
     margin-bottom: 18px;
     text-align: left;
     width: 100%;
+}
+
+.form-edit {
+    position: absolute;
 }
 
 #exampleFormControlInput1{
@@ -411,7 +419,7 @@ form{
         }
 
         .area1 {
-            height: 39%;
+            height: 38%;
         }
 
         .area-visualizar {
@@ -432,6 +440,12 @@ form{
             font-size: 14px;
         }
         
+    }
+
+    @media (max-width: 440px) {
+        .area1 {
+            height: 39.5%;
+        }
     }
 
     @media screen and (max-width: 414px) {
@@ -480,7 +494,7 @@ form{
         }
 
         .area1 {
-            height: 33%;
+            height: 31.5%;
         }
 
         .area-visualizar {
@@ -510,11 +524,19 @@ form{
         }
         
     }
+    @media (max-width: 325px) {
+        .area1 {
+            height: 33%;
+        }
+    }
 
     @media screen and (max-width: 305px){
         .area{
             height: 51%;
             padding: 0 10px;
+        }
+        .area1 {
+            height: 31.5%;
         }
     }
 

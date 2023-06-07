@@ -71,9 +71,8 @@
                             </div>
 
                             <div id="modal-edit<?php echo $user->id ?>" class="modal-edition modal-p">
-
                                 <div class="area area-visualizar">
-                                  <form action="/usuarios/update" method="POST">               
+                                  <form class="form-edit" action="/usuarios/update" method="POST">               
                                     <div class="texto">
                                         <h1>Editar Usuário</h1>
                                     </div>
@@ -102,24 +101,21 @@
 
                             <div id="modalExcluirUser<?php echo $user->id ?>" class="modal-excluir-user modal-p">
                                 <div class="area area1">
-                                  <form action="/usuarios/delete" method="POST">  
+                                  <form action="/usuarios/delete" method="POST">
                                     <div class="texto">
                                         <h1 class = "excluir">Excluir Usuário</h1>
                                     </div>
                                         <h4>
-                                            Tem certeza que deseja excluir o usuário Fulano da Silva?
+                                            Tem certeza que deseja excluir este usuário?
                                         </h4>
                                         <input type="hidden" name="id" value="<?= $user->id ?>">
-                                            <div class="botoes_excluir_cancelar">
-                                                <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>
-                                                <button type="submit" class="btn2 botao-modal fechar-modal">Excluir</button>
-                                            </div>
+                                        <div class="botoes_excluir_cancelar">
+                                            <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>
+                                            <button type="submit" class="btn2 botao-modal fechar-modal">Excluir</button>
                                         </div>
-                                    </div>
-                                </form>    
+                                  </form>
                                 </div>
                             </div>
-
                     <?php endforeach; ?>
                 </tbody>
             </table>

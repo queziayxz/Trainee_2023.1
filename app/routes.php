@@ -3,9 +3,6 @@
 use App\Controllers\PostController;
 use App\Controllers\UserController;
 
-use App\Controllers\PostController;
-use App\Controllers\UserController;
-
 $router->get('posts/admin', 'PostController@index');
 $router->get('posts', 'PostController@listaPosts');
 $router->post('posts/postIndividual', 'PostController@postIndividual');
