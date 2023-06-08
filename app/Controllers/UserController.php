@@ -67,4 +67,30 @@ class UserController
         App::get('database')->delete('users', $_POST['id']);
         header('Location: /usuarios/admin');
     }
+    public function viewLogin()
+    {
+
+        return view('site/login');
+    }
+    public function loginFeito()
+    {
+
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+
+        $logged = App::get('database')->login('users', $email, $password);
+
+        if($logged){
+            header('Location: /home');
+            
+    
+        } else { 
+            $erro = [
+                'erro' => "Usuário ou senha incorretos",
+            ] ;
+            return view('site/login', $erro);
+        }
+
+    }
+   
 }

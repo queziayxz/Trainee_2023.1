@@ -15,4 +15,6 @@ $router->get('usuarios/admin', 'UserController@index');
 $router->post('usuarios/create', 'UserController@create');
 $router->post('usuarios/delete','UserController@delete');
 $router->post('usuarios/update','UserController@update');
+$router->get('login','UserController@viewLogin');
+$router->post('login','UserController@loginFeito');
 ?>
