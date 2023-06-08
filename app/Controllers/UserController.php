@@ -42,12 +42,11 @@ class UserController
         }
 
 
-        $usuarios = App::get('database')->selectAll('users');
+        $usuarios = App::get('database')->selectAll('users', $inicio, $itensPagina);
 
         $total_pages = ceil($rows_count/$itensPagina);
 
-        return view('site/landingPage',compact('users','page','total_pages'));
-
+        return view('admin/lista-de-usuarios-adm',compact('users','page','total_pages'));
 
     }
 
