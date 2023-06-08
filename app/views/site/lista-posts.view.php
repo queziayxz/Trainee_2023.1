@@ -44,6 +44,9 @@
                     </div>
                 </div>
             <?php endforeach; ?>
+
+            <?php require('app/views/includes/Paginacao.php'); ?>
+
             </div>
         </div>
 

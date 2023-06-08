@@ -119,6 +119,9 @@
                     <?php endforeach; ?>
                 </tbody>
             </table>
+
+            <?php require('app/views/includes/Paginacao.php'); ?>
+
         </div>
 
         <div class = "main">

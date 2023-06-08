@@ -161,6 +161,9 @@
         </tbody>
 
       </table>
+
+      <?php require('app/views/includes/Paginacao.php'); ?>
+
     </div>
     
     
