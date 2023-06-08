@@ -118,5 +118,22 @@ class QueryBuilder
         }
     }
 
+    public function countAll($table)
+    {
+        $sql = 'SELECT COUNT(*) FROM {$table}';
+
+        try {
+
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute();
+
+            return intval($statement->fetch(PDO::FETCH_NUM[0]));
+
+        } catch (Exception $e) {
+            die("Ocorreu um erro ao tentar contar pelo banco de dados: {$e->getMessage()}");
+        }
+    }
+
 }
 

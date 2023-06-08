@@ -31,6 +31,24 @@ class UserController
                 return redirect('usuarios/admin');
             }
         }
+
+        $itensPagina = 5;
+        $inicio = $itensPagina * $page - $itensPagina;
+        $rows_count = App::get('database')->countAll('users');
+
+        if($inicio > $rows_count)
+        {
+            return redirect('usuarios/admin');
+        }
+
+
+        $usuarios = App::get('database')->selectAll('users');
+
+        $total_pages = ceil($rows_count/$itensPagina);
+
+        return view('site/landingPage',compact('users','page','total_pages'));
+
+
     }
 
     public function show()
