@@ -20,6 +20,18 @@ class UserController
         return view('admin/lista-de-usuarios-adm', compact('users'));
     }
 
+    // Paginação
+    public function view()
+    {
+        $page = 1;
+        if(isset($_GET['pagina']) && empty($_GET['pagina'])){
+            $page = intval($_GET['pagina']);
+
+            if($page <= 0){
+                return redirect('usuarios/admin');
+            }
+        }
+    }
 
     public function show()
     {
