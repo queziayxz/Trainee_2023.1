@@ -5,10 +5,10 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-session_start();
-    if (!isset($_SESSION['logado'])) {
+//session_start();
+   /* if (!isset($_SESSION['logado'])) {
         header('Location: /login');
-    }
+    }*/
 
 class PostController
 {

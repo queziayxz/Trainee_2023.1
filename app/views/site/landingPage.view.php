@@ -19,17 +19,21 @@
 
   </head>
   <body>
-  <?php   
-    session_start();
-    print_r($_SESSION);
-    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true));
+     <?php /*   
+    //session_start();
+    $caminho = $_SERVER['PATH_INFO'];
+
+    $ehRotaLogin = stripos($caminho, 'login');
+
+    if(!isset($_SESSION['logado']) && !$ehRotaLogin === false);
     {
       unset($_SESSION['email']);
-      unset($_SESSION['$senha']);
-      header('Location: login.view.php');
+      unset($_SESSION['password']);
+     // header('Location: /home');
+      exit();
     }
-    $logado = $_SESSION['email'];
-    ?>
+    //$logado = $_SESSION['email'];
+   */ ?> 
 
     <main>
 
