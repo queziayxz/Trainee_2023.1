@@ -5,6 +5,11 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
+session_start();
+    if (!isset($_SESSION['logado'])) {
+        header('Location: /login');
+    }
+
 class UserController
 {
     public function index()
@@ -82,10 +87,13 @@ class UserController
 
         if($logged){
             header('Location: /home');
-            
-    
+            $_SESSION['email'] = $email;
+            $_SESSION['senha'] = $password;
         } else { 
+            unset($_SESSION['email']);
+            unset($_SESSION['$senha']);
             $erro = [
+
                 'erro' => "Usuário ou senha incorretos",
             ] ;
             return view('site/login', $erro);
