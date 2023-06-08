@@ -118,7 +118,7 @@ class QueryBuilder
         }
     }
 
-    function login($table, $email, $password)
+    public function login($table, $email, $password)
     {
         $sql = sprintf('SELECT * FROM %s WHERE email = :email', $table);
         $stmt = $this->pdo->prepare($sql);
@@ -132,5 +132,7 @@ class QueryBuilder
             return false;
         }
     }
+
+
 }
 

@@ -18,4 +18,6 @@ $router->post('usuarios/update','UserController@update');
 
 $router->get('login','UserController@viewLogin');
 $router->post('login','UserController@loginFeito');
+
+$router->post('logout', 'UserController@logout')
 ?>
