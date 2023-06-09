@@ -121,5 +121,10 @@ class UserController
         unset($_SESSION['type']);
         header('Location: /visuLog');
     }
+
+    public function dashboard ()
+    {
+        return view('admin/dashboard');
+    }
    
 }

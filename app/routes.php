@@ -19,5 +19,7 @@ $router->post('usuarios/update','UserController@update');
 $router->get('visuLog','UserController@viewLogin');
 $router->post('login','UserController@loginFeito');
 
-$router->get('logout', 'UserController@logout')
+$router->get('logout', 'UserController@logout');
+
+$router->get('dashboard', 'UserController@dashboard');
 ?>
