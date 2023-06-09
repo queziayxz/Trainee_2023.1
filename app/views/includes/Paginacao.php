@@ -1,4 +1,4 @@
-<nav aria-label="Navegação de páginas">
+<nav class="mt-5" aria-label="Navegação de páginas">
   <ul class="pagination justify-content-center">
 
     <li class="page-item <?= $page <= 1 ? "disabled" : "" ?>">

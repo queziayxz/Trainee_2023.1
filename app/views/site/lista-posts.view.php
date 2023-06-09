@@ -10,8 +10,9 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel="stylesheet" href="/public/css/navbar_footer.css" />
         <link rel="stylesheet" href="../../../public/css/listaPost.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+        <link rel="stylesheet" href="/public/css/style_paginacao.css">
         <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
 
         <title>Posts - Radiator Springs Gazette</title>
     </head>
