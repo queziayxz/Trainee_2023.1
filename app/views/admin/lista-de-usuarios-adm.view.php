@@ -1,6 +1,10 @@
 <?php
-session_start();
-    var_dump($users);
+    session_start();
+    var_dump($_SESSION);
+    if($_SESSION['type'] == 0)
+    {
+        header('Location: /home');
+    }
 ?>
 
 

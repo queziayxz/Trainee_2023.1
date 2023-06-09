@@ -17,7 +17,18 @@
                 <a class="nav-link fw-bold" href="/posts">Nossos posts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="/login">Login</a>
+                <?php
+                  if(isset($_SESSION['logado']))
+                echo "<a class='nav-link fw-bold' href='/logout'>Logout</a>";
+                  else
+                echo "<a class='nav-link fw-bold' href='/visuLog'>Login</a>";
+                ?>
+              </li>
+              <li class="nav-item" >
+                <?php
+                if($_SESSION['type'] == 1)
+                  echo "<a class='nav-link fw-bold' href=''>Dashboard</a>";
+                ?>
               </li>
             </ul>
           </div>

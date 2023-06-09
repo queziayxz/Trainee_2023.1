@@ -108,14 +108,18 @@ class UserController
 
                 'erro' => "Usuário ou senha incorretos",
             ] ;
-            return view('site/login', $erro);
+            return view('site/visuLog', $erro);
         } 
     }
 
     public function logout()
     {
-        session_destroy();
-        header('Location: /login');
+        session_start();
+        unset($_SESSION['email']);
+        unset($_SESSION['password']);
+        unset($_SESSION['logado']);
+        unset($_SESSION['type']);
+        header('Location: /visuLog');
     }
    
 }
