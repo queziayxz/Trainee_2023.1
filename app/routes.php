@@ -16,7 +16,7 @@ $router->post('usuarios/create', 'UserController@create');
 $router->post('usuarios/delete','UserController@delete');
 $router->post('usuarios/update','UserController@update');
 
-$router->get('login','UserController@viewLogin');
+$router->get('visuLog','UserController@viewLogin');
 $router->post('login','UserController@loginFeito');
 
 $router->post('logout', 'UserController@logout')

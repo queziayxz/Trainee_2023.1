@@ -81,6 +81,7 @@ class UserController
     }
     public function loginFeito()
     {
+        session_start();
         $caminho = $_SERVER['PATH_INFO'];
 
         $email = $_POST["email"];
@@ -88,13 +89,21 @@ class UserController
 
         $logged = App::get('database')->login('users', $email, $password);
         $ehRotaLogin = stripos($caminho, 'login');
+        
+        echo $ehRotaLogin;
+
+        $ehRotaDeLogin = stripos($caminho, 'login');
+        
+        if (!isset($_SESSION['logado']) && $ehRotaDeLogin === false) {
+        header('Location: /login');
+        exit();
+        }
 
         if($logged && $ehRotaLogin){
             header('Location: /home');
             $_SESSION['logado'] = true;
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
-            session_start();
         } else { 
             unset($_SESSION['email']);
             unset($_SESSION['password']);

@@ -17,7 +17,7 @@
                 <a class="nav-link fw-bold" href="/posts">Nossos posts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="/login">Logout</a>
+                <a class="nav-link fw-bold" href="/login">Login</a>
               </li>
             </ul>
           </div>
