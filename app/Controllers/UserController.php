@@ -39,6 +39,7 @@ class UserController
             'name' => $_POST['name'],
             'email' => $_POST['email'],
             'password' => $_POST['password'],
+            'type' => $_POST['type'],
         ];
         //var_dump($parameters);
         App::get('database')->insert('users', $parameters);
