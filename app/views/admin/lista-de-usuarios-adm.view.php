@@ -19,11 +19,15 @@
 
     <body>
         <div class="table-box">
+            <!-- Inclui Sidebar -->
             <?php require('app/views/includes/SideBar.php'); ?>
             <div>
+                <!-- Título da Tabela -->
                 <h1 class="page-title">Lista de Usuários</h1>
+                <!-- Botão de Adicionar novo Usuário -->
                 <button data-modal="modal-add" class="add-button botao-modal"  title="Adicionar novo usuário"><i class="fa-solid fa-user-plus"></i> Adicionar Usuário</button>
             </div>
+            <!-- Tabela com a lista dos Usuários -->
             <table>
                 <thead>
                     <tr class="table-line" class="table-title">
@@ -46,6 +50,7 @@
                             </td>
                         </tr>
 
+                            <!-- Modal de Visualizar -->
                             <div id="modal-visualizar<?php echo $user->id ?>" class="modal-visu-user modal-p">
                                 <div class="area area-visualizar">
                                     <div class="texto">
@@ -71,6 +76,7 @@
                                 </div>
                             </div>
 
+                            <!-- Modal de editar -->
                             <div id="modal-edit<?php echo $user->id ?>" class="modal-edition modal-p">
                                 <div class="area area-visualizar">
                                   <form class="form-edit" action="/usuarios/update" method="POST">               
@@ -96,10 +102,11 @@
                                             <button type="submit" class="fechar-modal botao-modal btn2">Confirmar</button>
                                         </div>
                                     </div>
-                                </form>   
+                                  </form>   
                                 </div>
                             </div>
 
+                            <!-- Modal de Excluir -->
                             <div id="modalExcluirUser<?php echo $user->id ?>" class="modal-excluir-user modal-p">
                                 <div class="area area1">
                                   <form action="/usuarios/delete" method="POST">
@@ -117,14 +124,17 @@
                                   </form>
                                 </div>
                             </div>
+
                     <?php endforeach; ?>
                 </tbody>
             </table>
 
+            <!-- Inclui Paginação -->
             <?php require('app/views/includes/Paginacao.php'); ?>
 
         </div>
 
+        <!-- Modal de Adicionar -->
         <div class = "main">
             <div id="modal-add" class = "modal-addition modal-p">
                 <div class = "area area-visualizar">
