@@ -9,22 +9,9 @@ class UserController
 {
     public function index()
     {
-        $usuarios = App::get('database')->selectAll('users');
-
-        $tables = [
-            'usuarios' => $usuarios,
-        ];
-
-        $users = $tables['usuarios'];
-
-        return view('admin/lista-de-usuarios-adm', compact('users'));
-    }
-
-    // Paginação
-    public function view()
-    {
         $page = 1;
-        if(isset($_GET['pagina']) && empty($_GET['pagina'])){
+
+        if(isset($_GET['pagina']) && !empty($_GET['pagina'])){
             $page = intval($_GET['pagina']);
 
             if($page <= 0){
@@ -32,7 +19,7 @@ class UserController
             }
         }
 
-        $itensPagina = 5;
+        $itensPagina = 1;
         $inicio = $itensPagina * $page - $itensPagina;
         $rows_count = App::get('database')->countAll('users');
 
@@ -44,10 +31,22 @@ class UserController
 
         $usuarios = App::get('database')->selectAll('users', $inicio, $itensPagina);
 
+        $tables = [
+            'usuarios' => $usuarios,
+        ];
+
+        $users = $tables['usuarios'];
+
         $total_pages = ceil($rows_count/$itensPagina);
 
         return view('admin/lista-de-usuarios-adm',compact('users','page','total_pages'));
 
+    }
+
+    // Paginação
+    public function view()
+    {
+        
     }
 
     public function show()

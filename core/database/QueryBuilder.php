@@ -15,7 +15,7 @@ class QueryBuilder
 
     public function selectAll($table, $inicio = null, $rows_count = null)
     {
-        $sql = "select * from {$table}";
+        $sql = "SELECT * from {$table}";
 
         if($inicio >= 0 && $rows_count > 0)
         {
@@ -140,7 +140,7 @@ class QueryBuilder
 
     public function countAll($table)
     {
-        $sql = 'SELECT COUNT(*) FROM {$table}';
+        $sql = "SELECT COUNT(*) FROM {$table}";
 
         try {
 
@@ -148,7 +148,7 @@ class QueryBuilder
 
             $statement->execute();
 
-            return intval($statement->fetch(PDO::FETCH_NUM[0]));
+            return intval($statement->fetch(PDO::FETCH_NUM)[0]);
 
         } catch (Exception $e) {
             die("Ocorreu um erro ao tentar contar pelo banco de dados: {$e->getMessage()}");

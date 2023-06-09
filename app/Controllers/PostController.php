@@ -9,7 +9,27 @@ class PostController
 {
     public function index()
     {
-        $postagens = App::get('database')->selectAll('posts');
+        $page = 1;
+
+        if(isset($_GET['pagina']) && !empty($_GET['pagina'])){
+            $page = intval($_GET['pagina']);
+
+            if($page <= 0){
+                return redirect('posts/admin');
+            }
+        }
+
+        $itensPagina = 1;
+        $inicio = $itensPagina * $page - $itensPagina;
+        $rows_count = App::get('database')->countAll('posts');
+
+        if($inicio > $rows_count)
+        {
+            return redirect('posts/admin');
+        }
+
+
+        $postagens = App::get('database')->selectAll('posts', $inicio, $itensPagina);
 
         $tables = [
             'post' => $postagens,
@@ -17,12 +37,34 @@ class PostController
 
         $posts = $tables['post'];
 
-        return view('admin/lista-de-post-adm', compact('posts'));
+        $total_pages = ceil($rows_count/$itensPagina);
+
+        return view('admin/lista-de-post-adm', compact('posts','page','total_pages'));
     }
 
     public function listaPosts()
     {
-        $postagens = App::get('database')->selectAll('posts');
+        $page = 1;
+
+        if(isset($_GET['pagina']) && !empty($_GET['pagina'])){
+            $page = intval($_GET['pagina']);
+
+            if($page <= 0){
+                return redirect('posts/admin');
+            }
+        }
+
+        $itensPagina = 1;
+        $inicio = $itensPagina * $page - $itensPagina;
+        $rows_count = App::get('database')->countAll('posts');
+
+        if($inicio > $rows_count)
+        {
+            return redirect('posts/admin');
+        }
+
+
+        $postagens = App::get('database')->selectAll('posts', $inicio, $itensPagina);
 
         $tables = [
             'post' => $postagens,
@@ -30,7 +72,9 @@ class PostController
 
         $posts = $tables['post'];
 
-        return view('site/lista-posts', compact('posts'));
+        $total_pages = ceil($rows_count/$itensPagina);
+
+        return view('site/lista-posts', compact('posts','page','total_pages'));
     }
 
     public function postIndividual()
