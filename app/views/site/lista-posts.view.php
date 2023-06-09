@@ -18,10 +18,11 @@
     </head>
 
     <body>
-
+        <!-- Inclui NavBar -->
         <?php require('app/views/includes/NavBar.php'); ?>
 
         <div class="principal">
+            <!-- Barra de Pesquisa -->
             <div class="search-box">
                 <input class="search-text" type="text" placeholder="Pesquisar">
                 <a class="search-button" href="#">
@@ -30,6 +31,7 @@
             </div>
 
             <div class="main">
+            <!-- Posts -->
             <?php foreach($posts as $post): ?>
                 <div class="miniatura">
                     <img class="link-img" src="/<?= $post->image?>" alt="Imagem do Post">
@@ -46,15 +48,18 @@
                 </div>
             <?php endforeach; ?>
 
+            <!-- Inclui Paginação -->
             <?php require('app/views/includes/Paginacao.php'); ?>
 
             </div>
         </div>
 
+        <!-- Seta para voltar ao topo -->
         <div class = "botao">
             <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
         </div>
 
+        <!-- Inclui Footer -->
         <?php require('app/views/includes/Footer.php'); ?>
         
     </body>
