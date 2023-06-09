@@ -83,38 +83,33 @@ class UserController
     public function loginFeito()
     {
         session_start();
-        $caminho = $_SERVER['PATH_INFO'];
+        // $caminho = $_SERVER['PATH_INFO'];
 
         $email = $_POST["email"];
         $password = $_POST["password"];
 
         $logged = App::get('database')->login('users', $email, $password);
-        $ehRotaLogin = stripos($caminho, 'login');
+        // $ehRotaLogin = stripos($caminho, 'login');
         
-        echo $ehRotaLogin;
-
-        $ehRotaDeLogin = stripos($caminho, 'login');
-        
-        if (!isset($_SESSION['logado']) && $ehRotaDeLogin === false) {
-        header('Location: /login');
-        exit();
-        }
-
-        if($logged && $ehRotaLogin){
-            header('Location: /home');
+        if (!empty($logged)) {
+            
+            
             $_SESSION['logado'] = true;
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
+            $_SESSION['type'] = $logged[0]->type;
+            header('Location: /home');
         } else { 
             unset($_SESSION['email']);
             unset($_SESSION['password']);
+            unset($_SESSION['logado']);
+            unset($_SESSION['type']);
             $erro = [
 
                 'erro' => "Usuário ou senha incorretos",
             ] ;
             return view('site/login', $erro);
-        }
-
+        } 
     }
 
     public function logout()

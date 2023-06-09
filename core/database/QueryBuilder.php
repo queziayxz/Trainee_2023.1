@@ -120,17 +120,12 @@ class QueryBuilder
 
     public function login($table, $email, $password)
     {
-        $sql = sprintf('SELECT * FROM %s WHERE email = :email', $table);
+        $sql = sprintf('SELECT * FROM %s WHERE email = :email and password = :password', $table);
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':password', $password);
         $stmt->execute();
-        $user = $stmt->fetch();
-    
-        if ($user && $password == $user['password']) {
-            return true;
-        } else {
-            return false;
-        }
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
     }
 
 

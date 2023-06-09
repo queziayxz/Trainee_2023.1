@@ -1,5 +1,6 @@
 <?php 
-   // session_start();
+  session_start();
+  
     /*$caminho = $_SERVER['PATH_INFO'];
 
     $ehRotaLogin = stripos($caminho, 'login');
