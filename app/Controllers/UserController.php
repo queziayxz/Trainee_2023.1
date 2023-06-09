@@ -19,7 +19,7 @@ class UserController
             }
         }
 
-        $itensPagina = 1;
+        $itensPagina = 2;
         $inicio = $itensPagina * $page - $itensPagina;
         $rows_count = App::get('database')->countAll('users');
 
