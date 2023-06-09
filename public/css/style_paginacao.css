@@ -21,7 +21,6 @@
     --bs-pagination-disabled-border-color: #32252c;
 }
 
-/*
-vermelho - #9C1111
-branco - #D6C0B4
-marrom - #32252C
+.active>.page-link, .page-link.active {
+    z-index: 1;
+}
