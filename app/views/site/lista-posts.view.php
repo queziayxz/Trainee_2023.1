@@ -1,6 +1,5 @@
 <?php
-    
-    require('app/views/includes/Sessao.php');
+    session_start();
 ?>
 
 <!DOCTYPE html>

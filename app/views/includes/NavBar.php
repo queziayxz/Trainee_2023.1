@@ -26,7 +26,7 @@
               </li>
               <li class="nav-item" >
                 <?php
-                if(isset($_SESSION['logado']) && $_SESSION['type'] == 1  ) 
+                if(isset($_SESSION['logado']) ) 
                   echo "<a class='nav-link fw-bold' href='/dashboard'>Dashboard</a>";
                 ?>
               </li>

@@ -86,6 +86,12 @@ body.modificacoes{
     
   }
 
+  .col-md-3 a{
+    color:#32252C;
+    text-decoration: none;
+  }
+  
+
   
   @media (min-width: 768px) {
     #sidebar-wrapper {

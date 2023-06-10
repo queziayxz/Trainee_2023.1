@@ -71,7 +71,7 @@
           <a href="/usuarios/admin">
             <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
-                <h3 class="fs-2 fw-bold">0</h3>
+                <h3 class="fs-2 fw-bold"></h3>
                 <p class="fs-5 fw-bold">Usuários</p>
               </div>
               <i class="fa-solid fa-users fs-1  border rounded-full secondary-bg p-3"></i>
@@ -83,13 +83,15 @@
 
 
           <div class="col-md-3">
+          <a href="/usuarios/admin">
             <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
-                <h3 class="fs-2 fw-bold">0</h3>
+                <h3 class="fs-2 fw-bold"></h3>
                 <p class="fs-5 fw-bold">Postagens</p>
               </div>
               <i class="fa-solid fa-list fs-1 border rounded-full secondary-bg p-3"></i>
             </div>
+            </a>
           </div>
 
 
