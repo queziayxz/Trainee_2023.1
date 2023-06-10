@@ -68,6 +68,7 @@
       <div class="container-fluid px-4">
         <div class="row g-3 my-2">
           <div class="col-md-3">
+          <a href="/usuarios/admin">
             <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
                 <h3 class="fs-2 fw-bold">0</h3>
@@ -75,7 +76,11 @@
               </div>
               <i class="fa-solid fa-users fs-1  border rounded-full secondary-bg p-3"></i>
             </div> 
+          </a>
           </div>
+          
+
+
 
           <div class="col-md-3">
             <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
