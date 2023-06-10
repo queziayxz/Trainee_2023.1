@@ -108,7 +108,7 @@ class UserController
 
                 'erro' => "Usuário ou senha incorretos",
             ] ;
-            echo "Usuário ou senha incorretos";
+            
             return view('site/login', $erro);
         } 
     }
