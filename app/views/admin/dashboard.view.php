@@ -1,3 +1,7 @@
+<?php
+  require('app/views/includes/Sessao.php')
+?>
+
 <!doctype html>
 <html lang="pt-br">
 
