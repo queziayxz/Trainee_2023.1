@@ -19,27 +19,11 @@
 <body class="modificacoes">
 
   <div class="d-flex" id="wrapper">
-   
-    <div class="cor-fundo" id="sidebar-wrapper">
-      <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">Radiator
-        Springs</div>
-      <div class="list-group list-group-flush my-2">
-        <a href="#" class="list-group-item list-group-item-action bg-transparent ">
-          <i class="fa-solid fa-user me-2"></i>
-          </i>Lista de Usuários</a>
-        <a href="#" class="list-group-item list-group-item-action bg-transparent ">
-          <i class="fa-solid fa-list me-2"></i>Lista de Posts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-transparent primary-text ">
-          <i class="fas fa-power-off me-2"></i>Logout</a>
-      </div>
-    </div>
-   
-
-    
+     
     <div id="page-content-wrapper">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
         <div class="d-flex align-items-center">
-          <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+
           <h2 class="fs-2 m-0 fw-bold">Administrador</h2>
         </div>
 
@@ -65,8 +49,8 @@
         </div>
       </nav>
 
-      <div class="container-fluid px-4">
-        <div class="row g-3 my-2">
+      <div class="container-fluid px-4 ">
+        <div class="row g-3 my-2 justify-content-center" >
           <div class="col-md-3">
             <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
