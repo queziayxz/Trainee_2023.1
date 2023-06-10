@@ -20,7 +20,7 @@
             <div class="search-box">
             <form action="posts/search" method="GET">
             <input type="text" name="buscapost" id="buscapost" placeholder="Nome do Post">
-            <button type="submit"><ion-icon name="search"></ion-icon></button>
+            <button class="botao-buscar" type="submit"><ion-icon name="search"></ion-icon></button>
             </form>
         </div>
 
@@ -28,12 +28,12 @@
             <?php foreach($posts as $post): ?>
                 <div class="miniatura">
 
-                        <img class="link-img" src="<?= $post->image?>">
+                        <img class="link-img" src="/<?= $post->image?>">
                     <div class="miniatura-text">
                         <h1><?php echo $post->title?></h1>
                         <h2><?php echo substr($post->content, 0, 120) . "...";?></h2>
                         <div class="button">
-                            <form method="post" action="posts/postIndividual">
+                            <form method="post" action="/posts/postIndividual">
                                 <input type="hidden" name="id" value="<?php echo $post->id?>">
                                 <a href=""><button type="submit" class="ler" title="Ler Post Completo">Ler Post Completo</button></a>  
                             </form>

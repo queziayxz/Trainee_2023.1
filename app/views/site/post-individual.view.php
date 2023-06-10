@@ -17,7 +17,7 @@
             <h3></h3>
         </div>
         <div class ="post-img">
-            <img src="<?= $post->image?>" alt = "Imagem Post">
+            <img src="/<?= $post->image?>" alt = "Imagem Post">
         </div>
         <div class="descricao">
             <p><?php echo $post->content?>
