@@ -24,13 +24,13 @@
       <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">Radiator
         Springs</div>
       <div class="list-group list-group-flush my-2">
-        <a href="#" class="list-group-item list-group-item-action bg-transparent ">
+        <a href="/usuarios/admin" class="list-group-item list-group-item-action bg-transparent ">
           <i class="fa-solid fa-user me-2"></i>
           </i>Lista de Usuários</a>
-        <a href="#" class="list-group-item list-group-item-action bg-transparent ">
-          <i class="fa-solid fa-list me-2"></i>Lista de Posts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-transparent primary-text ">
-          <i class="fas fa-power-off me-2"></i>Logout</a>
+        <a href="/posts/admin" class="list-group-item list-group-item-action bg-transparent ">
+          <i class="fa-solid fa-list me-2" ></i>Lista de Posts</a>
+        <a href="/logout" class="list-group-item list-group-item-action bg-transparent primary-text ">
+          <i class="fas fa-power-off me-2" ></i>Logout</a>
       </div>
     </div>
    
