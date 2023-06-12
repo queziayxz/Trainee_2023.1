@@ -50,22 +50,33 @@
       </nav>
 
       <div class="container-fluid px-4 ">
+
         <div class="row g-3 my-2 justify-content-center" >
           <div class="col-md-3">
-            <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+            <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
                 <h3 class="fs-2 fw-bold">0</h3>
                 <p class="fs-5 fw-bold">Usuários</p>
               </div>
               <i class="fa-solid fa-users fs-1  border rounded-full secondary-bg p-3"></i>
             </div> 
+        </div>
+
+          <div class="col-md-3">
+            <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
+              <div>
+                <h3 class="fs-2 fw-bold">0</h3>
+                <p class="fs-5 fw-bold">Posts</p>
+              </div>
+              <i class="fa-solid fa-list fs-1 border rounded-full secondary-bg p-3"></i>
+            </div>
           </div>
 
           <div class="col-md-3">
-            <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+            <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
                 <h3 class="fs-2 fw-bold">0</h3>
-                <p class="fs-5 fw-bold">Postagens</p>
+                <p class="fs-5 fw-bold">Posts de Usuários</p>
               </div>
               <i class="fa-solid fa-list fs-1 border rounded-full secondary-bg p-3"></i>
             </div>

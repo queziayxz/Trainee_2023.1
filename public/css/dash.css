@@ -26,6 +26,12 @@ body.modificacoes{
     color: #32252C;
   }
 
+  .altera-cor 
+  {
+    background-color: #32252C;
+    color: white;
+  }
+
   .list-group-item{
     border: none;
     padding: 20px 30px;
