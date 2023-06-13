@@ -19,7 +19,7 @@ class PostController
             }
         }
 
-        $itensPagina = 2;
+        $itensPagina = 10;
         $inicio = $itensPagina * $page - $itensPagina;
         $rows_count = App::get('database')->countAll('posts');
 
@@ -27,7 +27,6 @@ class PostController
         {
             return redirect('posts/admin');
         }
-
 
         $postagens = App::get('database')->selectAll('posts', $inicio, $itensPagina);
 
@@ -54,7 +53,7 @@ class PostController
             }
         }
 
-        $itensPagina = 2;
+        $itensPagina = 6;
         $inicio = $itensPagina * $page - $itensPagina;
         $rows_count = App::get('database')->countAll('posts');
 
