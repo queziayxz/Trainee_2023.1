@@ -19,7 +19,7 @@ class UserController
             }
         }
 
-        $itensPagina = 2;
+        $itensPagina = 10;
         $inicio = $itensPagina * $page - $itensPagina;
         $rows_count = App::get('database')->countAll('users');
 
@@ -27,7 +27,6 @@ class UserController
         {
             return redirect('usuarios/admin');
         }
-
 
         $usuarios = App::get('database')->selectAll('users', $inicio, $itensPagina);
 
@@ -40,7 +39,6 @@ class UserController
         $total_pages = ceil($rows_count/$itensPagina);
 
         return view('admin/lista-de-usuarios-adm',compact('users','page','total_pages'));
-
     }
 
     // Paginação
