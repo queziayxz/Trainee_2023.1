@@ -24,7 +24,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
         <div class="d-flex align-items-center">
 
-          <h2 class="fs-2 m-0 fw-bold">Administrador</h2>
+          <h2 class="fs-2 m-0 fw-bold">Área Administrativa</h2>
         </div>
 
         <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -55,7 +55,6 @@
           <div class="col-md-3">
             <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
-                <h3 class="fs-2 fw-bold">0</h3>
                 <p class="fs-5 fw-bold">Usuários</p>
               </div>
               <i class="fa-solid fa-users fs-1  border rounded-full secondary-bg p-3"></i>
@@ -65,8 +64,7 @@
           <div class="col-md-3">
             <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
-                <h3 class="fs-2 fw-bold">0</h3>
-                <p class="fs-5 fw-bold">Posts</p>
+                <p class="fs-5 fw-bold">Posts (usuários)</p>
               </div>
               <i class="fa-solid fa-list fs-1 border rounded-full secondary-bg p-3"></i>
             </div>
@@ -75,8 +73,7 @@
           <div class="col-md-3">
             <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
-                <h3 class="fs-2 fw-bold">0</h3>
-                <p class="fs-5 fw-bold">Posts de Usuários</p>
+                <p class="fs-5 fw-bold">Posts (admin)</p>
               </div>
               <i class="fa-solid fa-list fs-1 border rounded-full secondary-bg p-3"></i>
             </div>
