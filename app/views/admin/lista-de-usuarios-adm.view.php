@@ -1,9 +1,9 @@
 <?php
     session_start();
-    if($_SESSION['type'] == 0)
-    {
-        header('Location: /home');
-    }
+    // if($_SESSION['type'] == 0)
+    // {
+    //     header('Location: /home');
+    // }
 ?>
 
 
