@@ -113,39 +113,31 @@
             <form enctype="multipart/form-data" class="formulario" action="/posts/edit" method="POST">
               <div class="coluna-esquerda">
                 <h1 class="">Editar Post</h1>
-
                 <div class="coluna-esquerda-item mb-3" id="titulo">
-                  <br>
-                  <label for="exampleFormControlInput1" class="form-label">Título:</label>
-                  <br>
+                  <label for="exampleFormControlInput1" class="form-label">Título:</label> 
                   <input class="form-control" id="exampleFormControlInput1" name="title" value="<?php echo $post->title;?>">
                 </div>
         
-                <div class="coluna-esquerda-item mb-3">
-                  <br>
+                <div class="coluna-esquerda-item mb-3"> 
                   <label for="exampleFormControlInput1" class="form-label">Selecionar Imagem:</label>
-                  <br>
                   <label for="arquivo" id="img">Enviar Arquivo</label>
-                  <input class="form-control" type="file" name="image" id="arquivo" value="<?php echo substr($post->image, 11,strlen($post->image));?>">
-                  <br>
+                  <input class="form-control" type="file" name="image" id="arquivo" value="<?php echo substr($post->image, 11,strlen($post->image));?>">  
                 </div>
-                <br>
+                
           
                 <div class="coluna-esquerda-item mb-3" >
         
                     <div class="form-group data2">
-                      <br>
+  
                       <label class="control-label" for="date">Data:</label>
-                      <br>
+  
                       <input type="date" id="txtDate" name="created_at" value="<?php echo $post->created_at;?>">
         
                     </div>
                 </div>
         
                 <div class="coluna-esquerda-item mb-3 conteudo2">
-                  <br>
                   <label for="exampleFormControlInput1" class="form-label">Conteúdo:</label>
-                  <br>
                   <input type="text" class="form-control conteudo3" id="exampleFormControlInput1" name="content"  value="<?php echo $post->content;?>">
                 </div>
 
@@ -180,16 +172,12 @@
               <div class="coluna-esquerda">
                 <h1>Adicionar Post</h1>
                 <div class="coluna-esquerda-item mb-3" id="titulo">
-                  <br>
                   <label for="exampleFormControlInput1" class="form-label">Título:</label>
-                  <br>
                   <input class="form-control" id="exampleFormControlInput1" placeholder="" name='title'>
                 </div>
         
                 <div class="coluna-esquerda-item mb-3">
-                  <br>
                   <label for="exampleFormControlInput1" class="form-label">Selecionar Imagem:</label>
-                  <br>
                   <label for="arquivo" id="img">Enviar Arquivo</label>
                   <input class="form-control" type="file" name="image" id="arquivo">
         
@@ -200,9 +188,9 @@
                   <!-- <form method="post"> -->
         
                     <div class="form-group">
-                      <br>
+  
                       <label class="control-label data2" for="date">Data:</label>
-                      <br>
+  
                       <input type="date" id="txtDate" name="created_at" class="meu-input">
         
                     </div>
@@ -211,16 +199,14 @@
                 </div>
         
                 <div class="coluna-esquerda-item mb-3 conteudo2">
-                  <br>
                   <label for="exampleFormControlInput1" class="form-label">Conteúdo:</label>
-                  <br>
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="content">
                 </div>
                 <input type="hidden" name="author" value="1">
 
                 <div class="botoes_excluir_cancelar">
-                  <button type="button" class="btn botao-modal fechar-modal">Voltar</button>
-                  <button type="submit" class="btn botao-modal fechar-modal">Publicar</button>
+                  <button type="button" class="btn1 botao-modal fechar-modal">Voltar</button>
+                  <button type="submit" class="btn1 botao-modal fechar-modal">Publicar</button>
                 </div>
               <!-- </form> -->
         
