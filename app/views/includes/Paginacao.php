@@ -8,7 +8,7 @@
     </li>
 
     <?php for($page_number = 1; $page_number <= $total_pages; $page_number++) : ?>
-        <li class="page-item <?= $page_number == $page ? "active" : "" ?>"><a class="page-link" href="?pagina=<?= $page_number ?>"><?= $page_number ?></a></li>
+        <li style="margin-bottom: 15px;" class="page-item <?= $page_number == $page ? "active" : "" ?>"><a class="page-link" href="?pagina=<?= $page_number ?>"><?= $page_number ?></a></li>
     <?php endfor ?>
 
     <li class="page-item <?= $page >= $total_pages ? "disabled" : ""?>">
