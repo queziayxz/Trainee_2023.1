@@ -1,5 +1,5 @@
 <nav class="mt-5" aria-label="Navegação de páginas">
-  <ul class="pagination justify-content-center">
+  <ul class="pagination justify-content-center flex-wrap">
 
     <li class="page-item <?= $page <= 1 ? "disabled" : "" ?>">
       <a class="page-link" href="?pagina=<?= $page > 1 ? $page - 1 : 1 ?>" aria-label="Anterior">
