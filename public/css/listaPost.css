@@ -17,6 +17,11 @@ body {
     align-items: center;
 }
 
+#form-busca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #buscapost{
     width: 540px;

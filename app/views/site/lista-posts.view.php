@@ -18,7 +18,7 @@
     <body>
         <div class="principal">
             <div class="search-box">
-            <form action="posts/search" method="GET">
+            <form action="/posts/search" method="GET" id="form-busca">
             <input type="text" name="buscapost" id="buscapost" placeholder="Nome do Post">
             <button class="botao-buscar" type="submit"><ion-icon name="search"></ion-icon></button>
             </form>
