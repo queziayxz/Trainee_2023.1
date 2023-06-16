@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -24,22 +28,23 @@
         <div class="principal">
             <!-- Barra de Pesquisa -->
             <div class="search-box">
-                <input class="search-text" type="text" placeholder="Pesquisar">
-                <a class="search-button" href="#">
-                    <ion-icon name="search"></ion-icon>
-                </a>
-            </div>
+            <form action="/posts/search" method="GET" id="form-busca">
+            <input type="text" name="buscapost" id="buscapost" placeholder="Nome do Post">
+            <button class="botao-buscar" type="submit"><ion-icon name="search"></ion-icon></button>
+            </form>
+        </div>
 
             <div class="main">
             <!-- Posts -->
             <?php foreach($posts as $post): ?>
                 <div class="miniatura">
-                    <img class="link-img" src="/<?= $post->image?>" alt="Imagem do Post">
+
+                        <img class="link-img" src="<?= $post->image?>" alt="Imagem do Post">
                     <div class="miniatura-text">
                         <h1><?php echo $post->title?></h1>
                         <h2><?php echo substr($post->content, 0, 120) . "...";?></h2>
                         <div class="button">
-                            <form method="post" action="posts/postIndividual">
+                            <form method="post" action="/posts/postIndividual">
                                 <input type="hidden" name="id" value="<?php echo $post->id?>">
                                 <a href=""><button type="submit" class="ler" title="Ler Post Completo">Ler Post Completo</button></a>  
                             </form>

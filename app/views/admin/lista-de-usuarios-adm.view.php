@@ -1,4 +1,14 @@
+<?php
+    session_start();
+    if (empty($_SESSION['email']) && (empty($_SESSION['password'])))
+     {
+         header('Location: /home');
+     }
+?>
+
+
 <!DOCTYPE html>
+
 
 <html lang="pt-br">
 
@@ -156,6 +166,7 @@
                                 <label for="senha">Senha:</label>
                                 <input type="password" class="form-control" id="exampleFormControlInput1" name='password'>
                             </div>
+                            <input type="hidden" name="type" value="0">
                             <div class="botoes_excluir_cancelar">
                                 <button type="button" class="fechar-modal botao-modal btn2">Voltar</button>
                                 <button type="submit" class="fechar-modal botao-modal btn2">Adicionar</button>

@@ -1,3 +1,7 @@
+<?php
+  require('app/views/includes/Sessao.php')
+?>
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -20,6 +24,8 @@
 
   <div class="d-flex" id="wrapper">
      
+
+
     <div id="page-content-wrapper">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
         <div class="d-flex align-items-center">
@@ -40,9 +46,7 @@
                 <i class="fas fa-user me-2 cor-texto"></i>Code Jr.
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item fw-bold" href="#">Perfil</a></li>
-                <li><a class="dropdown-item fw-bold" href="#">Configurações</a></li>
-                <li><a class="dropdown-item fw-bold" href="#">Logout</a></li>
+                <li><a class="dropdown-item fw-bold" href="/logout">Logout</a></li>
               </ul>
             </li>
           </ul>
@@ -53,31 +57,37 @@
 
         <div class="row g-3 my-2 justify-content-center" >
           <div class="col-md-3">
+          <a href="/usuarios/admin">
             <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
                 <p class="fs-5 fw-bold">Usuários</p>
               </div>
               <i class="fa-solid fa-users fs-1  border rounded-full secondary-bg p-3"></i>
-            </div> 
+            </div>
+          </a> 
         </div>
 
           <div class="col-md-3">
+          <a href="/posts"> 
             <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
                 <p class="fs-5 fw-bold">Posts (usuários)</p>
               </div>
               <i class="fa-solid fa-list fs-1 border rounded-full secondary-bg p-3"></i>
             </div>
+          </a> 
           </div>
 
           <div class="col-md-3">
+          <a href="/posts/admin">  
             <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
                 <p class="fs-5 fw-bold">Posts (admin)</p>
               </div>
               <i class="fa-solid fa-list fs-1 border rounded-full secondary-bg p-3"></i>
             </div>
-          </div>
+          </a>
+        </div>
 
 
       </div>

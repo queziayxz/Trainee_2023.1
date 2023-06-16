@@ -6,13 +6,13 @@
             <a href="/home" class="list-group-item list-group-item-action bg-transparent"><i
                 class="fas fa-home me-2"></i>Home</a>
             <a href="/posts/admin" class="list-group-item list-group-item-action bg-transparent"><i
-                class="fas fa-list me-2"></i>Lista de Posts (Admin)</a>
+                class="fas fa-list me-2" href="lista-de-post-adm.view.php"></i>Lista de Posts (Admin)</a>
             <a href="/posts" class="list-group-item list-group-item-action bg-transparent"><i
                 class="fas fa-list me-2"></i>Lista de Posts (Usuários)</a>
             <a href="/usuarios/admin" class="list-group-item list-group-item-action bg-transparent "><i
                 class="fas fa-user me-2"></i>Lista de Usuários</a>
-            <a href="/login" class="list-group-item list-group-item-action bg-transparent"><i
-                class="fas fa-power-off me-2"></i>Logout</a>
+            <a href="/logout" class="list-group-item list-group-item-action bg-transparent"><i
+                class="fas fa-power-off me-2" ></i>Logout</a>
         </div>
     </div>
     <div id="page-content-wrapper">

@@ -17,6 +17,23 @@ body {
     align-items: center;
 }
 
+#form-busca{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buscapost{
+    width: 540px;
+    height: 30px;
+    background-color: #32252C;
+    border: none;
+    font-size: 1.2em;
+    color: #D6C0B4;
+    font-weight: 400;
+    outline: none;
+}
+
 .search-box {
     margin: 0 auto;
     margin-top: 100px;
@@ -63,7 +80,15 @@ body {
     display: flex;
     flex-direction: column;
     width: 75%;
-    padding-bottom: 50px;
+}
+.botao-buscar {
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: #D6C0B4;
+    display: inline-flex;
+    vertical-align: sub;
+    
 }
 
 .miniatura {
@@ -100,6 +125,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    
 }
 
 .ler {
@@ -153,7 +179,18 @@ button {
     width: 10%;
  }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+{
+ border: 1px solid white;
+ -webkit-text-fill-color: #D6C0B4 !important;
+-webkit-box-shadow: 0 0 0px 1000px #32252C inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 @media (max-width: 1100px) {
+
 
 body {
     display: block;
@@ -222,11 +259,27 @@ body {
 
 }
 
+@media (max-width: 678px) {
+    #buscapost{
+        width: 395px;
+        }
+
+        .search-box {
+            width: 455px;
+        }
+}
+
 @media (max-width: 530px) {
     .botao a {
         font-size: 30px;
         left: 87%;
     }
+    #buscapost{
+        width: 215px;
+        }
+        .search-box {
+            width: 272px;
+        }
 }
 
 @media (max-width: 362px) {
@@ -254,10 +307,16 @@ body {
         font-size: 25px;
         left: 88.5%;
     }
+
 }
 
-@media (max-width: 287px) {
-    .search-text {
-        padding-left: 2px;
+    @media (max-width: 320px) {
+        #buscapost{
+        width: 188px;
+        }
+        
+        .search-box {
+            width: 240px;
+        }
+    
     }
-}

@@ -138,6 +138,32 @@ class QueryBuilder
         }
     }
 
+    public function login($table, $email, $password)
+    {
+        $sql = sprintf('SELECT * FROM %s WHERE email = :email and password = :password', $table);
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':password', $password);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+    }
+
+    public function busca($pesquisa){
+        $sql = "SELECT * FROM posts WHERE title LIKE '%$pesquisa%'";
+
+        try {
+            $statement = $this->pdo->prepare($sql);
+            $statement->execute();
+
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            $resultado = json_encode($result);
+            return json_decode($resultado);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+       
+    }
     public function countAll($table)
     {
         $sql = "SELECT COUNT(*) FROM {$table}";

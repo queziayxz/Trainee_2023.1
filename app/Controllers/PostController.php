@@ -5,6 +5,11 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
+//session_start();
+   /* if (!isset($_SESSION['logado'])) {
+        header('Location: /login');
+    }*/
+
 class PostController
 {
     public function index()
@@ -106,7 +111,10 @@ class PostController
 
     public function show()
     {
-
+       
+        $pesquisa = filter_input(INPUT_GET,'buscapost');
+        $posts = App::get('database')->busca($pesquisa); 
+        return view("site/lista-posts",compact('posts'));
     }
 
     public function create()
