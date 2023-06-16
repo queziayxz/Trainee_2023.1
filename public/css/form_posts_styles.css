@@ -401,7 +401,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - FIM */
   
   /* Modal de Adicionar e Editar - INÍCIO */
-  
+
   /* Modal de Adicionar e Editar - FIM */
   
   /* Modal de Visualizar - INÍCIO */
@@ -537,6 +537,12 @@ input[type=date]::-webkit-calendar-picker-indicator
     padding: 20px;
   }
   /* Modal de Excluir - FIM */
+
+  /* Modal de Visualizar - INÍCIO */
+  .conteudoo {
+    font-size: 14px;
+  }
+  /* Modal de Visualizar - FIM */  
 }
 
 @media (max-width:280px) {
