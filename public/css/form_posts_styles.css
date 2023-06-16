@@ -188,6 +188,7 @@ input::placeholder {
 .img {
   width: 100%;
   border-radius: 8px;
+  margin-bottom: 15px;
 }
 input[type="file"] {
   display: block;
@@ -492,7 +493,7 @@ input[type=date]::-webkit-calendar-picker-indicator
     font-weight: 400;
   }
   .form-label{
-    font-size: 13px;
+    font-size: 16px;
   }
   .control-label{
     font-size: 13px;
@@ -546,3 +547,89 @@ input[type=date]::-webkit-calendar-picker-indicator
   
 }
 
+@media (max-width:280px) {
+
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 85%;
+    height: 32%;
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+
+  .texto2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .btnVoltarC {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+  /* Modal de Excluir - FIM */
+
+  /* Modal de Adicionar e Editar - INÍCIO */
+  .area-posts{
+    width: 85%;
+    height: 60%;
+    padding: 15px;
+  }
+
+  .control-label {
+    font-size: 16px;
+  }
+
+  .area-posts input {
+    font-size: 13px;
+    height: auto;
+  }
+
+  #img {
+    width: 88%;
+    height: 33px;
+ }
+
+  #txtDate {
+    height: 33px;
+  }
+
+  .data2 {
+    margin-top: 0;
+  }
+
+  .conteudo2 {
+    margin-top: 10px;
+  }
+
+  .btn2 {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  .btn1 {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+  /* Modal de Adicionar e Editar - FIM */
+
+  /* Modal de Visualizar - INÍCIO */
+  .area-vizualizar {
+    width: 85%;
+    padding: 0px 20px;
+  }
+
+  .conteudoo {
+    text-align: justify;
+    font-size: 13px;
+  }
+
+  .btn2 {
+    margin-bottom: 15px;
+  }
+  /* Modal de Visualizar - FIM */
+}
