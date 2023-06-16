@@ -171,12 +171,12 @@
             <form enctype="multipart/form-data" action="/posts/create" method="POST" class="formulario" >
               <div class="coluna-esquerda">
                 <h1>Adicionar Post</h1>
-                <div class="coluna-esquerda-item mb-3" id="titulo">
+                <div class="coluna-esquerda-item botao-3" id="titulo">
                   <label for="exampleFormControlInput1" class="form-label">Título:</label>
                   <input class="form-control" id="exampleFormControlInput1" placeholder="" name='title'>
                 </div>
         
-                <div class="coluna-esquerda-item mb-3">
+                <div class="coluna-esquerda-item botao-3">
                   <label for="exampleFormControlInput1" class="form-label">Selecionar Imagem:</label>
                   <label for="arquivo" id="img">Enviar Arquivo</label>
                   <input class="form-control" type="file" name="image" id="arquivo">
@@ -184,7 +184,7 @@
                 </div>
         
         
-                <div class="coluna-esquerda-item mb-3 data2" >
+                <div class="coluna-esquerda-item botao-3 data2" >
                   <!-- <form method="post"> -->
         
                     <div class="form-group">
@@ -198,7 +198,7 @@
                   
                 </div>
         
-                <div class="coluna-esquerda-item mb-3 conteudo2">
+                <div class="coluna-esquerda-item botao-3 conteudo2">
                   <label for="exampleFormControlInput1" class="form-label">Conteúdo:</label>
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="content">
                 </div>
