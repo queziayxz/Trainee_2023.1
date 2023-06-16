@@ -399,7 +399,11 @@ input[type=date]::-webkit-calendar-picker-indicator
     height: 36%;
   }
   /* Modal de Excluir - FIM */
-
+  
+  /* Modal de Adicionar e Editar - INÍCIO */
+  
+  /* Modal de Adicionar e Editar - FIM */
+  
   /* Modal de Visualizar - INÍCIO */
   .area-vizualizar {
     padding-top: 25px;
