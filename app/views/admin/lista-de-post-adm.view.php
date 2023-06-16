@@ -1,9 +1,9 @@
 <?php
     session_start();
-    // if($_SESSION['type'] == 0)
-    // {
-    //     header('Location: /home');
-    // }
+    if (empty($_SESSION['email']) && (empty($_SESSION['password'])))
+     {
+         header('Location: /home');
+     }
 ?>
 
 <!DOCTYPE html>

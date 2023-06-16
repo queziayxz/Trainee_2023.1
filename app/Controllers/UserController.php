@@ -97,7 +97,6 @@ class UserController
             $_SESSION['logado'] = true;
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
-            $_SESSION['type'] = $logged[0]->type;
             header('Location: /dashboard');
         } else { 
             unset($_SESSION['email']);
