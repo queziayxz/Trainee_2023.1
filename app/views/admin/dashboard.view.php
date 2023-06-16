@@ -35,7 +35,7 @@
 
         <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon navbar-dark"></span>
+          <span class="navbar-toggler-icon navbar-light"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,7 +45,7 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-user me-2 cor-texto"></i>Code Jr.
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu altera-logout" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item fw-bold" href="/logout">Logout</a></li>
               </ul>
             </li>
@@ -56,7 +56,7 @@
       <div class="container-fluid px-4 ">
 
         <div class="row g-3 my-2 justify-content-center" >
-          <div class="col-md-3">
+          <div class="col-md-3 altera-link">
           <a href="/usuarios/admin">
             <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
@@ -67,7 +67,7 @@
           </a> 
         </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 altera-link">
           <a href="/posts"> 
             <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
@@ -78,7 +78,7 @@
           </a> 
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 altera-link">
           <a href="/posts/admin">  
             <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
