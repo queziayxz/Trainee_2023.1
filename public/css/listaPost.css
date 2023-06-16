@@ -81,6 +81,8 @@ body {
     background-color: transparent;
     border: none;
     color: #D6C0B4;
+    display: inline-flex;
+    vertical-align: sub;
     
 }
 
