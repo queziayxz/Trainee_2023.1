@@ -1,4 +1,14 @@
+<?php
+    session_start();
+    if (empty($_SESSION['email']) && (empty($_SESSION['password'])))
+     {
+         header('Location: /home');
+     }
+?>
+
+
 <!DOCTYPE html>
+
 
 <html lang="pt-br">
 
@@ -6,6 +16,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/public/css/sidebar.css">
         <link rel="stylesheet" href="../../../public/css/listaUsuariosAdmin.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
         
@@ -17,6 +28,7 @@
 
     <body>
         <div class="table-box">
+            <?php require('app/views/includes/SideBar.php'); ?>
             <div>
                 <h1 class="page-title">Lista de Usuários</h1>
                 <button data-modal="modal-add" class="add-button botao-modal"  title="Adicionar novo usuário"><i class="fa-solid fa-user-plus"></i> Adicionar Usuário</button>
@@ -69,9 +81,8 @@
                             </div>
 
                             <div id="modal-edit<?php echo $user->id ?>" class="modal-edition modal-p">
-
                                 <div class="area area-visualizar">
-                                  <form action="/usuarios/update" method="POST">               
+                                  <form class="form-edit" action="/usuarios/update" method="POST">               
                                     <div class="texto">
                                         <h1>Editar Usuário</h1>
                                     </div>
@@ -100,24 +111,21 @@
 
                             <div id="modalExcluirUser<?php echo $user->id ?>" class="modal-excluir-user modal-p">
                                 <div class="area area1">
-                                  <form action="/usuarios/delete" method="POST">  
+                                  <form action="/usuarios/delete" method="POST">
                                     <div class="texto">
                                         <h1 class = "excluir">Excluir Usuário</h1>
                                     </div>
                                         <h4>
-                                            Tem certeza que deseja excluir o usuário Fulano da Silva?
+                                            Tem certeza que deseja excluir este usuário?
                                         </h4>
                                         <input type="hidden" name="id" value="<?= $user->id ?>">
-                                            <div class="botoes_excluir_cancelar">
-                                                <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>
-                                                <button type="submit" class="btn2 botao-modal fechar-modal">Excluir</button>
-                                            </div>
+                                        <div class="botoes_excluir_cancelar">
+                                            <button type="button" class="btn2 botao-modal fechar-modal">Cancelar</button>
+                                            <button type="submit" class="btn2 botao-modal fechar-modal">Excluir</button>
                                         </div>
-                                    </div>
-                                </form>    
+                                  </form>
                                 </div>
                             </div>
-
                     <?php endforeach; ?>
                 </tbody>
             </table>
@@ -144,6 +152,7 @@
                                 <label for="senha">Senha:</label>
                                 <input type="password" class="form-control" id="exampleFormControlInput1" name='password'>
                             </div>
+                            <input type="hidden" name="type" value="0">
                             <div class="botoes_excluir_cancelar">
                                 <button type="button" class="fechar-modal botao-modal btn2">Voltar</button>
                                 <button type="submit" class="fechar-modal botao-modal btn2">Adicionar</button>
@@ -156,6 +165,10 @@
 
     </body>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../../../public/js/modals.js"></script>
     <script src="https://kit.fontawesome.com/f9c72cff41.js" crossorigin="anonymous"></script>
     

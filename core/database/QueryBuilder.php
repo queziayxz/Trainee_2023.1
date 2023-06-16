@@ -8,11 +8,11 @@ class QueryBuilder
 {
     protected $pdo;
 
-
     public function __construct($pdo)
     {
         $this->pdo = $pdo;
     }
+
     public function selectAll($table)
     {
         $sql = "select * from {$table}";
@@ -27,6 +27,7 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+
     public function selectPost($id, $table)
     {
         $sql = sprintf("SELECT * FROM %s WHERE %s", $table, "id = $id");
@@ -40,9 +41,8 @@ class QueryBuilder
         } catch (Exception $e) {
             die($e->getMessage());
         }
-
-
     }
+
     public function selectUltimosPosts($table)
     {
         $sql = sprintf("SELECT * FROM %s ORDER BY %s desc LIMIT %s", $table, 'id', "5");
@@ -118,6 +118,16 @@ class QueryBuilder
         }
     }
 
+    public function login($table, $email, $password)
+    {
+        $sql = sprintf('SELECT * FROM %s WHERE email = :email and password = :password', $table);
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':password', $password);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+    }
+
     public function busca($pesquisa){
         $sql = "SELECT * FROM posts WHERE title LIKE '%$pesquisa%'";
 
@@ -134,6 +144,7 @@ class QueryBuilder
         }
        
     }
+
 
 }
 

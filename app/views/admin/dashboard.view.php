@@ -1,3 +1,7 @@
+<?php
+  require('app/views/includes/Sessao.php')
+?>
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -24,13 +28,13 @@
       <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">Radiator
         Springs</div>
       <div class="list-group list-group-flush my-2">
-        <a href="#" class="list-group-item list-group-item-action bg-transparent ">
+        <a href="/usuarios/admin" class="list-group-item list-group-item-action bg-transparent ">
           <i class="fa-solid fa-user me-2"></i>
           </i>Lista de Usuários</a>
-        <a href="#" class="list-group-item list-group-item-action bg-transparent ">
-          <i class="fa-solid fa-list me-2"></i>Lista de Posts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-transparent primary-text ">
-          <i class="fas fa-power-off me-2"></i>Logout</a>
+        <a href="/posts/admin" class="list-group-item list-group-item-action bg-transparent ">
+          <i class="fa-solid fa-list me-2" ></i>Lista de Posts</a>
+        <a href="/logout" class="list-group-item list-group-item-action bg-transparent primary-text ">
+          <i class="fas fa-power-off me-2" ></i>Logout</a>
       </div>
     </div>
    
@@ -68,23 +72,30 @@
       <div class="container-fluid px-4">
         <div class="row g-3 my-2">
           <div class="col-md-3">
+          <a href="/usuarios/admin">
             <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
-                <h3 class="fs-2 fw-bold">0</h3>
+                <h3 class="fs-2 fw-bold"></h3>
                 <p class="fs-5 fw-bold">Usuários</p>
               </div>
               <i class="fa-solid fa-users fs-1  border rounded-full secondary-bg p-3"></i>
             </div> 
+          </a>
           </div>
+          
+
+
 
           <div class="col-md-3">
+          <a href="/usuarios/admin">
             <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
-                <h3 class="fs-2 fw-bold">0</h3>
+                <h3 class="fs-2 fw-bold"></h3>
                 <p class="fs-5 fw-bold">Postagens</p>
               </div>
               <i class="fa-solid fa-list fs-1 border rounded-full secondary-bg p-3"></i>
             </div>
+            </a>
           </div>
 
 

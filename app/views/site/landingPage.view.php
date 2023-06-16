@@ -1,21 +1,52 @@
-<!DOCTYPE html>
+<?php 
+  session_start();
+  
+    /*$caminho = $_SERVER['PATH_INFO'];
+
+    $ehRotaLogin = stripos($caminho, 'login');
+
+    if(!isset($_SESSION['logado']) && !$ehRotaLogin === false);
+    {
+      unset($_SESSION['email']);
+      unset($_SESSION['password']);
+     // header('Location: /home');
+      exit();
+    }
+    //$logado = $_SESSION['email'];
+   */ ?>
+   
+   
+   <!DOCTYPE html>
+
 <html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Radiator Springs</title>
-    <link rel="stylesheet" href="../../../public/css/landingP.css" />
 
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
     </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../public/css/landingP.css" />
+    <link rel="stylesheet" href="/public/css/navbar_footer.css" />
+    <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
+
+    <title>Radiator Springs</title>
+
   </head>
   <body>
+     
+
     <main>
+
+      <?php require('app/views/includes/NavBar.php'); ?>
+
       <section id="intro">
         <div id="imgIntro">
-          <img src="../../../public/assets/img/img2_blog.png" alt="" />
+          <img src="../../../public/assets/logo2.jpg" alt="imagem principal" />
         </div>
         <div id="pIntro">
           <p>
@@ -36,38 +67,33 @@
       <?php foreach($posts as $post): ?>
       <section class="posts">
         <div class="imgPost">
-          <img src="<?php echo $post->image?>" alt="" />
+          <img src="/<?= $post->image?>" alt="Imagem do post" />
         </div>
 
         <div class="pPost">
           <h2><?php echo $post->title?></h2>
           <p>
-          <?php echo substr($post->content, 0, 120) . "...";?>
+          <?php echo substr($post->content, 0, 200) . "...";?>
           </p>
-        </div>
-      </section>
 
-  <div class="button">
+          <div class="button">
       <form method="post" action="posts/postIndividual">
           <input type="hidden" name="id" value="<?php echo $post->id?>">
           <a href=""><button type="submit" class="ler" title="Ler Post Completo">Ler Post Completo</button></a>  
       </form>
   </div>
 
+        </div>
+
+      </section>
+
       <div class="cor"></div>
       <?php endforeach; ?>
-
-      
-       
-
-
-
-      
 
       <h2 id="small">Acesse nosso Facebook</h2>
       <div id="rs">
         <a href="#" target="_blank">
-          <img src="../../../public/assets/img/logo-facebook.jpg" alt="face"
+          <img src="../../../public/assets/logo-facebook.jpg" alt="face"
         /></a>
         <!-- <a href="#" target="_blank">
           <img src="../../../public/assets/img/logo-instagram.jpg" alt="insta"
@@ -79,6 +105,16 @@
           <img src="../../../public/assets/img/logo-youtube.jpg" alt="yt"
         /></a> -->
       </div>
+
+      <?php require('app/views/includes/Footer.php'); ?>
+
     </main>
+
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/31a11ca086.js" crossorigin="anonymous"></script>
+
 </html>

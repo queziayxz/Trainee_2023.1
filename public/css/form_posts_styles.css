@@ -1,68 +1,61 @@
 /* Geral */
-
 body {
   background-color: #32252c;
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
 }
+
 h1 {
   font-size: 25px;
   font-weight: 400;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 15px;
 }
+
 h2 {
   font-size: 20px;
   margin-bottom: 10px;
   font-weight: 400;
   font-weight: bold;
 }
+
 .dataa{
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
-
 #txtDate{
   padding-right: 3px;
   padding-left: 12px;
-  width: 97%;
-}
-
-.data2{
-  margin-top: 12px;
+  width: 100%;
 }
 
 .conteudo2{
   margin-top: 12px;
 }
 
-
-.form-label{
-  font-size: 15px;
-  margin-bottom: 10px;
+.form-label1{
   font-weight: 400;
   font-weight: bold;
 }
-/* modal */
 
+/* modal */
 #modal-edita,
 #modal-add,
 #modal-excluir,
 #modal-visu {
     display: none; 
-   
-    
-  }
+    z-index: 3;
+}
 
 .modal,
 .modal3,
 .modal4{
   display: none; 
   position: fixed;
-  z-index: 1;
-  
+  z-index: 5;
   left: 0;
   top: 0;
   width: 100%;
@@ -73,22 +66,23 @@ h2 {
   margin: 0 auto;
   
 }
+
 .modal2{
   display: none; 
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.8);
-  
+  background-color: rgba(0,0,0,0.8); 
 }
 
-
-
+.coluna-esquerda-item{
+  position: relative;
+}
 
 .coluna-esquerda,
 .coluna-direita {
@@ -104,14 +98,16 @@ h2 {
   width: 100%;
   height: 100%;
 }
+
 .titulo {
   font-size: 30px;
   font-weight: bold;
   display: flex;
   font-family: "Montserrat", sans-serif;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
+
 input::placeholder {
   padding-left: 10px;
   color: #d6c0b4;
@@ -122,6 +118,7 @@ input::placeholder {
   line-height: 16px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
+  text-align: justify;
 }
 .coluna-esquerd-item textarea {
   resize: vertical;
@@ -130,12 +127,6 @@ input::placeholder {
 }
 
 /* Posts/Editar */
-
-.formulario {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 10px;
-}
 .area-fundo-posts {
   display: flex;
   height: 100vh;
@@ -144,12 +135,12 @@ input::placeholder {
   justify-content: center;
   align-items: center;
 }
+
 .area-posts {
   background-color: #d6c0b4;
-  display: flex;
+  
   align-items: center;
   width: 50%;
-  height: 70%;
   padding: 35px;
   border-radius: 8px;
   box-shadow: 0px 10px 25px black;
@@ -160,10 +151,11 @@ input::placeholder {
   transform: translate(-50%, -50%);
   
 }
+
 .area-posts input {
   margin-top: 10px;
   height: 40px;
-  width: 97%;
+  
   color: #d6c0b4;
   background-color: #32252c;
   border: none;
@@ -172,11 +164,7 @@ input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-/* .area-posts form {
-  display: flex;
-  width: 100%;
-  align-items: center;
-} */
+
 #exampleFormControlTextarea1 {
   height: 100%;
   width: 100%;
@@ -188,42 +176,43 @@ input::placeholder {
   padding-left: 10px;
   margin-top: 20px;
 }
+
 .img {
   width: 100%;
   border-radius: 8px;
+  margin-bottom: 15px;
 }
+
 input[type="file"] {
   display: block;
 }
+
 #img {
   padding-top: 0px;
   height: 40px;
-  width: 85%;
+  width: 100%;
   background-color: #32252c;
   color: #d6c0b4;
   text-transform: uppercase;
   display: flex;
-  margin-top: 10px;
+  margin-top: 9.7px;
   cursor: pointer;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  padding-left: 13px;
   font-family: "Montserrat", sans-serif;
   position: absolute;
   pointer-events: none;
 }
+
 #exampleFormControlTextarea1::placeholder {
   padding-left: 10px;
   color: #d6c0b4;
   font-size: 14px;
 }
 
-
 /* Excluir post */
-
-
 .botoes_excluir_cancelar{
   display: flex;
   justify-content: center;
@@ -231,9 +220,8 @@ input[type="file"] {
   justify-content: flex-end;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-
-  
 }
+
 .area-excluir {
   background-color: #d6c0b4;
   display: flex;
@@ -248,9 +236,8 @@ input[type="file"] {
   left: 50%;
   position: fixed;
   transform: translate(-50%, -50%);
-  
-
 }
+
 .area-fundo-excluir {
   display: flex;
   height: 100vh;
@@ -258,14 +245,8 @@ input[type="file"] {
   align-items: center;
   justify-content: center;
   align-items: center;
-
 }
-/* .area-excluir form {
-  display: flex;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: center;
-} */
+
 .area-excluir input {
   margin-top: 10px;
   height: 45px;
@@ -276,23 +257,23 @@ input[type="file"] {
   outline: none;
   border-radius: 8px;
   font-family: "Montserrat", sans-serif;
-  
 }
+
 .texto2 {
   font-size: 20px;
   display: flex;
   font-family: "Montserrat", sans-serif;
   justify-content: space-around;
+  text-align: center;
 }
 
 /* Vizualizar posts */
-
 .area-vizualizar {
   background-color: #d6c0b4;
   display: flex;
   align-items: flex-end;
   width: 60%;
-  height: 80%;
+  height: 75%;
   padding: 35px;
   border-radius: 8px;
   box-shadow: 0px 10px 25px black;
@@ -302,7 +283,6 @@ input[type="file"] {
   position: fixed;
   transform: translate(-50%, -50%);
   overflow-y: auto;
-
 }
 .area-fundo-vizualizar {
   display: flex;
@@ -313,12 +293,6 @@ input[type="file"] {
   align-items: center;
 }
 
-/* .area-vizualizar form {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin: 0 auto;
-} */
 .area-vizualizar input {
   margin-top: 10px;
   height: 45px;
@@ -329,16 +303,9 @@ input[type="file"] {
   outline: none;
   border-radius: 8px;
   font-family: "Montserrat", sans-serif;
-  
-
 }
-/* .formulario-vizualizar {
-  display: flex;
-  width: 50%;
-} */
 
 /* Botoes */
-
 input[type=date]::-webkit-calendar-picker-indicator
 {
   filter:  invert(100%) sepia(3%) saturate(7352%) hue-rotate(331deg) brightness(81%) contrast(98%);
@@ -356,8 +323,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   cursor: pointer;
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
-
 }
+
 .btnVoltarC {
   padding: 10px 8px;
   width: 120px;
@@ -370,15 +337,14 @@ input[type=date]::-webkit-calendar-picker-indicator
   cursor: pointer;
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
-
 }
+
 .control-label{
   font-size: 15px;
-  margin-bottom: 10px;
   font-weight: 400;
   font-weight: bold;
-
 }
+
 .form-control{
   font-size: 14px;
   margin-bottom: 10px;
@@ -386,6 +352,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   font-weight: bold;
   padding-left: 12px;
 }
+
 .btnVoltarC {
   padding: 10px 8px;
   width: 120px;
@@ -398,9 +365,9 @@ input[type=date]::-webkit-calendar-picker-indicator
   cursor: pointer;
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
-
 }
-.btn {
+
+.btn1 {
   padding: 10px 8px;
   width: 120px;
   text-align: center;
@@ -412,8 +379,8 @@ input[type=date]::-webkit-calendar-picker-indicator
   cursor: pointer;
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
-
 }
+
 .btn2 {
   padding: 10px 8px;
   width: 120px;
@@ -426,58 +393,278 @@ input[type=date]::-webkit-calendar-picker-indicator
   cursor: pointer;
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
-
+  margin-bottom: 15px;
 }
 
-
- @media (max-width: 635px) {
-  .area-excluir{
-    width: 65%;
-    height: 50%;
+@media (max-width: 1100px) {
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 29%;
+    height: 36%;
   }
- 
+  /* Modal de Excluir - FIM */
+  
+  /* Modal de Adicionar e Editar - INÍCIO */
+
+
+
+
+  /* Modal de Adicionar e Editar - FIM */
+  
+  /* Modal de Visualizar - INÍCIO */
+  .area-vizualizar {
+    padding-top: 25px;
+  }
+  /* Modal de Visualizar - FIM */  
 }
 
-@media (max-width: 469px) {
-h1{
-  font-size: 19px;
+@media (max-width: 825px) {
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 29%;
+    height: 35%;
+    padding: 20px;
+  }
 
-}
-.coluna-esquerd {
-  width: 100%;
-  height: 100%;
-}
-.area-vizualizar {
-  background-color: #d6c0b4;
-  display: flex;
-  align-items: start;
-  width: 70%;
-  height: 70%;
-  padding: 35px;
-  border-radius: 8px;
-  box-shadow: 0px 10px 25px black;
-  margin: 0 auto;
-  overflow-y: auto;
+  .titulo{
+    font-size: 25px;
+  }
 
+  .texto2 {
+    font-size: 18px;
+  }
+  .btnVoltarC {
+    font-size: 15px;
+    padding-top: 8px;
+    padding: 8px;
+  }
+  /* Modal de Excluir - FIM */
+
+  /* Modal de Visualizar - INÍCIO */
+  .area-vizualizar {
+    padding-top: 20px;
+  }
+  /* Modal de Visualizar - FIM */  
 }
-.conteudoo {
-  font-size: 14px;
-  line-height: 14px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+
+@media (max-width: 682px) {
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 32%;
+    height: 33%;
+    padding: 20px;
+  }
+
+  .titulo{
+    font-size: 22px;
+  }
+
+  .texto2 {
+    font-size: 16px;
+  }
+  .btnVoltarC {
+    font-size: 14px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+  }
+  /* Modal de Excluir - FIM */
+
+  /* Modal de Visualizar - INÍCIO */
+  .area-vizualizar {
+    width: 80%;
+    padding-top: 15px;
+  }
+
+  .area-posts{
+    width: 65%;
+  }
+  /* Modal de Visualizar - FIM */  
 }
-.form-label{
-  font-size: 13px;
+
+@media (max-width: 559px) {
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 34%;
+    height: 33%;
+    padding: 20px;
+  }
+
+  .titulo{
+    font-size: 22px;
+  }
+
+  .texto2 {
+    font-size: 16px;
+  }
+  .btnVoltarC {
+    font-size: 13px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+  }
+  /* Modal de Excluir - FIM */
 }
-.control-label{
-  font-size: 13px;
+
+@media (max-width: 559px) {
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 45%;
+    height: 32%;
+    padding: 20px;
+  }
+  /* Modal de Excluir - FIM */
 }
-.area-posts{
-  width: 65%;
-  height: 62%;
+
+@media (max-width: 500px) {
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 45%;
+    height: 32%;
+    padding: 20px;
+  }
+  /* Modal de Excluir - FIM */
+
+  .area-posts{
+    padding: 20px;
+  }
 }
-.area-excluir{
-  width: 65%;
-  height: 50%;
+
+@media (max-width: 426px) {
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 65%;
+    height: 32%;
+    padding: 20px;
+  }
+  /* Modal de Excluir - FIM */
+
+  /* Modal de Visualizar - INÍCIO */
+  .area-vizualizar {
+    width: 85%;
+    padding: 15px 23px 0px 23px;
+  }
+
+  .btn2 {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  h1{
+    font-size: 22px;
+  }
+
+  .area-posts{
+    width: 80%;
+  }
+  /* Modal de Visualizar - FIM */
 }
+
+@media (max-width: 298px) {
+  h1{
+    font-size: 22px;
+  }
+
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 70%;
+    height: 32%;
+    padding: 20px;
+  }
+  /* Modal de Excluir - FIM */
+
+  /* Modal de Visualizar - INÍCIO */
+  .conteudoo {
+    font-size: 14px;
+  }
+  /* Modal de Visualizar - FIM */  
+}
+
+@media (max-width:280px) {
+
+  h1{
+    font-size: 19px;
+  }
+
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 85%;
+    height: 32%;
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+
+  .texto2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .btnVoltarC {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+  /* Modal de Excluir - FIM */
+
+  /* Modal de Adicionar e Editar - INÍCIO */
+  /*.area-posts{
+    width: 85%;
+    height: 60%;
+    padding: 15px;
+  }
+
+  .control-label {
+    font-size: 16px;
+  }
+
+  .area-posts input {
+    font-size: 13px;
+    height: auto;
+    margin-top: 8px;
+  }
+
+  .form-control {
+    margin-bottom: 8px;
+  }
+
+  #img {
+    width: 88%;
+    height: 32px;
+    margin-top: 7.5px;
+ }
+
+  #txtDate {
+    height: 32px;
+  }
+
+  .data2 {
+    margin-top: 0;
+  }
+
+  .conteudo2 {
+    margin-top: 10px;
+  }
+
+  .btn1 {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+  */
+  /* Modal de Adicionar e Editar - FIM */
+
+  /* Modal de Visualizar - INÍCIO */
+  .area-vizualizar {
+    width: 85%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .conteudoo {
+    font-size: 13px;
+  }
+
+
+  /* Modal de Visualizar - FIM */
 }

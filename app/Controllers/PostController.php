@@ -5,6 +5,11 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
+//session_start();
+   /* if (!isset($_SESSION['logado'])) {
+        header('Location: /login');
+    }*/
+
 class PostController
 {
     public function index()
@@ -19,6 +24,7 @@ class PostController
 
         return view('admin/lista-de-post-adm', compact('posts'));
     }
+
     public function listaPosts()
     {
         $postagens = App::get('database')->selectAll('posts');
@@ -31,6 +37,7 @@ class PostController
 
         return view('site/lista-posts', compact('posts'));
     }
+
     public function postIndividual()
     {
         $id = $_POST['id'];
@@ -44,6 +51,7 @@ class PostController
 
         return view('site/post-individual', compact('posts'));
     }
+
     public function landingPage()
     {
        
@@ -57,10 +65,6 @@ class PostController
 
         return view('site/landingPage', compact('posts'));
     }
-
-
-
-
 
     public function show()
     {
@@ -136,7 +140,9 @@ class PostController
 
     public function delete()
     {
+        $id = $_POST['id'];
 
+        App::get('database')->delete('posts', $id);
+        header('Location: /posts/admin');
     }
 }
-

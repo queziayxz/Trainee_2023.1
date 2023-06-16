@@ -35,8 +35,8 @@ body{
 .post h1{
     text-align: center;
     text-transform: uppercase;
-    padding-top: 20px;
-    width: 400;
+    padding-top: 30px;
+    
 }
 
 .post h3{
@@ -62,23 +62,22 @@ body{
 
 .post-img img{
     width: 60%;
-    height: 80%; 
+    border-radius: 5px;
 }
 
 .descricao{
     background-color: #D6C0B4;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 .descricao p{
     color: #32252C;
     text-align: justify;
     font-weight: 400;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 20px 20%;
 }
 
 .botao a {position: fixed;
-    left: 90%;
+    left: 88%;
     right: -30%;
     top: 85%; 
     color: #32252C;
@@ -94,24 +93,64 @@ body{
 
 .data{
     background-color: #D6C0B4;
+    padding-bottom: 30px;
+    padding-left: 20%;
 }
 
 .data h6{
-    margin-left: 1%;
+    /* margin-left: 1%; */
     font-weight: 400;
     color: 32252C;
 }
 
  @media (max-width: 1000px) {
 
-
-    .descricao p {
-        text-align: left;
-    }
-
     .botao a{
         height: 300px;
         width: 300px;
-        left: 85%;
+        left: 89%;
+    }
+}
+
+@media (max-width: 700px) {
+    .post-img img{
+        width: 80%;
+    }
+
+    .descricao p {
+        margin: 15px 10%;
+    }
+
+    .data{
+        padding-left: 10%;
+    }
+
+    .botao a{
+        left: 92.5%;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .botao a{
+        font-size: 25px;
+        left: 92%;
+    }
+}
+
+@media (max-width: 315px){
+    .botao a{
+        font-size: 20px;
+        left: 92%;
+    }
+}
+
+@media (max-width: 280px) {
+    .descricao p {
+        font-size: 13px;
+    }
+
+    .botao a {
+        left: 91.5%;
     }
 }

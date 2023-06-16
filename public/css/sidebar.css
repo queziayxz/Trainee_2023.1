@@ -1,11 +1,13 @@
-body.estilos{
-    font-family: 'Montserrat', sans-serif;
-  background-color: #D6C0B4;
+.d-flex {
+  position: fixed;
+  z-index: 2;
+  width: auto;
 }
 
 .sidebar
 {
     background-color: #32252C;
+    z-index: 2;
 }
 
 .sidebar a{
@@ -16,6 +18,14 @@ body.estilos{
     color: #91827a;
 }
 
+.navbar {
+  z-index: 2;
+  
+}
+
+.border-bottom {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) #D6C0B4!important;
+}
 
 #wrapper {
     overflow-x: hidden;
@@ -48,7 +58,7 @@ body.estilos{
   }
   
   .list-group-item {
-    border: none;
+    border-bottom: 2px solid #D6C0B4;
     padding: 20px 30px;
   }
   
@@ -66,5 +76,11 @@ body.estilos{
 
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
+  }
+}
+
+@media (max-width: 300px) {
+  div .px-4 {
+    padding-bottom: 0;
   }
 }

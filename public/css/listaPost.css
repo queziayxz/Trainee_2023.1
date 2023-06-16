@@ -93,7 +93,7 @@ body {
 
 .miniatura {
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-bottom: 43px;
     padding-top: 45px;
     border-bottom: solid 3px #32252C;
     flex-direction: row;
@@ -109,13 +109,16 @@ body {
 
 .miniatura-text h1 {
     font-size: 20px;
+    font-weight: 600;
     color: #9C1111;
+    overflow-wrap: break-word;
 }
 
 .miniatura-text h2 {
     font-size: 16px;
     color: #32252C;
     margin-bottom: 20px;
+    overflow-wrap: break-word;
 }
 
 .button {
