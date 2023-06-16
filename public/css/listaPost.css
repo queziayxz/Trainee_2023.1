@@ -18,7 +18,7 @@ body {
 }
 
 #form-busca{
-    display: flex;
+        display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -175,6 +175,16 @@ button {
     height: 10%;
     width: 10%;
  }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+{
+ border: 1px solid white;
+ -webkit-text-fill-color: #D6C0B4 !important;
+-webkit-box-shadow: 0 0 0px 1000px #32252C inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 @media (max-width: 1100px) {
 
