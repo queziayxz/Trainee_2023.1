@@ -80,6 +80,10 @@ h2 {
   background-color: rgba(0,0,0,0.8); 
 }
 
+.coluna-esquerda-item{
+  position: relative;
+}
+
 .coluna-esquerda,
 .coluna-direita {
   width: 100%;
@@ -186,7 +190,7 @@ input[type="file"] {
 #img {
   padding-top: 0px;
   height: 40px;
-  width: 91%;
+  width: 100%;
   background-color: #32252c;
   color: #d6c0b4;
   text-transform: uppercase;
@@ -402,6 +406,9 @@ input[type=date]::-webkit-calendar-picker-indicator
   
   /* Modal de Adicionar e Editar - INÍCIO */
 
+
+
+
   /* Modal de Adicionar e Editar - FIM */
   
   /* Modal de Visualizar - INÍCIO */
@@ -467,6 +474,10 @@ input[type=date]::-webkit-calendar-picker-indicator
     width: 80%;
     padding-top: 15px;
   }
+
+  .area-posts{
+    width: 65%;
+  }
   /* Modal de Visualizar - FIM */  
 }
 
@@ -503,6 +514,20 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - FIM */
 }
 
+@media (max-width: 500px) {
+  /* Modal de Excluir - INÍCIO */
+  .area-excluir {
+    width: 45%;
+    height: 32%;
+    padding: 20px;
+  }
+  /* Modal de Excluir - FIM */
+
+  .area-posts{
+    padding: 20px;
+  }
+}
+
 @media (max-width: 426px) {
   /* Modal de Excluir - INÍCIO */
   .area-excluir {
@@ -521,6 +546,14 @@ input[type=date]::-webkit-calendar-picker-indicator
   .btn2 {
     font-size: 13px;
     padding: 6px 8px;
+  }
+
+  h1{
+    font-size: 22px;
+  }
+
+  .area-posts{
+    width: 80%;
   }
   /* Modal de Visualizar - FIM */
 }
@@ -576,7 +609,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - FIM */
 
   /* Modal de Adicionar e Editar - INÍCIO */
-  .area-posts{
+  /*.area-posts{
     width: 85%;
     height: 60%;
     padding: 15px;
@@ -618,6 +651,7 @@ input[type=date]::-webkit-calendar-picker-indicator
     font-size: 13px;
     padding: 6px 8px;
   }
+  */
   /* Modal de Adicionar e Editar - FIM */
 
   /* Modal de Visualizar - INÍCIO */
@@ -630,5 +664,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   .conteudoo {
     font-size: 13px;
   }
+
+
   /* Modal de Visualizar - FIM */
 }
