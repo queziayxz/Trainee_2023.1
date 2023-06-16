@@ -32,10 +32,6 @@ h2 {
   width: 100%;
 }
 
-.data2{
-  margin-top: 12px;
-}
-
 .conteudo2{
   margin-top: 12px;
 }
@@ -201,13 +197,12 @@ input[type="file"] {
   color: #d6c0b4;
   text-transform: uppercase;
   display: flex;
-  margin-top: 10.98px;
+  margin-top: 10px;
   cursor: pointer;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  padding-left: 13px;
   font-family: "Montserrat", sans-serif;
   position: absolute;
   pointer-events: none;
