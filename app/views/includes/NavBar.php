@@ -11,7 +11,7 @@
           <div class="navbar-nav">
             <ul class="navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link fw-bold " href="/home">Home</a>
+                <a class="nav-link fw-bold " href="/">Home</a>
               </li>
               <li class="nav-item" >
                 <a class="nav-link fw-bold" href="/posts">Nossos posts</a>
