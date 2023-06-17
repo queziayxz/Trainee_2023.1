@@ -65,7 +65,6 @@ class UserController
             'name' => $_POST['name'],
             'email' => $_POST['email'],
             'password' => $_POST['password'],
-            'type' => $_POST['type'],
         ];
         //var_dump($parameters);
         App::get('database')->insert('users', $parameters);
@@ -128,7 +127,6 @@ class UserController
             unset($_SESSION['email']);
             unset($_SESSION['password']);
             unset($_SESSION['logado']);
-            unset($_SESSION['type']);
             $erro = [
 
                 'erro' => "Usuário ou senha incorretos",
@@ -144,8 +142,7 @@ class UserController
         unset($_SESSION['email']);
         unset($_SESSION['password']);
         unset($_SESSION['logado']);
-        unset($_SESSION['type']);
-        header('Location: /visuLog');
+        header('Location: /');
     }
 
     public function dashboard ()
