@@ -20,7 +20,7 @@
         <div class="sidebar" id="sidebar-wrapper">
             <div class="sidebar-heading text-center py-4 fs-4 fw-bold text-uppercase border-bottom">Início</div>
             <div class="list-group list-group-flush">
-                <a href="/home" class="list-group-item list-group-item-action bg-transparent fw-bold"><i
+                <a href="/" class="list-group-item list-group-item-action bg-transparent fw-bold"><i
                     class="fas fa-home me-2"></i>Home</a>
                 <a href="/posts/admin" class="list-group-item list-group-item-action bg-transparent fw-bold"><i
                     class="fas fa-list me-2"></i>Lista de Posts (Admin)</a>

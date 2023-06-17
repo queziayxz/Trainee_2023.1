@@ -1,7 +1,7 @@
 <header>
     <div class="container" id="nav-container">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a href="/home" class="navbar-brand">
+        <a href="/" class="navbar-brand">
           <img id="logo" src="/public/assets/logo_blog.jpg" alt="Logo Radiator Springs RS">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
