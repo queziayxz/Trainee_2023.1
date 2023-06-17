@@ -14,17 +14,19 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel="stylesheet" href="/public/css/navbar_footer.css" />
         <link rel="stylesheet" href="../../../public/css/listaPost.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+        <link rel="stylesheet" href="/public/css/style_paginacao.css">
         <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
 
         <title>Posts - Radiator Springs Gazette</title>
     </head>
 
     <body>
-
+        <!-- Inclui NavBar -->
         <?php require('app/views/includes/NavBar.php'); ?>
 
         <div class="principal">
+            <!-- Barra de Pesquisa -->
             <div class="search-box">
             <form action="/posts/search" method="GET" id="form-busca">
             <input type="text" name="buscapost" id="buscapost" placeholder="Nome do Post">
@@ -33,6 +35,7 @@
         </div>
 
             <div class="main">
+            <!-- Posts -->
             <?php foreach($posts as $post): ?>
                 <div class="miniatura">
 
@@ -49,13 +52,19 @@
                     </div>
                 </div>
             <?php endforeach; ?>
+
+            <!-- Inclui Paginação -->
+            <?php require('app/views/includes/Paginacao.php'); ?>
+
             </div>
         </div>
 
+        <!-- Seta para voltar ao topo -->
         <div class = "botao">
             <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
         </div>
 
+        <!-- Inclui Footer -->
         <?php require('app/views/includes/Footer.php'); ?>
         
     </body>

@@ -1,0 +1,26 @@
+.pagination {
+    --bs-pagination-padding-x: 0.75rem;
+    --bs-pagination-padding-y: 0.375rem;
+    --bs-pagination-font-size: 1rem;
+    --bs-pagination-color: #D6C0B4;
+    --bs-pagination-bg: #32252C;
+    --bs-pagination-border-width: var(--bs-border-width);
+    --bs-pagination-border-color: #32252c;
+    --bs-pagination-border-radius: var(--bs-border-radius);
+    --bs-pagination-hover-color: #D6C0B4;
+    --bs-pagination-hover-bg: #9C1111;
+    --bs-pagination-hover-border-color: #32252C;
+    --bs-pagination-focus-color: #D6C0B4;
+    --bs-pagination-focus-bg: #9c1111;
+    --bs-pagination-focus-box-shadow: 0 0 0 0.1rem #9c1111;
+    --bs-pagination-active-color: #d6c0b4;
+    --bs-pagination-active-bg: #9c1111;
+    --bs-pagination-active-border-color: #32252c;
+    --bs-pagination-disabled-color: #d6c0b4;
+    --bs-pagination-disabled-bg: #3c3237;
+    --bs-pagination-disabled-border-color: #32252c;
+}
+
+.active>.page-link, .page-link.active {
+    z-index: 1;
+}

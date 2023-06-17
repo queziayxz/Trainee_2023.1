@@ -15,24 +15,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel="stylesheet" href="/public/css/sidebar.css">
         <link rel="stylesheet" href="../../../public/css/listaUsuariosAdmin.css">
+        <link rel="stylesheet" href="/public/css/style_paginacao.css">
+        <link rel="stylesheet" href="../../../public/css/styleadduser.css">
+        <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
         
         <title>Lista de Usuários - Radiator Springs Gazette</title>
-        <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg">
-        
-        <link rel="stylesheet" href="../../../public/css/styleadduser.css">
     </head>
 
     <body>
         <div class="table-box">
+            <!-- Inclui Sidebar -->
             <?php require('app/views/includes/SideBar.php'); ?>
             <div>
+                <!-- Título da Tabela -->
                 <h1 class="page-title">Lista de Usuários</h1>
+                <!-- Botão de Adicionar novo Usuário -->
                 <button data-modal="modal-add" class="add-button botao-modal"  title="Adicionar novo usuário"><i class="fa-solid fa-user-plus"></i> Adicionar Usuário</button>
             </div>
+            <!-- Tabela com a lista dos Usuários -->
             <table>
                 <thead>
                     <tr class="table-line" class="table-title">
@@ -55,6 +60,7 @@
                             </td>
                         </tr>
 
+                            <!-- Modal de Visualizar -->
                             <div id="modal-visualizar<?php echo $user->id ?>" class="modal-visu-user modal-p">
                                 <div class="area area-visualizar">
                                     <div class="texto">
@@ -80,6 +86,7 @@
                                 </div>
                             </div>
 
+                            <!-- Modal de editar -->
                             <div id="modal-edit<?php echo $user->id ?>" class="modal-edition modal-p">
                                 <div class="area area-visualizar">
                                   <form class="form-edit" action="/usuarios/update" method="POST">               
@@ -105,10 +112,11 @@
                                             <button type="submit" class="fechar-modal botao-modal btn2">Confirmar</button>
                                         </div>
                                     </div>
-                                </form>   
+                                  </form>   
                                 </div>
                             </div>
 
+                            <!-- Modal de Excluir -->
                             <div id="modalExcluirUser<?php echo $user->id ?>" class="modal-excluir-user modal-p">
                                 <div class="area area1">
                                   <form action="/usuarios/delete" method="POST">
@@ -126,11 +134,17 @@
                                   </form>
                                 </div>
                             </div>
+
                     <?php endforeach; ?>
                 </tbody>
             </table>
+
+            <!-- Inclui Paginação -->
+            <?php require('app/views/includes/Paginacao.php'); ?>
+
         </div>
 
+        <!-- Modal de Adicionar -->
         <div class = "main">
             <div id="modal-add" class = "modal-addition modal-p">
                 <div class = "area area-visualizar">

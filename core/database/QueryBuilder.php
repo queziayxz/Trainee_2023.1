@@ -13,9 +13,14 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    public function selectAll($table)
+    public function selectAll($table, $inicio = null, $rows_count = null)
     {
-        $sql = "select * from {$table}";
+        $sql = "SELECT * from {$table}";
+
+        if($inicio >= 0 && $rows_count > 0)
+        {
+            $sql .= " LIMIT {$inicio}, {$rows_count}";
+        }
 
         try {
             $stat = $this->pdo->prepare($sql);
@@ -27,6 +32,21 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+
+    // public function selectAll($table)
+    // {
+    //     $sql = "select * from {$table}";
+
+    //     try {
+    //         $stat = $this->pdo->prepare($sql);
+
+    //         $stat->execute();
+
+    //         return $stat->fetchAll(PDO::FETCH_CLASS);
+    //     } catch (Exception $e) {
+    //         die($e->getMessage());
+    //     }
+    // }
 
     public function selectPost($id, $table)
     {
@@ -144,7 +164,22 @@ class QueryBuilder
         }
        
     }
+    public function countAll($table)
+    {
+        $sql = "SELECT COUNT(*) FROM {$table}";
 
+        try {
+
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute();
+
+            return intval($statement->fetch(PDO::FETCH_NUM)[0]);
+
+        } catch (Exception $e) {
+            die("Ocorreu um erro ao tentar contar pelo banco de dados: {$e->getMessage()}");
+        }
+    }
 
 }
 

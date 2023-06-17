@@ -23,33 +23,19 @@
 <body class="modificacoes">
 
   <div class="d-flex" id="wrapper">
-   
-    <div class="cor-fundo" id="sidebar-wrapper">
-      <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">Radiator
-        Springs</div>
-      <div class="list-group list-group-flush my-2">
-        <a href="/usuarios/admin" class="list-group-item list-group-item-action bg-transparent ">
-          <i class="fa-solid fa-user me-2"></i>
-          </i>Lista de Usuários</a>
-        <a href="/posts/admin" class="list-group-item list-group-item-action bg-transparent ">
-          <i class="fa-solid fa-list me-2" ></i>Lista de Posts</a>
-        <a href="/logout" class="list-group-item list-group-item-action bg-transparent primary-text ">
-          <i class="fas fa-power-off me-2" ></i>Logout</a>
-      </div>
-    </div>
-   
+     
 
-    
+
     <div id="page-content-wrapper">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
         <div class="d-flex align-items-center">
-          <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-          <h2 class="fs-2 m-0 fw-bold">Administrador</h2>
+
+          <h2 class="fs-2 m-0 fw-bold">Área Administrativa</h2>
         </div>
 
         <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon navbar-dark"></span>
+          <span class="navbar-toggler-icon navbar-light"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -59,44 +45,49 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-user me-2 cor-texto"></i>Code Jr.
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item fw-bold" href="#">Perfil</a></li>
-                <li><a class="dropdown-item fw-bold" href="#">Configurações</a></li>
-                <li><a class="dropdown-item fw-bold" href="#">Logout</a></li>
+              <ul class="dropdown-menu altera-logout" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item fw-bold" href="/logout">Logout</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </nav>
 
-      <div class="container-fluid px-4">
-        <div class="row g-3 my-2">
-          <div class="col-md-3">
+      <div class="container-fluid px-4 ">
+
+        <div class="row g-3 my-2 justify-content-center" >
+          <div class="col-md-3 altera-link">
           <a href="/usuarios/admin">
-            <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+            <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
-                <h3 class="fs-2 fw-bold"></h3>
                 <p class="fs-5 fw-bold">Usuários</p>
               </div>
               <i class="fa-solid fa-users fs-1  border rounded-full secondary-bg p-3"></i>
-            </div> 
-          </a>
-          </div>
-          
+            </div>
+          </a> 
+        </div>
 
-
-
-          <div class="col-md-3">
-          <a href="/usuarios/admin">
-            <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+          <div class="col-md-3 altera-link">
+          <a href="/posts"> 
+            <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
               <div>
-                <h3 class="fs-2 fw-bold"></h3>
-                <p class="fs-5 fw-bold">Postagens</p>
+                <p class="fs-5 fw-bold">Posts (usuários)</p>
               </div>
               <i class="fa-solid fa-list fs-1 border rounded-full secondary-bg p-3"></i>
             </div>
-            </a>
+          </a> 
           </div>
+
+          <div class="col-md-3 altera-link">
+          <a href="/posts/admin">  
+            <div class="p-3 altera-cor shadow-sm d-flex justify-content-around align-items-center rounded">
+              <div>
+                <p class="fs-5 fw-bold">Posts (admin)</p>
+              </div>
+              <i class="fa-solid fa-list fs-1 border rounded-full secondary-bg p-3"></i>
+            </div>
+          </a>
+        </div>
 
 
       </div>

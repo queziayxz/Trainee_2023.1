@@ -12,6 +12,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    
     <link
     href="https://fonts.googleapis.com/css?family=Montserrat:100,400"
     rel="stylesheet"/>
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="/public/css/sidebar.css">
     <link rel="stylesheet" href="../../../public/css/listaPostAdmin.css" />
     <link rel="stylesheet" href="../../../public/css/form_posts_styles.css" />
+    <link rel="stylesheet" href="/public/css/style_paginacao.css">
     <link rel="shortcut icon" href="../../../public/assets/logo_blog.jpg" />
 
     <title>Lista de Posts - Radiator Springs Gazette</title>
@@ -161,6 +163,9 @@
         </tbody>
 
       </table>
+
+      <?php require('app/views/includes/Paginacao.php'); ?>
+
     </div>
     
     
