@@ -5,6 +5,7 @@
         <div class="list-group list-group-flush">
             <a href="/" class="list-group-item list-group-item-action bg-transparent"><i
                 class="fas fa-home me-2"></i>Home</a>
+            <a href="/dashboard" class="list-group-item list-group-item-action bg-transparent"><i class="fa-solid fa-table me-2"></i>Dashboard</a>
             <a href="/posts/admin" class="list-group-item list-group-item-action bg-transparent"><i
                 class="fas fa-list me-2" href="lista-de-post-adm.view.php"></i>Lista de Posts (Admin)</a>
             <a href="/posts" class="list-group-item list-group-item-action bg-transparent"><i

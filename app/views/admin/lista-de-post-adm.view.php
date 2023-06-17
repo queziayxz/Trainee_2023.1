@@ -205,8 +205,8 @@
                 <input type="hidden" name="author" value="1">
 
                 <div class="botoes_excluir_cancelar">
-                  <button type="button" class="btn1 botao-modal fechar-modal">Voltar</button>
-                  <button type="submit" class="btn1 botao-modal fechar-modal">Publicar</button>
+                  <button type="button" class="btn2 botao-modal fechar-modal">Voltar</button>
+                  <button type="submit" class="btn2 botao-modal fechar-modal">Publicar</button>
                 </div>
               <!-- </form> -->
         
