@@ -156,6 +156,7 @@ body {
 }
 
 .link-img {
+    border-radius: 5px;
     width: 280px;
     height: 170px;
     display: inline-block;
