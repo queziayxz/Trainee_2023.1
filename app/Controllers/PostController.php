@@ -111,10 +111,39 @@ class PostController
 
     public function show()
     {
+        $page = 1;
+
+        if(isset($_GET['pagina']) && !empty($_GET['pagina'])){
+            $page = intval($_GET['pagina']);
+
+            if($page <= 0){
+                return redirect('posts/admin');
+            }
+        }
+
+        $itensPagina = 6;
+        $inicio = $itensPagina * $page - $itensPagina;
+        $rows_count = App::get('database')->countAll('posts');
+
+        if($inicio > $rows_count)
+        {
+            return redirect('posts/admin');
+        }
+
+
+        $postagens = App::get('database')->selectAll('posts', $inicio, $itensPagina);
+
+        $tables = [
+            'post' => $postagens,
+        ];
+
+        $posts = $tables['post'];
+
+        $total_pages = ceil($rows_count/$itensPagina);
        
         $pesquisa = filter_input(INPUT_GET,'buscapost');
         $posts = App::get('database')->busca($pesquisa); 
-        return view("site/lista-posts",compact('posts'));
+        return view("site/lista-posts",compact('posts','page','total_pages'));
     }
 
     public function create()
