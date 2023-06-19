@@ -226,7 +226,7 @@ input[type="file"] {
   background-color: #d6c0b4;
   display: flex;
   align-items: center;
-  width: 30%;
+  height: auto;
   height: 28%;
   padding: 25px;
   border-radius: 8px;
@@ -249,7 +249,7 @@ input[type="file"] {
 
 .area-excluir input {
   margin-top: 10px;
-  height: 45px;
+  height: auto;
   width: 180%;
   color: #d6c0b4;
   background-color: #32252c;
@@ -400,7 +400,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - INÍCIO */
   .area-excluir {
     width: 29%;
-    height: 36%;
+    height: auto;
   }
   /* Modal de Excluir - FIM */
   
@@ -422,7 +422,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - INÍCIO */
   .area-excluir {
     width: 29%;
-    height: 35%;
+    height: auto;
     padding: 20px;
   }
 
@@ -451,7 +451,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - INÍCIO */
   .area-excluir {
     width: 32%;
-    height: 33%;
+    height: auto;
     padding: 20px;
   }
 
@@ -485,7 +485,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - INÍCIO */
   .area-excluir {
     width: 34%;
-    height: 33%;
+    height: auto;
     padding: 20px;
   }
 
@@ -508,7 +508,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - INÍCIO */
   .area-excluir {
     width: 45%;
-    height: 32%;
+    height: auto;
     padding: 20px;
   }
   /* Modal de Excluir - FIM */
@@ -518,7 +518,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - INÍCIO */
   .area-excluir {
     width: 45%;
-    height: 32%;
+    height: auto;
     padding: 20px;
   }
   /* Modal de Excluir - FIM */
@@ -532,7 +532,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - INÍCIO */
   .area-excluir {
     width: 65%;
-    height: 32%;
+    height: auto;
     padding: 20px;
   }
   /* Modal de Excluir - FIM */
@@ -566,7 +566,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - INÍCIO */
   .area-excluir {
     width: 70%;
-    height: 32%;
+    height: auto;
     padding: 20px;
   }
   /* Modal de Excluir - FIM */
@@ -587,7 +587,7 @@ input[type=date]::-webkit-calendar-picker-indicator
   /* Modal de Excluir - INÍCIO */
   .area-excluir {
     width: 85%;
-    height: 32%;
+    height: auto;
     padding: 20px;
   }
 
