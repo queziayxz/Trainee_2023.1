@@ -117,13 +117,13 @@
                 <h1 class="">Editar Post</h1>
                 <div class="coluna-esquerda-item" id="titulo">
                   <label for="exampleFormControlInput1" class="form-label1">Título:</label> 
-                  <input class="form-control" id="exampleFormControlInput1" name="title" value="<?php echo $post->title;?>">
+                  <input class="form-control1" id="exampleFormControlInput1" name="title" value="<?php echo $post->title;?>">
                 </div>
         
                 <div class="coluna-esquerda-item"> 
                   <label for="exampleFormControlInput1" class="form-label1">Selecionar Imagem:</label>
                   <label for="arquivo" id="img">Enviar Arquivo</label>
-                  <input class="form-control" type="file" name="image" id="arquivo" value="<?php echo substr($post->image, 11,strlen($post->image));?>">  
+                  <input class="form-control1" type="file" name="image" id="arquivo" value="<?php echo substr($post->image, 11,strlen($post->image));?>">  
                 </div>
                 
           
@@ -140,7 +140,7 @@
         
                 <div class="coluna-esquerda-item conteudo2">
                   <label for="exampleFormControlInput1" class="form-label1">Conteúdo:</label>
-                  <input type="text" class="form-control conteudo3" id="exampleFormControlInput1" name="content"  value="<?php echo $post->content;?>">
+                  <input type="text" class="form-control1 conteudo3" id="exampleFormControlInput1" name="content"  value="<?php echo $post->content;?>">
                 </div>
 
                 <input type="hidden" name="author" value="1">
@@ -178,13 +178,13 @@
                 <h1>Adicionar Post</h1>
                 <div class="coluna-esquerda-item botao-3" id="titulo">
                   <label for="exampleFormControlInput1" class="form-label1">Título:</label>
-                  <input class="form-control" id="exampleFormControlInput1" placeholder="" name='title'>
+                  <input class="form-control1" id="exampleFormControlInput1" placeholder="" name='title'>
                 </div>
         
                 <div class="coluna-esquerda-item botao-3">
                   <label for="exampleFormControlInput1" class="form-label1">Selecionar Imagem:</label>
                   <label for="arquivo" id="img">Enviar Arquivo</label>
-                  <input class="form-control" type="file" name="image" id="arquivo">
+                  <input class="form-control1" type="file" name="image" id="arquivo">
         
                 </div>
         
@@ -205,7 +205,7 @@
         
                 <div class="coluna-esquerda-item botao-3 conteudo2">
                   <label for="exampleFormControlInput1" class="form-label1">Conteúdo:</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="content">
+                  <input type="text" class="form-control1" id="exampleFormControlInput1" placeholder="" name="content">
                 </div>
                 <input type="hidden" name="author" value="1">
 
