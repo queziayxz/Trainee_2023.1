@@ -48,6 +48,10 @@ body {
      margin-bottom: 12px; 
 }
 
+[type="search"]::-webkit-search-cancel-button {
+    display: none;
+  }
+
 .size {
     width: 600px;
 }
