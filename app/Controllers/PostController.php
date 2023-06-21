@@ -134,8 +134,6 @@ class PostController
         $itensPagina = 6;
         $inicio = $itensPagina * $page - $itensPagina;
         $rows_count = App::get('database')->countAll('posts');
-
-       
         $pesquisa = filter_input(INPUT_GET,'buscapost');
         if($pesquisa){
         $_SESSION['search_string']=$pesquisa;
