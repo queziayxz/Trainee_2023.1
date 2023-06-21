@@ -107,7 +107,7 @@ class UserController
     }
     public function loginFeito()
     {
-        session_start();
+        
         // $caminho = $_SERVER['PATH_INFO'];
 
         $email = $_POST["email"];
