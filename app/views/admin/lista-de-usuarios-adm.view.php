@@ -167,7 +167,7 @@
                                 <input type="password" class="form-control" id="exampleFormControlInput1" name='password'>
                             </div>
                             <div class="botoes_excluir_cancelar">
-                                <button type="button" class="fechar-modal botao-modal btn2">Voltar</button>
+                                <button type="button" class="btn2 fechar-modal botao-modal ">Voltar</button>
                                 <button type="submit" class="fechar-modal botao-modal btn2">Adicionar</button>
                             </div>
                         </div>

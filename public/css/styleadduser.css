@@ -17,12 +17,12 @@ body{
     height: 100vh;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
 }
 
 .form-bar label {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 13px;
 }
 
 /* modal visualizar */
@@ -160,18 +160,18 @@ form{
     align-items: center;
 }
 
-.botao2{
+/*.botao2{
     text-align: center;
     margin-top: 8%;
     margin-bottom: 20px;
     display:flex;
     justify-content: flex-end;
     align-items: center;
-}
+}*/
 
 .btn2 {
-    font-family: 'Montserrat', sans-serif;
-    padding: 9px 7px;
+    align-items: center;
+    padding: 10px 8px;
     width: 120px;
     text-align: center;
     color: #d6c0b4;
@@ -181,7 +181,8 @@ form{
     user-select: none;
     cursor: pointer;
     margin-top: 10px;
-    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
 }
 
 .botoes_excluir_cancelar{
