@@ -135,10 +135,7 @@ class PostController
         $inicio = $itensPagina * $page - $itensPagina;
         $rows_count = App::get('database')->countAll('posts');
 
-        /* if($inicio > $rows_count)
-        {
-            return redirect('posts/admin');
-        } */
+       
         $pesquisa = filter_input(INPUT_GET,'buscapost');
         if($pesquisa){
         $_SESSION['search_string']=$pesquisa;
