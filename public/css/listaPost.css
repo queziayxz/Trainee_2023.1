@@ -84,6 +84,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 75%;
+    margin-top: 30px;
 }
 .botao-buscar {
     font-size: 25px;
