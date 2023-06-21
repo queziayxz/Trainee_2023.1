@@ -1,6 +1,4 @@
-<?php
-    session_start();
-?>
+
 
 <!DOCTYPE html>
 
@@ -28,11 +26,17 @@
         <div class="principal">
             <!-- Barra de Pesquisa -->
             <div class="search-box">
-            <form action="/posts/search" method="GET" id="form-busca">
-            <input type="text" name="buscapost" id="buscapost" placeholder="Nome do Post">
-            <button class="botao-buscar" type="submit"><ion-icon name="search"></ion-icon></button>
-            </form>
-        </div>
+                <form action="/posts" method="GET" id="form-busca">
+                <input type="search" name="buscapost" id="buscapost" placeholder="Nome do Post" value="<?php if(isset($busca)) echo $busca ?>">
+                <button class="botao-buscar" type="submit"><ion-icon name="search"></ion-icon></button>
+                </form>
+            </div>
+
+            <?php if(isset($busca)) { ?>
+            <div class="d-flex justify-content-end size me-4">
+                <a href="posts/limpar" style="color:#9C1111; text-decoration:none">limpar</a>
+            </div>
+            <?php } ?>
 
             <div class="main">
             <!-- Posts -->

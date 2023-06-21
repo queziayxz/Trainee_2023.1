@@ -1,20 +1,6 @@
 <?php 
-  session_start();
   
-    /*$caminho = $_SERVER['PATH_INFO'];
-
-    $ehRotaLogin = stripos($caminho, 'login');
-
-    if(!isset($_SESSION['logado']) && !$ehRotaLogin === false);
-    {
-      unset($_SESSION['email']);
-      unset($_SESSION['password']);
-     // header('Location: /home');
-      exit();
-    }
-    //$logado = $_SESSION['email'];
-   */ ?>
-   
+?> 
    
    <!DOCTYPE html>
 

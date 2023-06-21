@@ -148,8 +148,13 @@ class QueryBuilder
         return $stmt->fetchAll(PDO::FETCH_CLASS);
     }
 
-    public function busca($pesquisa){
+    public function busca($pesquisa, $inicio, $itensPagina){
         $sql = "SELECT * FROM posts WHERE title LIKE '%$pesquisa%'";
+
+        if($inicio >= 0 && $itensPagina > 0)
+        {
+            $sql .= " LIMIT {$inicio}, {$itensPagina}";
+        }
 
         try {
             $statement = $this->pdo->prepare($sql);

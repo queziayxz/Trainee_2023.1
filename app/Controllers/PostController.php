@@ -52,33 +52,47 @@ class PostController
 
         if(isset($_GET['pagina']) && !empty($_GET['pagina'])){
             $page = intval($_GET['pagina']);
-
-            if($page <= 0){
-                return redirect('posts/admin');
-            }
         }
 
         $itensPagina = 6;
         $inicio = $itensPagina * $page - $itensPagina;
         $rows_count = App::get('database')->countAll('posts');
 
-        if($inicio > $rows_count)
+        /* if($inicio > $rows_count)
         {
             return redirect('posts/admin');
-        }
-
-
-        $postagens = App::get('database')->selectAll('posts', $inicio, $itensPagina);
-
-        $tables = [
-            'post' => $postagens,
-        ];
-
-        $posts = $tables['post'];
+        } */
+        $pesquisa = filter_input(INPUT_GET,'buscapost');
+        if($pesquisa != ''){
+            $_SESSION['search_string']=$pesquisa;
+        } 
 
         $total_pages = ceil($rows_count/$itensPagina);
 
-        return view('site/lista-posts', compact('posts','page','total_pages'));
+        if(isset($_SESSION['search_string'])){
+            $busca = $_SESSION['search_string'];
+            $posts = App::get('database')->busca($busca, $inicio, $itensPagina);
+            return view("site/lista-posts",compact('posts','page','total_pages', 'busca'));
+        }
+        else{
+            unset($_SESSION['search_string']);
+            $postagens = App::get('database')->selectAll('posts', $inicio, $itensPagina);
+
+            $tables = [
+                'post' => $postagens,
+            ];
+
+            $posts = $tables['post'];
+
+            return view("site/lista-posts",compact('posts','page','total_pages'));
+        }
+    }
+
+    public function limparBusca()
+    {
+        unset($_SESSION['search_string']);
+
+        header('Location: /posts');
     }
 
     public function postIndividual()
@@ -115,22 +129,28 @@ class PostController
 
         if(isset($_GET['pagina']) && !empty($_GET['pagina'])){
             $page = intval($_GET['pagina']);
-
-            if($page <= 0){
-                return redirect('posts/admin');
-            }
         }
 
         $itensPagina = 6;
         $inicio = $itensPagina * $page - $itensPagina;
         $rows_count = App::get('database')->countAll('posts');
 
-        if($inicio > $rows_count)
+        /* if($inicio > $rows_count)
         {
             return redirect('posts/admin');
+        } */
+        $pesquisa = filter_input(INPUT_GET,'buscapost');
+        if($pesquisa){
+        $_SESSION['search_string']=$pesquisa;
         }
 
+        $total_pages = ceil($rows_count/$itensPagina);
 
+        if($_SESSION['search_string']){
+            $posts = App::get('database')->busca($pesquisa, $inicio, $itensPagina);
+        }
+        else{
+        unset($_SESSION['search_string']);
         $postagens = App::get('database')->selectAll('posts', $inicio, $itensPagina);
 
         $tables = [
@@ -138,11 +158,8 @@ class PostController
         ];
 
         $posts = $tables['post'];
-
-        $total_pages = ceil($rows_count/$itensPagina);
-       
-        $pesquisa = filter_input(INPUT_GET,'buscapost');
-        $posts = App::get('database')->busca($pesquisa); 
+        }
+        
         return view("site/lista-posts",compact('posts','page','total_pages'));
     }
 

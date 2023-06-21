@@ -3,9 +3,12 @@
 use App\Controllers\PostController;
 use App\Controllers\UserController;
 
+session_start();
+
 $router->get('posts/admin', 'PostController@index');
-$router->get('posts/search', 'PostController@show');
+// $router->get('posts/search', 'PostController@show');
 $router->get('posts', 'PostController@listaPosts');
+$router->get('posts/limpar', 'PostController@limparBusca');
 $router->post('posts/postIndividual', 'PostController@postIndividual');
 
 $router->get('', 'PostController@landingPage');
