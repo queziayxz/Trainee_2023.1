@@ -77,7 +77,7 @@
                                         </div>
                                         <div class="form-bar">
                                             <label for="senha">Senha:</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->password; ?>" readonly>
+                                            <input type="password" class="form-control" id="exampleFormControlInput1" value="<?php echo $user->password; ?>" readonly>
                                         </div>
                                     </div>
                                     <div class="botoes_excluir_cancelar">
