@@ -34,7 +34,7 @@
 
             <?php if(isset($busca)) { ?>
             <div class="d-flex justify-content-end size me-4">
-                <a href="posts/limpar" style="color:#9C1111; text-decoration:none"><button type="submit" class="ler" title="Limpar">limpar</button></a>
+                <a href="posts/limpar" style="color:#9C1111; text-decoration:none"><button type="submit" class="ler" title="Limpar">Limpar</button></a>
             </div>
             <?php } ?>
 

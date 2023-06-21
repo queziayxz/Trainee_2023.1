@@ -45,7 +45,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #32252C;
-     margin-bottom: 20px; 
+     margin-bottom: 12px; 
 }
 
 .size {
@@ -299,10 +299,6 @@ body {
 }
 
 @media (max-width: 362px) {
-    .search-box {
-        margin-bottom: 0;
-    }
-
     .main {
         width: 97%;
     }
